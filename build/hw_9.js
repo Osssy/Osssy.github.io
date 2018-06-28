@@ -60,52 +60,30 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 333);
+/******/ 	return __webpack_require__(__webpack_require__.s = 330);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 333:
+/***/ 330:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(334);
+module.exports = __webpack_require__(331);
 
 
 /***/ }),
 
-/***/ 334:
+/***/ 331:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(335);
-
-var redLightOn = document.querySelector(".traffic-light__block_red");
-var orangeLightOn = document.querySelector(".traffic-light__block_orange");
-var greenLightOn = document.querySelector(".traffic-light__block_green");
-
-document.querySelector(".traffic-light__block_red").onclick = function red() {
-	redLightOn.classList.add("light__red_on");
-	orangeLightOn.classList.remove("light__orange_on");
-	greenLightOn.classList.remove("light__green_on");
-};
-
-document.querySelector(".traffic-light__block_orange").onclick = function orange() {
-	redLightOn.classList.remove("light__red_on");
-	orangeLightOn.classList.add("light__orange_on");
-	greenLightOn.classList.remove("light__green_on");
-};
-
-document.querySelector(".traffic-light__block_green").onclick = function green() {
-	redLightOn.classList.remove("light__red_on");
-	orangeLightOn.classList.remove("light__orange_on");
-	greenLightOn.classList.add("light__green_on");
-};
+__webpack_require__(332);
 
 /***/ }),
 
-/***/ 335:
+/***/ 332:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

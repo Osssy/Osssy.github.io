@@ -60,52 +60,60 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 333);
+/******/ 	return __webpack_require__(__webpack_require__.s = 336);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 333:
+/***/ 336:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(334);
+module.exports = __webpack_require__(337);
 
 
 /***/ }),
 
-/***/ 334:
+/***/ 337:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(335);
+__webpack_require__(338);
 
-var redLightOn = document.querySelector(".traffic-light__block_red");
-var orangeLightOn = document.querySelector(".traffic-light__block_orange");
-var greenLightOn = document.querySelector(".traffic-light__block_green");
+var listElem = document.querySelector(".accordion__list");
+var textClosed = document.querySelector(".text__closed");
+var textOpened = document.querySelector(".text__opened");
+var accordion = document.querySelector(".accordion");
 
-document.querySelector(".traffic-light__block_red").onclick = function red() {
-	redLightOn.classList.add("light__red_on");
-	orangeLightOn.classList.remove("light__orange_on");
-	greenLightOn.classList.remove("light__green_on");
+var isDisabled = accordion.classList.contains(textClosed);
+
+function open() {
+  isDisabled = false;
+  lighter.classList.remove(textClosed);
+}
+
+function close() {
+  isDisabled = true;
+  lighter.classList.add(textClosed);
+}
+
+listElem.onclick = function open() {
+  textClosed.classList.remove("text__closed");
+  textOpened.classList.add("text__opened");
 };
 
-document.querySelector(".traffic-light__block_orange").onclick = function orange() {
-	redLightOn.classList.remove("light__red_on");
-	orangeLightOn.classList.add("light__orange_on");
-	greenLightOn.classList.remove("light__green_on");
-};
-
-document.querySelector(".traffic-light__block_green").onclick = function green() {
-	redLightOn.classList.remove("light__red_on");
-	orangeLightOn.classList.remove("light__orange_on");
-	greenLightOn.classList.add("light__green_on");
-};
+function toggleOpened() {
+  if (isDisabled === true) {
+    open();
+  } else {
+    close();
+  }
+}
 
 /***/ }),
 
-/***/ 335:
+/***/ 338:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
