@@ -14,7 +14,6 @@ body {
   -ms-flex-align: center;
       align-items: center;
   width: 600px;
-  height: 500px;
   color: white;
   font-family: "Aria", sans-serif;
   font-weight: normal;
@@ -36,18 +35,17 @@ body {
   max-height: 100%;
   border-radius: 5px; }
 
-.accordion > :first-child {
-  border-radius: 5px 5px 0 0; }
-
-.accordion > :last-child {
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
-  border-bottom: none; }
-
 .accordion__list {
   background: #059588;
   padding: 20px;
   border-bottom: 2px solid white; }
+
+.accordion :first-child {
+  border-radius: 5px 5px 0 0; }
+
+.accordion :last-child {
+  border-radius: 0 0 5px 5px;
+  border-bottom: none; }
 
 .accoridon__list_link {
   color: white;
@@ -57,8 +55,10 @@ body {
   color: black;
   padding: 10px; }
 
+/*
 .text__closed {
-  display: none; }
-
+	display: none;
+}
+*/
 .text__opened {
-  display: block; }
+  display: none; }

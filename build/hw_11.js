@@ -60,60 +60,46 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 336);
+/******/ 	return __webpack_require__(__webpack_require__.s = 333);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 336:
+/***/ 333:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(337);
+module.exports = __webpack_require__(334);
 
 
 /***/ }),
 
-/***/ 337:
+/***/ 334:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(338);
+__webpack_require__(335);
 
-var listElem = document.querySelector(".accordion__list");
+var accordion = document.querySelector(".accordion");
+var listElem = Array.from(accordion.querySelectorAll(".accordion__list"));
 var textClosed = document.querySelector(".text__closed");
 var textOpened = document.querySelector(".text__opened");
-var accordion = document.querySelector(".accordion");
 
-var isDisabled = accordion.classList.contains(textClosed);
-
-function open() {
-  isDisabled = false;
-  lighter.classList.remove(textClosed);
-}
-
-function close() {
-  isDisabled = true;
-  lighter.classList.add(textClosed);
-}
-
-listElem.onclick = function open() {
-  textClosed.classList.remove("text__closed");
-  textOpened.classList.add("text__opened");
-};
-
-function toggleOpened() {
-  if (isDisabled === true) {
-    open();
-  } else {
-    close();
-  }
+for (var i = 0; i < listElem.length; i++) {
+  listElem[i].addEventListener('click', function open() {
+    var opened = this.nextElementSibling.classList.toggle("text__opened");
+    if (opened.style.display === "block") {
+      opened.style.display = "none";
+    } else {
+      opened.style.display = "block";
+    }
+  });
 }
 
 /***/ }),
 
-/***/ 338:
+/***/ 335:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
