@@ -4451,7 +4451,7 @@ p {
   display: flex !important;
   background-color: #ffffff;
   box-shadow: 1px 5px 11px 1px rgba(192, 16, 79, 0.5);
-  border-radius: 0.57143rem;
+  border-radius: 0.71428rem;
   margin-top: 11.11111%;
   margin-bottom: 16.66667%;
   transition-duration: 0.3s; }
@@ -4459,8 +4459,8 @@ p {
     -ms-transform: scale(1.05);
         transform: scale(1.05); }
   .slide__image {
-    border-top-left-radius: 0.57143rem;
-    border-top-right-radius: 0.57143rem;
+    border-top-left-radius: 0.71428rem;
+    border-top-right-radius: 0.71428rem;
     margin-bottom: 9.72222%; }
   .slide__name {
     color: #868686;
