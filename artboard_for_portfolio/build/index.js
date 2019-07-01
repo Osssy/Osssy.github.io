@@ -9542,26 +9542,21 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.team__slider').slick({
         infinite: true,
-        speed: 500,
-        centerMode: true,
-        centerPadding: '0px',
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [{
             breakpoint: 769,
             settings: {
-                centerMode: true,
-                centerPadding: '0px',
+                infinite: true,
                 slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true
+                slidesToScroll: 1
             }
         }, {
             breakpoint: 576,
             settings: {
+                infinite: true,
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true
+                slidesToScroll: 1
             }
         }]
     });
