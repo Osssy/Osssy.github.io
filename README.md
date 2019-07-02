@@ -1,1 +1,1 @@
-public hosted repo
+public hosted zone
