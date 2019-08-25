@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>London Landing</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="index.css" rel="stylesheet"></head>
+<body>
+
+	<!-- SVG icons -->
+	<svg style="display: none">
+	    <symbol id="london-eye" viewBox="0 0 41 45">
+	    	<g fill-rule="evenodd">
+	    	    <ellipse cx="20.208" cy="1.484" rx="1.494" ry="1.484"/>
+	    	    <ellipse cx="20.208" cy="38.532" rx="1.491" ry="1.481"/>
+	    	    <ellipse cx="1.559" cy="20.005" rx="1.491" ry="1.481"/>
+	    	    <ellipse cx="38.862" cy="20.008" rx="1.494" ry="1.484"/>
+	    	    <ellipse cx="3.134" cy="12.556" rx="1.494" ry="1.484"/>
+	    	    <path d="M37.285 28.94c.822 0 1.49-.661 1.49-1.478s-.668-1.479-1.49-1.479-1.489.662-1.489 1.479c0 .817.667 1.479 1.49 1.479z"/>
+	    	    <ellipse cx="6.999" cy="6.932" rx="1.494" ry="1.484"/>
+	    	    <ellipse cx="33.425" cy="33.081" rx="1.491" ry="1.481"/>
+	    	    <ellipse cx="12.819" cy="2.997" rx="1.489" ry="1.479"/>
+	    	    <ellipse cx="27.6" cy="37.016" rx="1.494" ry="1.484"/>
+	    	    <ellipse cx="27.788" cy="3.08" rx="1.491" ry="1.481"/>
+	    	    <ellipse cx="12.636" cy="36.933" rx="1.494" ry="1.484"/>
+	    	    <ellipse cx="33.228" cy="6.739" rx="1.494" ry="1.484"/>
+	    	    <ellipse cx="7.198" cy="33.276" rx="1.494" ry="1.484"/>
+	    	    <ellipse cx="37.253" cy="12.475" rx="1.491" ry="1.481"/>
+	    	    <ellipse cx="3.176" cy="27.538" rx="1.494" ry="1.484"/>
+	    	    <path d="M23.98 35.415a15.829 15.829 0 0 0 7.42-4.153c6.212-6.167 6.212-16.192 0-22.356-2.998-2.984-6.995-4.628-11.25-4.628-4.249 0-8.248 1.645-11.252 4.63-3.008 2.985-4.666 6.955-4.666 11.178 0 4.223 1.656 8.193 4.666 11.176a15.87 15.87 0 0 0 7.41 4.153l-1.352 6.406H7.893v2.3h24.59v-2.3h-7.145l-1.357-6.406zm-.395-1.881l-.285-1.346c.588-.144 1.172-.303 1.728-.53l.558 1.257c-.642.267-1.325.447-2.001.619zm-2.249-13.188c0-.007.003-.014.003-.023H31.81c-.007.317-.021.632-.05.94-.004.051-.015.102-.025.152a12.973 12.973 0 0 1-.16 1.028c-.148.727-.37 1.433-.655 2.105l-9.585-4.202zm9.381 4.625a11.488 11.488 0 0 1-2.156 3.126l-7.338-7.282 9.494 4.156zm-9.376-5.124l-.002-.026 9.582-4.195c.274.649.487 1.327.637 2.031.007.037.019.067.026.101.064.309.106.621.145.936.01.072.028.145.035.221.03.306.044.621.049.934H21.34v-.002zm-.118-.492l7.338-7.29c.885.916 1.61 1.972 2.156 3.131l-9.494 4.159zm-.348-.33l4.192-9.436c1.17.543 2.23 1.267 3.152 2.143l-7.344 7.294zm7.348 9.415a11.753 11.753 0 0 1-3.151 2.14l-4.037-9.086-.048-.244 7.236 7.19zm-3.584 2.343c-.491.205-1.015.336-1.538.474l-1.584-7.505 3.122 7.031zm1.375 1.925l-.556-1.255a12.598 12.598 0 0 0 3.44-2.342l.977.97a13.924 13.924 0 0 1-3.86 2.627zm4.199-2.962l-.98-.97a12.382 12.382 0 0 0 2.36-3.42l1.257.551a13.68 13.68 0 0 1-2.637 3.839zm2.839-4.271l-1.25-.548c.312-.745.546-1.52.713-2.316v-.002c.074-.361.127-.727.17-1.093.006-.052.017-.108.022-.158.037-.343.048-.69.053-1.038h1.373a13.706 13.706 0 0 1-1.081 5.155zm1.084-5.628h-1.374a13.95 13.95 0 0 0-.053-1.033c-.007-.071-.02-.143-.03-.212-.046-.347-.09-.694-.16-1.037a.761.761 0 0 1-.018-.069 12.1 12.1 0 0 0-.707-2.256l1.258-.55a13.794 13.794 0 0 1 1.084 5.157zm-1.286-5.585l-1.255.55a12.533 12.533 0 0 0-2.362-3.418l.98-.97a13.795 13.795 0 0 1 2.637 3.838zm-2.975-4.174l-.978.97a12.653 12.653 0 0 0-3.443-2.346l.553-1.255a13.97 13.97 0 0 1 3.868 2.63zm-9.488-3.903a14.09 14.09 0 0 1 5.192 1.072l-.554 1.255a12.287 12.287 0 0 0-2.26-.692c-.028-.007-.05-.016-.081-.02-.338-.07-.68-.116-1.028-.157-.077-.01-.15-.028-.23-.035-.347-.036-.697-.05-1.042-.055l.003-1.368zm0 2.32c.32.005.632.012.942.049.079.007.148.025.234.037.313.036.625.078.931.14.028.004.056.016.09.023.711.15 1.397.363 2.05.637l-4.224 9.515a.083.083 0 0 0-.023-.005V8.505zm0 15.546l1.572 7.436c-.519.083-1.035.168-1.572.177v-7.613zm0 8.563c.602-.01 1.188-.106 1.769-.195l.283 1.343c-.674.108-1.355.216-2.052.225v-1.373zm-.48-26.43v1.372c-.345.004-.694.018-1.042.052-.046.007-.095.017-.143.021a12.469 12.469 0 0 0-3.446.883l-.56-1.253a14.092 14.092 0 0 1 5.191-1.074zm-.831 13.17l-9.495-4.156a11.757 11.757 0 0 1 2.156-3.13l7.339 7.287zm-7-7.622c.921-.876 1.984-1.6 3.153-2.143l4.19 9.43-7.344-7.287zm6.887 8.094c-.003.007-.003.016-.003.023H8.493c.002-.315.011-.63.044-.94.004-.054.018-.102.025-.155.128-1.095.4-2.148.815-3.128l9.586 4.2zm-.003.494c0 .01.003.017.003.023l-9.586 4.2c-.28-.671-.5-1.366-.653-2.09-.002-.014-.007-.023-.009-.035a9.677 9.677 0 0 1-.146-.964c-.007-.066-.023-.13-.03-.197a9.595 9.595 0 0 1-.048-.937h10.47zm.116.495l-7.339 7.286a11.651 11.651 0 0 1-2.158-3.125l9.497-4.161zm.225.45l-.058.274-4.011 9.042a11.753 11.753 0 0 1-3.152-2.142l7.22-7.173zm-.533 2.512l-1.58 7.475c-.523-.135-1.044-.266-1.53-.469l3.11-7.006zm-.635 8.642c.586.092 1.175.186 1.774.197v1.371c-.699-.01-1.38-.12-2.058-.228l.284-1.34zm.195-.934l1.58-7.464v7.643c-.538-.01-1.059-.097-1.58-.18zm1.559-12.579L15.66 9.389c.994-.414 2.054-.69 3.166-.815.049-.004.095-.013.143-.02.306-.033.626-.042.938-.049v10.396c-.007.003-.014.003-.02.005zM14.285 7.464l.558 1.253a12.534 12.534 0 0 0-3.444 2.346l-.975-.975a13.833 13.833 0 0 1 3.86-2.624zm-4.199 2.962l.975.97A12.533 12.533 0 0 0 8.7 14.814l-1.26-.552a13.756 13.756 0 0 1 2.647-3.836zm-2.848 4.262l1.262.552c-.31.738-.55 1.51-.713 2.3 0 .007-.003.014-.005.02-.074.36-.127.72-.17 1.084-.004.055-.018.11-.022.168-.037.342-.049.685-.054 1.035H6.154c.028-1.801.396-3.545 1.084-5.16zM6.154 20.32h1.38c.007.348.016.693.053 1.035.01.07.024.14.035.212.037.35.088.692.155 1.037a.435.435 0 0 1 .016.065c.167.775.401 1.534.704 2.256l-1.262.552a13.687 13.687 0 0 1-1.081-5.157zm1.287 5.592l1.263-.554a12.45 12.45 0 0 0 2.36 3.42l-.978.97a13.833 13.833 0 0 1-2.645-3.836zm2.983 4.17l.975-.97a12.566 12.566 0 0 0 3.441 2.338l-.555 1.256a13.882 13.882 0 0 1-3.86-2.624zm4.291 2.829l.558-1.258c.552.232 1.138.384 1.719.529l-.285 1.345c-.676-.168-1.352-.35-1.992-.616zm1.43 8.91l1.305-6.171c.883.15 1.786.242 2.703.242.912 0 1.808-.093 2.688-.24l1.304 6.169h-8z"/>
+	    	</g>
+	    </symbol>
+
+	    <symbol id="hotel" viewBox="0 0 60 60">
+	    	<g fill-rule="evenodd">
+		        <path d="M16.998 27h-7a1 1 0 0 0-1 1V38a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V28a1 1 0 0 0-1-1zm-1 9.999h-5V29h5V37zM33.995 27h-6.999a1 1 0 0 0-1 1V38a1 1 0 0 0 1 1h6.999a1 1 0 0 0 1-1V28a1 1 0 0 0-1-1zm-1 9.999h-4.999V29h5V37zM33.995 42.998h-6.999a1 1 0 0 0-1 1v9.998a1 1 0 0 0 1 1h6.999a1 1 0 0 0 1-1v-9.998a1 1 0 0 0-1-1zm-1 9.999h-4.999v-8h5v8zM49.993 27h-7a1 1 0 0 0-1 1V38a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V28a1 1 0 0 0-1-1zm-1 9.999h-5V29h5V37zM16.998 42.998h-7a1 1 0 0 0-1 1v9.998a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-9.998a1 1 0 0 0-1-1zm-1 9.999h-5v-8h5v8zM49.993 42.998h-7a1 1 0 0 0-1 1v9.998a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-9.998a1 1 0 0 0-1-1zm-1 9.999h-5v-8h5v8z"/>
+		        <path d="M55.992 57.996V24.001h1a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1h-1v-3.998a1 1 0 0 0-1-1h-2V1.004a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v10.999h-2a1 1 0 0 0-1 1v3.999H3a1 1 0 0 0-1 1V23a1 1 0 0 0 1 1h1v33.995H0v2h60v-2h-4.008zM8.999 2.004h41.994v9.999H8.999V2.004zm-3 11.998h47.993v3H6v-3zm47.993 43.994H6V24.001h47.993v33.995zM5 22.001H4v-3h51.993v3H4.999z"/>
+		        <path d="M28.46 5.425a3.114 3.114 0 0 0-.67-1.053 3.079 3.079 0 0 0-1.04-.695 3.48 3.48 0 0 0-1.345-.252c-.492 0-.941.083-1.348.25a3.055 3.055 0 0 0-1.043.695c-.29.297-.514.648-.673 1.055a3.605 3.605 0 0 0-.239 1.325c0 .477.08.919.239 1.325.159.406.383.758.673 1.055.289.297.637.529 1.043.695.407.167.856.25 1.348.25.492 0 .94-.083 1.345-.25a3.034 3.034 0 0 0 1.04-.695 3.14 3.14 0 0 0 .67-1.055c.159-.406.238-.848.238-1.325s-.08-.919-.238-1.325zM27.315 7.71c-.095.284-.23.524-.407.72a1.765 1.765 0 0 1-.646.453c-.254.105-.54.157-.857.157-.318 0-.605-.052-.86-.157a1.781 1.781 0 0 1-.65-.453 2.017 2.017 0 0 1-.411-.72 2.986 2.986 0 0 1-.144-.96c0-.357.048-.677.144-.96a2.04 2.04 0 0 1 .411-.723 1.77 1.77 0 0 1 .65-.454c.255-.105.542-.158.86-.158.318 0 .603.053.857.158.253.105.468.256.646.454.176.198.312.439.407.722.094.284.141.604.141.96 0 .358-.047.678-.141.961zM19.925 3.497v2.798h-3.05V3.497h-1.22v6.506h1.22V7.159h3.05v2.844h1.219V3.497zM41.018 9.004V3.497h-1.21v6.506h3.815v-.999zM28.752 3.497v.994h1.967v5.512h1.21V4.49h1.957v-.994zM38.759 4.46v-.963h-4.103v6.506h4.103v-.967h-2.884v-1.84h2.272v-.932h-2.272V4.46z"/>
+		    </g>
+	    </symbol>
+
+	    <symbol id="big-ben" viewBox="0 0 26 60">
+			<g fill-rule="evenodd">
+		        <path d="M24.007 38.987a1 1 0 0 0 1-1v-21a1 1 0 0 0-1-1h-1.219l-1.81-7.242c-.007-.027-.024-.048-.033-.074a.95.95 0 0 0-.154-.289c-.02-.025-.032-.055-.055-.078l-7.5-8c-.378-.404-1.081-.404-1.459 0l-7.5 8c-.022.024-.035.053-.055.078a.97.97 0 0 0-.074.107 1.016 1.016 0 0 0-.08.182c-.009.026-.026.047-.032.074l-1.811 7.242H1.006a1 1 0 0 0-1 1v21a1 1 0 0 0 1 1h1v9h-2v2h2v2h-2v2h2v4a1 1 0 0 0 1 1h3v.026h2v-.026h2v.026h2v-.026h1v.026h2v-.026h2v.026h2v-.026h3a1 1 0 0 0 1-1v-4h2v-2h-2v-2h2v-2h-2v-9h1.001zm-11.5-36.538l5.192 5.538H7.315l5.192-5.538zm-6.72 7.538h13.438l1.5 6h-1.719v-3h-2v3h-2v-3h-2v3h-1v-3h-2v3h-2v-3h-2v3H4.287l1.5-6zm-3.78 8h21v19h-21v-19zm8 21v9h-2v-9h2zm3 0v9h-1v-9h1zm-3 11v2h-2v-2h2zm2 0h1v2h-1v-2zm3 0h2v2h-2v-2zm0-2v-9h2v9h-2zm-11-9h2v9h-2v-9zm0 11h2v2h-2v-2zm0 7v-3h2v3h-2zm4 0v-3h2v3h-2zm4 0v-3h1v3h-1zm3 0v-3h2v3h-2zm6 0h-2v-3h2v3zm0-5h-2v-2h2v2zm0-4h-2v-9h2v9z"/>
+		        <path d="M12.507 34.987c4.136 0 7.5-3.364 7.5-7.5s-3.364-7.5-7.5-7.5-7.5 3.364-7.5 7.5 3.364 7.5 7.5 7.5zm0-13c3.033 0 5.5 2.468 5.5 5.5s-2.467 5.5-5.5 5.5a5.506 5.506 0 0 1-5.5-5.5c0-3.032 2.467-5.5 5.5-5.5z"/>
+		        <path d="M16.007 27.987v-2h-3v-3h-2v5h2z"/>
+		    </g>
+	    </symbol>
+
+	    <symbol id="hamburger" viewBox="0 0 62 60">
+	    	<g fill-rule="evenodd">
+		        <path d="M56.413 38.363H41.686l3.595-1.957h11.132a.978.978 0 1 0 0-1.956h-11.38a.977.977 0 0 0-.468.119l-7.186 3.91-.006.004-6.72 3.657-6.721-3.657a.168.168 0 0 1-.007-.004l-7.186-3.91a.977.977 0 0 0-.467-.12H4.892a.978.978 0 1 0 0 1.957h11.131l3.595 1.957H4.891A4.897 4.897 0 0 0 0 43.254a4.897 4.897 0 0 0 4.891 4.891h51.522a4.897 4.897 0 0 0 4.891-4.89 4.897 4.897 0 0 0-4.891-4.892zm0 7.826H4.891a2.938 2.938 0 0 1-2.934-2.935A2.938 2.938 0 0 1 4.89 40.32h18.322l6.972 3.794a.978.978 0 0 0 .935 0l6.971-3.794h18.322a2.938 2.938 0 0 1 2.935 2.935 2.938 2.938 0 0 1-2.935 2.935zM44.283 54.993a.98.98 0 0 0-1.957 0 .98.98 0 0 0 1.957 0z"/>
+		        <path d="M56.413 50.102H16.63a.978.978 0 1 0 0 1.956h38.735c-.476 3.315-3.334 5.87-6.778 5.87h-35.87c-3.443 0-6.302-2.555-6.778-5.87h6.778a.978.978 0 1 0 0-1.956H4.891a.978.978 0 0 0-.978.978c0 4.855 3.95 8.805 8.804 8.805h35.87c4.855 0 8.804-3.95 8.804-8.805a.978.978 0 0 0-.978-.978zM14.087 21.882a.98.98 0 0 0 0 1.957.98.98 0 0 0 0-1.957zM47.217 21.882a.98.98 0 0 0 0 1.957.98.98 0 0 0 0-1.957zM18 24.621a.98.98 0 0 0 0 1.957.98.98 0 0 0 0-1.957z"/>
+		        <path d="M4.891 32.493h51.522c.54 0 .978-.438.978-.978v-3.08c0-7.732-6.29-14.022-14.021-14.022H31.63V10.19l8.607-3.973a.979.979 0 0 0 0-1.776L31.062.205a.978.978 0 0 0-1.388.889V14.413h-11.74c-7.73 0-14.021 6.29-14.021 14.022v3.08c0 .54.438.978.978.978zm26.74-29.87l5.862 2.706-5.863 2.706V2.623zM5.87 28.435c0-6.653 5.412-12.065 12.065-12.065H43.37c6.652 0 12.065 5.412 12.065 12.065v2.102H5.87v-2.102z"/>
+		    </g>
+	    </symbol>
+
+	    <symbol id="ticket" viewBox="0 0 60 60">
+		    <g fill-rule="evenodd">
+		        <path d="M52.998 15.692l-.653.653c-1.222 1.222-2.111 1.576-3.963 1.576-3.744 0-6.461-2.718-6.461-6.462 0-1.852.353-2.74 1.575-3.963l.653-.652L37.305 0 0 37.305l6.844 6.844.652-.653c1.222-1.222 2.111-1.575 3.963-1.575 3.744 0 6.462 2.717 6.462 6.461 0 1.852-.354 2.74-1.576 3.963l-.653.653 6.844 6.843 37.305-37.305-6.843-6.844zM18.277 52.971c1.1-1.312 1.49-2.576 1.49-4.589 0-4.736-3.572-8.308-8.308-8.308-2.013 0-3.277.39-4.59 1.49L2.61 37.305l21.772-21.771 3.04 3.04 1.305-1.306-3.04-3.04L37.305 2.61l4.26 4.26c-1.101 1.312-1.49 2.576-1.49 4.59 0 4.735 3.57 8.307 8.307 8.307 2.013 0 3.277-.39 4.59-1.49l4.259 4.259-11.618 11.618-3.04-3.04-1.305 1.305 3.04 3.04-21.772 21.772-4.26-4.26z"/>
+		        <path d="M32.96 24.113l-3.692-3.693 1.305-1.305 3.693 3.692zM39.422 30.574l-3.692-3.692 1.305-1.305 3.692 3.692z"/>
+		    </g>
+		</symbol>
+
+		<symbol id="coffee-cup" viewBox="0 0 52 60">
+		    <g fill-rule="evenodd">
+		        <path d="M43.477 30.065c-.731 0-1.446.096-2.138.282V30a3.049 3.049 0 0 0-3.045-3.045H3.045A3.049 3.049 0 0 0 0 30v14.514c0 4.223 1.975 8.333 5.184 10.852v1.589A3.049 3.049 0 0 0 8.229 60H33.11a3.049 3.049 0 0 0 3.046-3.045v-1.589c2.267-1.78 3.916-4.353 4.69-7.2.843.285 1.724.43 2.631.43 4.538 0 8.23-3.691 8.23-8.229v-2.073c0-4.538-3.692-8.23-8.23-8.23zm-2.138 8.229a2.14 2.14 0 0 1 2.138-2.138 2.14 2.14 0 0 1 2.139 2.138v2.073a2.14 2.14 0 0 1-2.139 2.138 2.14 2.14 0 0 1-2.138-2.138v-2.073zM33.11 58.056H8.23a1.103 1.103 0 0 1-1.102-1.101v-1.102h27.085v1.102c0 .607-.494 1.101-1.102 1.101zm6.285-13.542c0 3.678-1.73 7.247-4.534 9.395H6.478c-2.804-2.148-4.534-5.717-4.534-9.395V30c0-.607.494-1.102 1.101-1.102h35.249c.607 0 1.101.495 1.101 1.102V44.514zm10.367-4.147a6.292 6.292 0 0 1-6.285 6.285c-.78 0-1.533-.14-2.248-.416.072-.57.11-1.144.11-1.722v-.671a4.057 4.057 0 0 0 2.138.606 4.087 4.087 0 0 0 4.082-4.082v-2.073a4.087 4.087 0 0 0-4.082-4.082c-.783 0-1.516.222-2.138.606v-2.435a6.292 6.292 0 0 1 8.423 5.91v2.074zM20.013 19.263c-1.064.976-2.389 2.19-2.389 4.517a.972.972 0 1 0 1.944 0c0-1.472.776-2.183 1.758-3.083 1.064-.975 2.389-2.189 2.389-4.516 0-2.329-1.325-3.543-2.389-4.52-.982-.9-1.758-1.611-1.758-3.085 0-1.473.776-2.185 1.758-3.086 1.064-.975 2.389-2.19 2.389-4.518a.972.972 0 1 0-1.944 0c0 1.473-.776 2.185-1.758 3.086-1.064.975-2.389 2.19-2.389 4.518 0 2.329 1.325 3.543 2.389 4.519.982.9 1.758 1.612 1.758 3.086 0 1.472-.776 2.183-1.758 3.082zM26.233 19.263c-1.064.976-2.389 2.19-2.389 4.517a.972.972 0 1 0 1.944 0c0-1.472.776-2.183 1.758-3.083 1.065-.975 2.39-2.189 2.39-4.516 0-2.329-1.325-3.543-2.39-4.52-.982-.9-1.758-1.611-1.758-3.085a.972.972 0 1 0-1.944 0c0 2.329 1.325 3.543 2.39 4.519.981.9 1.757 1.612 1.757 3.086 0 1.472-.775 2.183-1.758 3.082zM13.793 19.263c-1.065.976-2.39 2.19-2.39 4.517a.972.972 0 1 0 1.945 0c0-1.472.776-2.183 1.758-3.083 1.064-.975 2.389-2.189 2.389-4.516 0-2.329-1.325-3.543-2.389-4.52-.982-.9-1.758-1.611-1.758-3.085a.972.972 0 1 0-1.944 0c0 2.329 1.324 3.543 2.388 4.519.983.9 1.759 1.612 1.759 3.086 0 1.472-.776 2.183-1.758 3.082z"/>
+		    </g>
+		</symbol>
+
+		<symbol id="museum" viewBox="0 0 63 60">
+		    <g fill-rule="evenodd">
+		        <path d="M62.179 18.82c-.002-.02.001-.041-.002-.062l-1.12-8.962C60.383 4.404 55.406.017 49.961.017H13.336C7.924.017 2.71 4.34 1.714 9.651L.019 18.69c-.004.02-.002.042-.005.063-.006.047-.014.093-.014.141v39.978c0 .612.497 1.11 1.11 1.11H61.076a1.11 1.11 0 0 0 1.11-1.11V18.894c0-.025-.006-.05-.007-.074zM3.897 10.06c.809-4.313 5.043-7.822 9.439-7.822H49.96c4.363 0 8.353 3.514 8.893 7.833l.964 7.714H2.448l1.449-7.725zm13.87 47.702H9.995v-8.338a3.887 3.887 0 0 1 7.774 0v8.338zm16.658 0H26.65v-8.338a3.887 3.887 0 0 1 7.774 0v8.338zm16.656 0h-7.773v-8.338a3.887 3.887 0 0 1 7.773 0v8.338zm8.884 0h-6.663v-8.338c0-3.362-2.74-6.098-6.107-6.098-3.368 0-6.108 2.736-6.108 6.098v8.338h-4.442v-8.338c0-3.362-2.74-6.098-6.107-6.098-3.368 0-6.108 2.736-6.108 6.098v8.338h-4.442v-8.338c0-3.362-2.74-6.098-6.107-6.098-3.368 0-6.108 2.736-6.108 6.099v8.337H2.221V37.773h57.744v19.989zm0-22.21H2.221V20.006h57.744v15.546z"/>
+		        <path d="M8.884 22.227a4.448 4.448 0 0 0-4.442 4.443v5.551c0 .613.497 1.11 1.11 1.11h6.663a1.11 1.11 0 0 0 1.11-1.11v-5.55a4.448 4.448 0 0 0-4.441-4.444zm2.22 8.883H6.664v-4.44c0-1.225.996-2.222 2.22-2.222 1.225 0 2.222.997 2.222 2.222v4.44zM19.988 22.227a4.448 4.448 0 0 0-4.441 4.443v5.551c0 .613.497 1.11 1.11 1.11h6.663a1.11 1.11 0 0 0 1.11-1.11v-5.55a4.448 4.448 0 0 0-4.442-4.444zm2.221 8.883h-4.441v-4.44c0-1.225.996-2.222 2.22-2.222 1.225 0 2.221.997 2.221 2.222v4.44zM31.093 22.227a4.448 4.448 0 0 0-4.442 4.443v5.551c0 .613.498 1.11 1.11 1.11h6.664a1.11 1.11 0 0 0 1.11-1.11v-5.55a4.448 4.448 0 0 0-4.442-4.444zm2.221 8.883h-4.442v-4.44c0-1.225.997-2.222 2.221-2.222 1.225 0 2.221.997 2.221 2.222v4.44zM42.198 22.227a4.448 4.448 0 0 0-4.442 4.443v5.551c0 .613.497 1.11 1.11 1.11h6.663a1.11 1.11 0 0 0 1.11-1.11v-5.55a4.448 4.448 0 0 0-4.441-4.444zm2.22 8.883h-4.441v-4.44c0-1.225.996-2.222 2.22-2.222 1.226 0 2.222.997 2.222 2.222v4.44zM53.302 22.227a4.448 4.448 0 0 0-4.441 4.443v5.551c0 .613.497 1.11 1.11 1.11h6.663a1.11 1.11 0 0 0 1.11-1.11v-5.55a4.448 4.448 0 0 0-4.442-4.444zm2.221 8.883h-4.441v-4.44c0-1.225.996-2.222 2.22-2.222 1.225 0 2.222.997 2.222 2.222v4.44z"/>
+		    </g>
+		</symbol>
+	</svg>
+
+	<!-- header section -->
+	<header class="header" id="#header">
+		<div class="header_wrapper">
+			<div class="header__info">
+				<a class="navigation__open" href="#nowhere">
+					<i class="fa fa-bars"></i>
+				</a>
+				<nav class="header__navigation navigation">
+					<a class="navigation__close" href="#nowhere">
+						<i class="fa fa-close"></i>
+					</a>
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="navigation__link" href="#search">Search</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#news">News</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#about">About</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#trip">Trip</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#footer">Footer</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__main">
+				<div class="header__icon">
+					<svg class="icon__london-eye">
+						<use xlink:href="#london-eye"></use>
+					</svg>
+					<hr class="icon__horizontal">
+				</div>
+				<h1 class="header__title">London</h1>
+				<span class="header__subtitle">Explore the secret life of the city</span>
+				<a href="#nowhere" class="header__button button-blue">Explore the city</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="content">
+
+		<!-- search section -->
+		<section class="search" id="search">
+			<div class="search_wrapper">
+				<form class="search__field">
+                    <label class="search__label" for="search">
+                        <i class="search__icon fa fa-search"></i>
+                        <input class="search__input" id="search" placeholder="Search in the city" type="search" name="search">
+                    </label>
+                </form>
+				<span class="search__excerption"><span class="search__excerption_highlighted">Search for your favourite:</span> restaurant, museum, hotel, attractions</span>
+				<ul class="search__entertainment entertainment__list">
+					<li class="entertainment__item search-item">
+						<a href="#nowhere" class="entertainment__link">
+							<div class="entertainment__link_wrapper">
+								<svg class="entertainment__icon entertainment__icon_hotel">
+								    <use xlink:href="#hotel"></use>
+								</svg>
+								<div class="entertainment__description">
+									<h5 class="entertainment__title">Accomodation</h5>
+									<hr class="entertainment__horizontal_active">
+									<span class="entertainment__text"><span class="entertainment__text_highlighted">Perfect solution:</span> hotel, apartment, hostel, guest house</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="entertainment__item search-item">
+						<a href="#nowhere" class="entertainment__link">
+							<div class="entertainment__link_wrapper">
+								<svg class="entertainment__icon entertainment__icon_big-ben">
+								    <use xlink:href="#big-ben"></use>
+								</svg>
+								<div class="entertainment__description">
+									<h5 class="entertainment__title">Tourist Attractions</h5>
+									<hr class="entertainment__horizontal_active">
+									<span class="entertainment__text"><span class="entertainment__text_highlighted">Search for your favourite:</span> restaurant, museum, hotel, attractions</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="entertainment__item search-item">
+						<a href="#nowhere" class="entertainment__link">
+							<div class="entertainment__link_wrapper">
+								<svg class="entertainment__icon entertainment__icon_hamburger">
+								    <use xlink:href="#hamburger"></use>
+								</svg>
+								<div class="entertainment__description">
+									<h5 class="entertainment__title">Restaurants</h5>
+									<hr class="entertainment__horizontal_active">
+									<span class="entertainment__text"><span class="entertainment__text_highlighted">You are hungry:</span> chinese food, burgers, traditional food</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="entertainment__item search-item">
+						<a href="#nowhere" class="entertainment__link">
+							<div class="entertainment__link_wrapper">
+								<svg class="entertainment__icon entertainment__icon_ticket">
+									<use xlink:href="#ticket"></use>
+								</svg>
+								<div class="entertainment__description">
+									<h5 class="entertainment__title">Events & Tickets</h5>
+									<hr class="entertainment__horizontal_active">
+									<span class="entertainment__text"><span class="entertainment__text_highlighted">It's time to have fun:</span> concerts, cinema, exhibitions</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="entertainment__item search-item">
+						<a href="#nowhere" class="entertainment__link">
+							<div class="entertainment__link_wrapper">
+								<svg class="entertainment__icon entertainment__icon_coffee-cup">
+									<use xlink:href="#coffee-cup"></use>
+								</svg>
+								<div class="entertainment__description">
+									<h5 class="entertainment__title">Coffee Shop</h5>
+									<hr class="entertainment__horizontal_active">
+									<span class="entertainment__text"><span class="entertainment__text_highlighted">You must wake up:</span> Starbucks, Filicori, Nescafe, Lavazza</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="entertainment__item search-item">
+						<a href="#nowhere" class="entertainment__link">
+							<div class="entertainment__link_wrapper">
+								<svg class="entertainment__icon entertainment__icon_museum">
+									<use xlink:href="#museum"></use>
+								</svg>
+								<div class="entertainment__description">
+									<h5 class="entertainment__title">Gouvernement</h5>
+									<hr class="entertainment__horizontal_active">
+									<span class="entertainment__text"><span class="entertainment__text_highlighted">Must see:</span> parliament building, district court, royal house</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- news section -->
+		<section class="news" id="news">
+			<div class="news_wrapper">
+				<span class="news__banner-title">news</span>
+				<h2 class="news__title">Latest news from <span class="news__title_strikethrough">London Blog</span></h2>
+				<div class="news__slider">
+					<div class="news__slide news-slide">
+						<img src="./assets/images/food.jpg" alt="food" class="news-slide__image">
+						<div class="news-slide__description">
+							<h2 class="news-slide__title">Exploring the food in the heart of the London</h2>
+							<span class="news-slide__date">25 Aug, 2016 </span>
+							<p class="news-slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+							<div class="news-slide__author">
+								<img src="./assets/images/avatar.jpg" alt="avatar" class="news-slide__avatar">
+								<span class="news-slide__signature">by Felecia Wilson</span>
+							</div>
+						</div>
+					</div>
+					<div class="news__slide news-slide">
+						<img src="./assets/images/history.jpg" alt="food" class="news-slide__image">
+						<div class="news-slide__description">
+							<h2 class="news-slide__title">The history and architecture of England</h2>
+							<span class="news-slide__date">25 Aug, 2016 </span>
+							<p class="news-slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+							<div class="news-slide__author">
+								<img src="./assets/images/avatar_2.jpg" alt="avatar" class="news-slide__avatar">
+								<span class="news-slide__signature">by Noelle Garza</span>
+							</div>
+						</div>
+					</div>
+					<div class="news__slide news-slide">
+						<img src="./assets/images/food.jpg" alt="food" class="news-slide__image">
+						<div class="news-slide__description">
+							<h2 class="news-slide__title">Exploring the food in the heart of the London</h2>
+							<span class="news-slide__date">25 Aug, 2016 </span>
+							<p class="news-slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+							<div class="news-slide__author">
+								<img src="./assets/images/avatar.jpg" alt="avatar" class="news-slide__avatar">
+								<span class="news-slide__signature">by Felecia Wilson</span>
+							</div>
+						</div>
+					</div>
+					<div class="news__slide news-slide">
+						<img src="./assets/images/history.jpg" alt="food" class="news-slide__image">
+						<div class="news-slide__description">
+							<h2 class="news-slide__title">The history and architecture of England</h2>
+							<span class="news-slide__date">25 Aug, 2016 </span>
+							<p class="news-slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+							<div class="news-slide__author">
+								<img src="./assets/images/avatar_2.jpg" alt="avatar" class="news-slide__avatar">
+								<span class="news-slide__signature">by Noelle Garza</span>
+							</div>
+						</div>
+					</div>
+					<div class="news__slide news-slide">
+						<img src="./assets/images/food.jpg" alt="food" class="news-slide__image">
+						<div class="news-slide__description">
+							<h2 class="news-slide__title">Exploring the food in the heart of the London</h2>
+							<span class="news-slide__date">25 Aug, 2016 </span>
+							<p class="news-slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+							<div class="news-slide__author">
+								<img src="./assets/images/avatar.jpg" alt="avatar" class="news-slide__avatar">
+								<span class="news-slide__signature">by Felecia Wilson</span>
+							</div>
+						</div>
+					</div>
+					<div class="news__slide news-slide">
+						<img src="./assets/images/history.jpg" alt="food" class="news-slide__image">
+						<div class="news-slide__description">
+							<h2 class="news-slide__title">The history and architecture of England</h2>
+							<span class="news-slide__date">25 Aug, 2016 </span>
+							<p class="news-slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+							<div class="news-slide__author">
+								<img src="./assets/images/avatar_2.jpg" alt="avatar" class="news-slide__avatar">
+								<span class="news-slide__signature">by Noelle Garza</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="news.html" class="news__more button-blue">More stories</a>
+			</div>
+		</section>
+
+		<!-- about section -->
+		<section class="about" id="about">
+			<div class="about_wrapper">
+				<div class="about__description">
+					<div class="about__item">
+						<h2 class="about__title">About London</h2>
+						<p class="about__text">London is the political, economic and cultural capital of Britain. You can visit the Queen's official residence at Buckingham Palace and tour the Houses of Parliament, historic home of the UK government.</p>
+						<p class="about__text">London's world-class tourist attractions are renowned across the globe. Many of the most famous attractions are free to visit, for example Tate Modern, the National Gallery and the Victoria and Albert Museum.</p>
+					</div>
+					<div class="about__item">
+						<h2 class="about__title">History</h2>
+						<p class="about__text">London's history stretches back over thousands of years, and the city boasts four World Heritage Sites: the Palace of Westminster and Westminster Abbey, the Tower of London, Maritime Greenwich and the Royal Botanic Gardens, Kew.</p>
+					</div>
+					<button class="about__more button-blue"">Read More</button>
+				</div>
+				<img src="./assets/images/picture.png" alt="about" class="about__image">
+			</div>
+		</section>
+
+		<!-- trip section -->
+		<section class="trip" id="trip">
+			<div class="trip_wrapper">
+				<span class="trip__banner-title">select trip</span>
+				<h2 class="trip__title">Select your <span class="news__title_strikethrough">favorite trip</span></h2>
+				<ul class="trip__gallery gallery">
+					<li class="gallery__item">
+						<img class="gallery__image" src="./assets/images/tab-1.jpg" alt="tab_1">
+						<div class="gallery_overlay">
+							<h4 class="gallery__title">Tower of  London</h4>
+							<hr class="gallery__horizontal">
+							<p class="gallery__text">Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings.</p>
+							<a href="#nowhere" class="gallery__button">Book now</a>
+						</div>
+					</li>
+					<li class="gallery__item">
+						<img class="gallery__image" src="./assets/images/tab-3.jpg" alt="tab_3">
+						<div class="gallery_overlay">
+							<h4 class="gallery__title">Tower of  London</h4>
+							<hr class="gallery__horizontal">
+							<p class="gallery__text">Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings.</p>
+							<a href="#nowhere" class="gallery__button">Book now</a>
+						</div>
+					</li>
+					<li class="gallery__item">
+						<img class="gallery__image" src="./assets/images/tab-4.jpg" alt="tab_4">
+						<div class="gallery_overlay">
+							<h4 class="gallery__title">Tower of  London</h4>
+							<hr class="gallery__horizontal">
+							<p class="gallery__text">Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings.</p>
+							<a href="#nowhere" class="gallery__button">Book now</a>
+						</div>
+					</li>
+					<li class="gallery__item">
+						<img class="gallery__image" src="./assets/images/tab-1.jpg" alt="tab_1">
+						<div class="gallery_overlay">
+							<h4 class="gallery__title">Tower of  London</h4>
+							<hr class="gallery__horizontal">
+							<p class="gallery__text">Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings.</p>
+							<a href="#nowhere" class="gallery__button">Book now</a>
+						</div>
+					</li>
+					<li class="gallery__item">
+						<img class="gallery__image" src="./assets/images/tab-3.jpg" alt="tab_3">
+						<div class="gallery_overlay">
+							<h4 class="gallery__title">Tower of  London</h4>
+							<hr class="gallery__horizontal">
+							<p class="gallery__text">Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings.</p>
+							<a href="#nowhere" class="gallery__button">Book now</a>
+						</div>
+					</li>
+					<li class="gallery__item">
+						<img class="gallery__image" src="./assets/images/tab-4.jpg" alt="tab_4">
+						<div class="gallery_overlay">
+							<h4 class="gallery__title">Tower of  London</h4>
+							<hr class="gallery__horizontal">
+							<p class="gallery__text">Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings.</p>
+							<a href="#nowhere" class="gallery__button">Book now</a>
+						</div>
+					</li>
+				</ul>
+				<div class="trip__tab tab_container">
+					<a class="tab__link" href="#nowhere">
+						<i class="tab__close fa fa-close"></i>
+					</a>
+					<img class="tab__image">
+					<span class="tab__description"></span>
+				</div>
+			</div>
+			<hr class="trip__horizontal">
+		</section>
+	</main>
+
+	<!-- footer section -->
+	<footer class="footer" id="footer">
+		<div class="footer__main">
+			<div class="footer__main_wrapper">
+				<div class="footer__articles footer-articles">
+					<h4 class="footer-articles__title">articles</h4>
+					<ul class="footer-articles__list">
+						<li class="footer-articles__item">
+							<a href="#nowhere" class="footer-articles__link">Exploring the food in the heart of the London</a>
+							<div class="footer-articles__info">
+								<span class="footer-articles__signature">by Felecia Wilson</span>
+								<span class="footer-articles__date">25 Aug, 2016</span>
+							</div>
+						</li>
+						<li class="footer-articles__item">
+							<a href="#nowhere" class="footer-articles__link">The history and architecture of England</a>
+							<div class="footer-articles__info">
+								<span class="footer-articles__signature">by Felecia Wilson</span>
+								<span class="footer-articles__date">25 Aug, 2016</span>
+							</div>
+						</li>
+						<li class="footer-articles__item">
+							<a href="#nowhere" class="footer-articles__link">Exploring the food in the heart of the London</a>
+							<div class="footer-articles__info">
+								<span class="footer-articles__signature">by Felecia Wilson</span>
+								<span class="footer-articles__date">25 Aug, 2016</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="footer__about-us footer-about-us">
+					<h4 class="footer-about-us__title">about us</h4>
+					<p class="footer-about-us__text">London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.</p>
+				</div>
+				
+				<div class="footer__newsletter footer-newsletter">
+					<h4 class="footer-newsletter__title">newsletter</h4>
+					<p class="footer-newsletter__description">Get updates about new tours, travel tips, photo guides and more!</p>
+					<form action="" class="footer-nemsletter__subscription">
+						<input type="text" id="name" class="footer-newsletter__name" name="name" placeholder="Name">
+						<input type="text" id="email" class="footer-newsletter__email" name="email" placeholder="E-mail">
+						<button class="footer-newsletter__submit" type="submit" name="send">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer__additional">
+			<div class="footer__additional_wrapper">
+				<span class="footer__copyright">&copy; Copyright 2016 by Andrei Rotariu</span>
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="index.js"></script></body>
+</html>
