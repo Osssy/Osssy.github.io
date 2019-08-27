@@ -9507,8 +9507,6 @@ __webpack_require__(337);
 
 __webpack_require__(338);
 
-__webpack_require__(339);
-
 /***/ }),
 /* 335 */
 /***/ (function(module, exports) {
@@ -9526,25 +9524,33 @@ __webpack_require__(339);
 
 $(document).ready(function () {
 	$('.navigation__open').click(function () {
-		$('.navigation').show();
-		$(this).hide();
+		$('.navigation').fadeIn();
+		$('.navigation__close').fadeIn();
+		$(this).fadeOut();
+		$('body').css('overflow', 'hidden');
 	});
 
 	$('.navigation__close').click(function () {
-		$('.navigation').hide();
-		$('.navigation__open').show();
+		$('.navigation').fadeOut();
+		$('.navigation__open').fadeIn();
+		$(this).fadeOut();
+		$('body').css('overflow', 'visible');
 	});
 
 	$('body').keydown(function (event) {
 		if (event.keyCode == 27) {
-			$('.navigation').hide();
-			$('.navigation__open').show();
+			$('.navigation').fadeOut();
+			$('.navigation__open').fadeIn();
+			$('.navigation__close').fadeOut();
+			$('body').css('overflow', 'visible');
 		}
 	});
 
 	$('.navigation__link').click(function () {
-		$('.navigation').hide();
-		$('.navigation__open').show();
+		$('.navigation').fadeOut();
+		$('.navigation__open').fadeIn();
+		$('.navigation__close').fadeOut();
+		$('body').css('overflow', 'visible');
 	});
 });
 
@@ -9580,19 +9586,6 @@ $(document).ready(function () {
 "use strict";
 
 
-// select
-
-$(document).ready(function () {
-	$('.styler').styler();
-});
-
-/***/ }),
-/* 339 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 //tab gallery
 
 $(document).ready(function () {
@@ -9603,10 +9596,16 @@ $(document).ready(function () {
         $('.tab__image').attr('src', image);
         $('.tab__description').text(alt);
         $('.tab_container').show();
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".tab_container").offset().top - 15
+        }, 700);
     });
 
     $('.tab__close').click(function () {
         $('.tab_container').hide();
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".trip__gallery").offset().top - 130
+        }, 700);
     });
 });
 
