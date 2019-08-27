@@ -321,118 +321,7 @@
     opacity: .75;
     color: black;
 }
-.jq-checkbox,
-.jq-radio {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.jq-checkbox input,
-.jq-radio input {
-	position: absolute;
-	z-index: -1;
-	margin: 0;
-	padding: 0;
-	opacity: 0;
-}
-.jq-file {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-}
-.jq-file input {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: auto;
-	margin: 0;
-	padding: 0;
-	opacity: 0;
-	font-size: 100px;
-	line-height: 1em;
-}
-.jq-file__name {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.jq-selectbox,
-.jq-select-multiple {
-	position: relative;
-	display: inline-block;
-}
-.jq-selectbox select,
-.jq-select-multiple select {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	opacity: 0;
-}
-.jq-selectbox li,
-.jq-select-multiple li {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	white-space: nowrap;
-}
-.jq-selectbox {
-	z-index: 10;
-}
-.jq-selectbox__select {
-	position: relative;
-}
-.jq-selectbox__select-text {
-	overflow: hidden;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.jq-selectbox__dropdown {
-	position: absolute;
-}
-.jq-selectbox__search input {
-	-webkit-appearance: textfield;
-}
-.jq-selectbox__search input::-webkit-search-cancel-button,
-.jq-selectbox__search input::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-.jq-selectbox__dropdown ul {
-	position: relative;
-	overflow: auto;
-	overflow-x: hidden;
-	list-style: none;
-	-webkit-overflow-scrolling: touch;
-}
-.jq-select-multiple ul {
-	position: relative;
-	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
-}
-.jq-number {
-	display: inline-block;
-}
-.jq-number__field input {
-	-moz-appearance: textfield;
-	text-align: left; /* для Opera Presto */
-}
-.jq-number__field input::-webkit-inner-spin-button,
-.jq-number__field input::-webkit-outer-spin-button {
-	margin: 0; /* в каких-то браузерах присутствует отступ */
-	-webkit-appearance: none;
-}@charset "UTF-8";
+@charset "UTF-8";
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2749,7 +2638,8 @@
 /* colors */
 /* font-properties */
 /* numerical properties */
-html, body, h1,
+html,
+body, h1,
 h2,
 h3,
 h4,
@@ -3127,7 +3017,8 @@ button {
 * {
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   font-size: 14px;
   font-family: 'Arial-Regular', sans-serif; }
 
@@ -3171,6 +3062,20 @@ p {
     color: #e6e6e6;
     background: #54a2f7;
     box-shadow: 0px 0px 10px 0px #54a2f7; }
+
+.button-open,
+.button-close {
+  position: absolute;
+  font-size: 30px;
+  padding: 8px 13px;
+  border-radius: 5px; }
+  @media (max-width: 1024px) {
+    .button-open,
+    .button-close {
+      font-size: 26px; } }
+  .button-open:hover,
+  .button-close:hover {
+    background: rgba(255, 255, 255, 0.3); }
 
 .slick-slide {
   display: -ms-flexbox;
@@ -3432,33 +3337,15 @@ p {
     .navigation__link:hover {
       color: #fff; }
   .navigation__open {
-    position: absolute;
-    padding: 8px 13px;
-    border-radius: 5px;
-    font-size: 30px;
     color: #fff;
     top: -100px;
     right: 0; }
-    @media (max-width: 1024px) {
-      .navigation__open {
-        font-size: 26px; } }
-    .navigation__open:hover {
-      background: rgba(255, 255, 255, 0.3); }
   .navigation__close {
     display: none;
     z-index: 2;
-    position: absolute;
-    padding: 8px 13px;
-    border-radius: 5px;
-    font-size: 30px;
     color: #b3b3b3;
     top: -100px;
     right: 0; }
-    @media (max-width: 1024px) {
-      .navigation__close {
-        font-size: 26px; } }
-    .navigation__close:hover {
-      background: rgba(255, 255, 255, 0.3); }
 
 .icon__london-eye {
   fill: #fff;
@@ -4088,7 +3975,7 @@ p {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     opacity: 0.8;
     -ms-transform: scale(0.95);
         transform: scale(0.95);
@@ -4171,6 +4058,16 @@ p {
         font-size: 12px; } }
 
 .tab_container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   position: relative;
   display: none;
   width: 100%;
@@ -4178,30 +4075,33 @@ p {
   @media (max-width: 1024px) {
     .tab_container {
       margin: 0 0 60px; } }
-
-.tab__close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 30px;
-  color: #cccccc; }
-  @media (max-width: 1024px) {
-    .tab__close {
-      font-size: 26px; } }
   @media (max-width: 767px) {
-    .tab__close {
-      font-size: 20px;
-      top: 15px;
-      right: 15px; } }
-  .tab__close:hover {
-    color: #fff; }
+    .tab_container {
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1;
+      height: 100%;
+      position: fixed;
+      margin: 0; } }
 
 .tab__image {
   width: 100%;
   border-radius: 50px; }
   @media (max-width: 767px) {
     .tab__image {
-      border-radius: 30px; } }
+      margin: 0 auto;
+      padding: 0 20px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); } }
+
+.tab__close {
+  top: 30px;
+  right: 30px;
+  color: #b3b3b3; }
 
 .tab__description {
   text-transform: uppercase;
@@ -4213,11 +4113,6 @@ p {
   @media (max-width: 1024px) {
     .tab__description {
       font-size: 26px; } }
-  @media (max-width: 767px) {
-    .tab__description {
-      font-size: 20px;
-      bottom: 15px;
-      left: 15px; } }
 
 .footer__main {
   border-top: solid 1px #979797;
