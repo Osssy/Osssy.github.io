@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 341);
+/******/ 	return __webpack_require__(__webpack_require__.s = 339);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10671,7 +10671,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ 341:
+/***/ 339:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10681,7 +10681,7 @@ var _jquery = __webpack_require__(130);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _slickCarouselLatest = __webpack_require__(342);
+var _slickCarouselLatest = __webpack_require__(340);
 
 var _slickCarouselLatest2 = _interopRequireDefault(_slickCarouselLatest);
 
@@ -10704,7 +10704,7 @@ window.slick = _slickCarouselLatest2.default;
 
 /***/ }),
 
-/***/ 342:
+/***/ 340:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*

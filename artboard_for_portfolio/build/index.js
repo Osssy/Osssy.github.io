@@ -9504,10 +9504,10 @@ __webpack_require__(339);
 //side menu toggle
 $(document).ready(function () {
     $('.side-nav__open').click(function () {
-        $('.side-nav__menu').css('width', '180px');
+        $('.side-nav__menu').removeClass('hide');
     });
     $('.side-nav__close').click(function () {
-        $('.side-nav__menu').css('width', '0px');
+        $('.side-nav__menu').addClass('hide');
     });
 });
 
@@ -9520,15 +9520,23 @@ $(document).ready(function () {
 
 //spoiler
 $(document).ready(function () {
-    if (window.matchMedia('(max-width: 575px)').matches) {
-        $('.main-nav__list').hide();
-        $('.main-nav__toggle').click(function () {
-            $(this).children('.fa').toggleClass('fa-caret-up').toggleClass('fa-caret-down');
-            $(this).next().slideToggle();
-        });
-    } else {
-        return false;
-    }
+    var toggle = $('.main-nav__toggle');
+    var list = $('.main-nav__list');
+
+    toggle.click(function () {
+        list.toggleClass('hide-mobile');
+        $(this).find('.fa').toggleClass('fa-caret-up');
+        $(this).find('.fa').toggleClass('fa-caret-down');
+    });
+
+    $(window).resize(function () {
+        if (window.innerWidth < 575) {
+            list.addClass('hide-mobile');
+            toggle.find('.fa').removeClass('fa-caret-up').addClass('fa-caret-down');
+        } else {
+            return false;
+        }
+    });
 });
 
 /***/ }),
@@ -9541,22 +9549,20 @@ $(document).ready(function () {
 //slider
 $(document).ready(function () {
     $('.team__slider').slick({
-        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [{
             breakpoint: 769,
             settings: {
-                infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
         }, {
             breakpoint: 576,
             settings: {
-                infinite: true,
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false
             }
         }]
     });

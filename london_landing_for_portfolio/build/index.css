@@ -3125,7 +3125,8 @@ p {
 
 @media (max-width: 767px) {
   .slick-prev {
-    left: -5px; } }
+    left: 15%;
+    top: 110%; } }
 
 .slick-prev:before {
   display: -ms-flexbox;
@@ -3162,9 +3163,9 @@ p {
       font-size: 26px; } }
   @media (max-width: 767px) {
     .slick-prev:before {
-      width: 28px;
-      height: 28px;
-      font-size: 16px; } }
+      width: 32px;
+      height: 32px;
+      font-size: 20px; } }
 
 @media (max-width: 1024px) {
   .slick-next {
@@ -3172,7 +3173,8 @@ p {
 
 @media (max-width: 767px) {
   .slick-next {
-    right: -5px; } }
+    right: 15%;
+    top: 110%; } }
 
 .slick-next:before {
   display: -ms-flexbox;
@@ -3209,9 +3211,9 @@ p {
       font-size: 26px; } }
   @media (max-width: 767px) {
     .slick-next:before {
-      width: 28px;
-      height: 28px;
-      font-size: 16px; } }
+      width: 32px;
+      height: 32px;
+      font-size: 20px; } }
 
 .slick-active {
   opacity: 1; }
@@ -3521,8 +3523,10 @@ p {
 
 .entertainment__link {
   position: absolute;
-  width: 100%;
-  height: 100%; }
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .entertainment__icon {
   margin: 0 0 17px; }
@@ -3648,15 +3652,6 @@ p {
     .news_wrapper {
       padding: 40px 15px; } }
 
-.news__banner-title {
-  display: none;
-  position: absolute;
-  font-size: 288px;
-  background-image: linear-gradient(128deg, #91aeec, #7787a9);
-  background-clip: text;
-  font-weight: bold;
-  opacity: 0.09; }
-
 .news__title {
   font-size: 36px;
   text-align: center;
@@ -3678,7 +3673,7 @@ p {
   width: 100%; }
   @media (max-width: 767px) {
     .news__slider {
-      margin: 0 0 40px; } }
+      margin: 0 0 120px; } }
 
 .news-slide {
   display: -ms-flexbox;
@@ -3700,7 +3695,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column; } }
   .news-slide__image {
-    width: 47.38739%;
+    width: calc(263 / 555 * 100%);
     height: 100%;
     object-fit: cover; }
     @media (max-width: 1024px) {
@@ -3719,7 +3714,7 @@ p {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding: 34px 21px 15px 31px;
-    width: 52.61261%; }
+    width: calc(292 / 555 * 100%); }
     @media (max-width: 1024px) {
       .news-slide__description {
         padding: 25px 20px;
@@ -3830,7 +3825,7 @@ p {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 30px 30px 0 0;
-  width: 39.47368%; }
+  width: calc(450 / 1140 * 100%); }
   @media (max-width: 767px) {
     .about__description {
       width: 100%;
@@ -3872,7 +3867,7 @@ p {
     margin: 0 auto; } }
 
 .about__image {
-  width: 56.31579%; }
+  width: calc(642 / 1140 * 100%); }
   @media (max-width: 767px) {
     .about__image {
       width: 100%;
@@ -3901,14 +3896,6 @@ p {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto; }
-  .trip__banner-title {
-    display: none;
-    position: absolute;
-    font-size: 288px;
-    background-image: linear-gradient(128deg, #91aeec, #7787a9);
-    background-clip: text;
-    font-weight: bold;
-    opacity: 0.09; }
   .trip__title {
     font-size: 36px;
     margin: 0 0 75px; }
@@ -4069,7 +4056,6 @@ p {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   position: relative;
-  display: none;
   width: 100%;
   margin: 0 0 75px; }
   @media (max-width: 1024px) {
@@ -4142,7 +4128,7 @@ p {
             flex-direction: column; } }
 
 .footer-articles {
-  width: 25.61404%; }
+  width: calc(292 / 1140 * 100%); }
   @media (max-width: 767px) {
     .footer-articles {
       width: 100%;
@@ -4206,7 +4192,7 @@ p {
         font-size: 12px; } }
 
 .footer-about-us {
-  width: 25.61404%; }
+  width: calc(292 / 1140 * 100%); }
   @media (max-width: 767px) {
     .footer-about-us {
       width: 100%;
@@ -4238,7 +4224,7 @@ p {
         text-align: justify; } }
 
 .footer-newsletter {
-  width: 25.61404%; }
+  width: calc(292 / 1140 * 100%); }
   @media (max-width: 767px) {
     .footer-newsletter {
       width: 100%; } }
@@ -4340,3 +4326,9 @@ p {
   @media (max-width: 767px) {
     .footer__copyright {
       font-size: 12px; } }
+
+.no-scrolled {
+  overflow: hidden; }
+
+.hide {
+  display: none; }

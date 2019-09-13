@@ -9,50 +9,69 @@
 <link href="index.css" rel="stylesheet"></head>
 
 <body>
+    <!-- SVG icons -->
+    <svg style="display: none">
+        <symbol id="soran" viewBox="0 0 42 42">
+            <path fill="#ff65c2" d="M21 0c-11.598 0-21 9.402-21 21s9.402 21 21 21 21-9.402 21-21-9.402-21-21-21zM21 39.375c-2.582 0-5.040-0.534-7.269-1.495l9.563-10.758c0.214-0.24 0.331-0.551 0.331-0.872v-3.938c0-0.725-0.588-1.313-1.313-1.313-4.634 0-9.524-4.818-9.572-4.866-0.246-0.246-0.58-0.384-0.928-0.384h-5.25c-0.725 0-1.313 0.588-1.313 1.313v7.875c0 0.497 0.281 0.952 0.726 1.174l4.524 2.262v7.706c-4.76-3.32-7.875-8.836-7.875-15.080 0-2.818 0.635-5.488 1.769-7.875h4.793c0.348 0 0.682-0.138 0.928-0.384l5.25-5.25c0.246-0.246 0.384-0.58 0.384-0.928v-3.175c1.664-0.495 3.426-0.762 5.25-0.762 2.888 0 5.619 0.667 8.051 1.854-0.17 0.144-0.335 0.294-0.494 0.453-1.487 1.487-2.307 3.465-2.307 5.568s0.819 4.081 2.307 5.568c1.494 1.494 3.495 2.308 5.563 2.308 0.13 0 0.26-0.003 0.39-0.010 0.567 2.125 1.589 7.656-0.345 15.272-0.018 0.072-0.029 0.143-0.035 0.214-3.336 3.408-7.986 5.523-13.131 5.523z"></path>
+        </symbol>
+        <symbol id="speed-up" viewBox="0 0 64 64">
+            <path fill="#ff65c2" d="M44 4l-20 20h-12l-12 16c0 0 12.713-3.541 20.129-1.88l-20.129 25.88 26.369-20.509c3.677 8.416-2.369 20.509-2.369 20.509l16-12v-12l20-20 4-20-20 4z"></path>
+        </symbol>
+        <symbol id="security" viewBox="0 0 72 64">
+            <path fill="#ff65c2" d="M60 0l-28 8-28-8c0 0-0.281 3.231 0 8l28 8.756 28-8.756c0.281-4.769 0-8 0-8zM4.512 12.194c1.499 15.669 7.093 42.015 27.488 51.806 20.395-9.791 25.989-36.137 27.488-51.806l-27.488 10.335-27.488-10.335z"></path>
+        </symbol>
+        <symbol id="support" viewBox="0 0 72 64">
+            <path fill="#ff65c2" d="M68 56.323c0 2.844 1.627 5.307 4 6.511v0.996c-0.664 0.091-1.342 0.139-2.031 0.139-4.251 0-8.084-1.783-10.795-4.642-1.639 0.436-3.375 0.672-5.174 0.672-9.941 0-18-7.163-18-16s8.059-16 18-16c9.941 0 18 7.163 18 16 0 3.459-1.235 6.662-3.335 9.279-0.427 0.926-0.665 1.957-0.665 3.044zM32 0c17.404 0 31.562 11.288 31.99 25.345-3.074-1.37-6.474-2.095-9.99-2.095-5.972 0-11.614 2.090-15.884 5.886-4.428 3.936-6.866 9.215-6.866 14.864 0 2.792 0.596 5.493 1.733 7.987-0.327 0.008-0.654 0.013-0.983 0.013-1.697 0-3.363-0.108-4.989-0.315-6.874 6.874-15.078 8.106-23.011 8.287v-1.682c4.284-2.099 8-5.921 8-10.29 0-0.61-0.047-1.208-0.135-1.794-7.237-4.767-11.865-12.047-11.865-20.206 0-14.359 14.327-26 32-26z"></path>
+        </symbol>
+        <symbol id="maintenance" viewBox="0 0 64 64">
+            <path fill="#ff65c2" d="M64 24.816l-22.111-3.213-9.889-20.036-9.889 20.036-22.111 3.213 16 15.596-3.777 22.022 19.777-10.397 19.777 10.397-3.777-22.022 16-15.596z"></path>
+        </symbol>
+    </svg>
     <header class="header">
         <!-- header navigation bar section -->
         <div class="header__navbar-section">
             <div class="header__navbar-section_wrapper col-laptop-sm-9 col-tablet-10 col-mobile-12">
-                <a class="header__logo logo" href="index.html">
+                <div class="header__logo logo" href="index.html">
                     <div class="logo_wrapper">
-                        <svg class="logo__icon" viewBox="0 0 42 42">
-                            <path fill="#ff65c2" d="M21 0c-11.598 0-21 9.402-21 21s9.402 21 21 21 21-9.402 21-21-9.402-21-21-21zM21 39.375c-2.582 0-5.040-0.534-7.269-1.495l9.563-10.758c0.214-0.24 0.331-0.551 0.331-0.872v-3.938c0-0.725-0.588-1.313-1.313-1.313-4.634 0-9.524-4.818-9.572-4.866-0.246-0.246-0.58-0.384-0.928-0.384h-5.25c-0.725 0-1.313 0.588-1.313 1.313v7.875c0 0.497 0.281 0.952 0.726 1.174l4.524 2.262v7.706c-4.76-3.32-7.875-8.836-7.875-15.080 0-2.818 0.635-5.488 1.769-7.875h4.793c0.348 0 0.682-0.138 0.928-0.384l5.25-5.25c0.246-0.246 0.384-0.58 0.384-0.928v-3.175c1.664-0.495 3.426-0.762 5.25-0.762 2.888 0 5.619 0.667 8.051 1.854-0.17 0.144-0.335 0.294-0.494 0.453-1.487 1.487-2.307 3.465-2.307 5.568s0.819 4.081 2.307 5.568c1.494 1.494 3.495 2.308 5.563 2.308 0.13 0 0.26-0.003 0.39-0.010 0.567 2.125 1.589 7.656-0.345 15.272-0.018 0.072-0.029 0.143-0.035 0.214-3.336 3.408-7.986 5.523-13.131 5.523z"></path>
+                        <svg class="logo__icon">
+                            <use xlink:href="#soran"></use>
                         </svg>
                         <span class="logo__text">Soran</span>
                     </div>
-                </a>
-                <button class="main-nav__toggle">
+                    <a class="logo__link" href="index.html"></a>
+                </div>
+                <a class="main-nav__toggle" href="#nowhere">
                     <i class="fa fa-caret-down"></i>
-                </button>
-                <ul class="main-nav__list">
+                </a>
+                <ul class="main-nav__list hide-mobile">
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="#nowhere">Task Example</a>
+                        <a class="main-nav__link" href="example.html">Task Example</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="#nowhere">Pricing</a>
+                        <a class="main-nav__link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="#nowhere">Blog</a>
+                        <a class="main-nav__link" href="blog.html">Blog</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="#nowhere">Contact us</a>
+                        <a class="main-nav__link" href="contact-us.html">Contact us</a>
                     </li>
                     <li class="main-nav__item main-nav__item_free-trial">
                         <a class="main-nav__link main-nav__link_free-trial" href="#nowhere">3 Days Free Trial</a>
                     </li>
                 </ul>
-                <button class="side-nav__open">
+                <a class="side-nav__open" href="#nowhere">
                     <i class="fa fa-bars"></i>
-                </button>
-                <div class="side-nav__menu">
-                    <button class="side-nav__close">
+                </a>
+                <div class="side-nav__menu hide">
+                    <a class="side-nav__close" href="#nowhere">
                         <i class="fa fa-close"></i>
-                    </button>
+                    </a>
                     <ul class="side-nav__list">
-                        <li class="side-nav__item"><a href="#" class="side-nav__link">Information</a></li>
-                        <li class="side-nav__item"><a href="#" class="side-nav__link">Navigation</a></li>
-                        <li class="side-nav__item"><a href="#" class="side-nav__link">Resource</a></li>
-                        <li class="side-nav__item"><a href="#" class="side-nav__link">Site Map</a></li>
+                        <li class="side-nav__item"><a href="information.html" class="side-nav__link">Information</a></li>
+                        <li class="side-nav__item"><a href="navigation.html" class="side-nav__link">Navigation</a></li>
+                        <li class="side-nav__item"><a href="resource.html" class="side-nav__link">Resource</a></li>
+                        <li class="side-nav__item"><a href="map.html" class="side-nav__link">Site Map</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,9 +88,9 @@
                     </button>
                 </form>
                 <div class="header__social social">
-                    <a href="#" class="social__link social__facebook"><img class="social__image" src="./assets/images/group-4.png" alt="social facebook"></a>
-                    <a href="#" class="social__link social__twitter"><img class="social__image" src="./assets/images/group-4-copy.png" alt="social twitter"></a>
-                    <a href="#" class="social__link social__instagram"><img class="social__image" src="./assets/images/group-4-copy-2.png" alt="social instagram"></a>
+                    <a href="#nowhere" class="social__link social__facebook"><img class="social__image" src="./assets/images/group-4.png" alt="social facebook"></a>
+                    <a href="#nowhere" class="social__link social__twitter"><img class="social__image" src="./assets/images/group-4-copy.png" alt="social twitter"></a>
+                    <a href="#nowhere" class="social__link social__instagram"><img class="social__image" src="./assets/images/group-4-copy-2.png" alt="social instagram"></a>
                 </div>
             </div>
         </div>
@@ -85,8 +104,8 @@
                 <ul class="benefits__list">
                     <li class="benefits__item benefit">
                         <div class="benefit__icon_wrapper">
-                            <svg class="benefit__icon" viewBox="0 0 64 64">
-                                <path fill="#ff65c2" d="M44 4l-20 20h-12l-12 16c0 0 12.713-3.541 20.129-1.88l-20.129 25.88 26.369-20.509c3.677 8.416-2.369 20.509-2.369 20.509l16-12v-12l20-20 4-20-20 4z"></path>
+                            <svg class="benefit__icon">
+                                <use xlink:href="#speed-up"></use>
                             </svg>
                         </div>
                         <h3 class="benefit__title">Speedup Your Site</h3>
@@ -94,8 +113,8 @@
                     </li>
                     <li class="benefits__item benefit">
                         <div class="benefit__icon_wrapper">
-                            <svg class="benefit__icon" viewBox="0 0 72 64">
-                                <path fill="#ff65c2" d="M60 0l-28 8-28-8c0 0-0.281 3.231 0 8l28 8.756 28-8.756c0.281-4.769 0-8 0-8zM4.512 12.194c1.499 15.669 7.093 42.015 27.488 51.806 20.395-9.791 25.989-36.137 27.488-51.806l-27.488 10.335-27.488-10.335z"></path>
+                            <svg class="benefit__icon">
+                                <use xlink:href="#security"></use>
                             </svg>
                         </div>
                         <h3 class="benefit__title">Security Assurance</h3>
@@ -103,8 +122,8 @@
                     </li>
                     <li class="benefits__item benefit">
                         <div class="benefit__icon_wrapper">
-                            <svg class="benefit__icon" viewBox="0 0 72 64">
-                                <path fill="#ff65c2" d="M68 56.323c0 2.844 1.627 5.307 4 6.511v0.996c-0.664 0.091-1.342 0.139-2.031 0.139-4.251 0-8.084-1.783-10.795-4.642-1.639 0.436-3.375 0.672-5.174 0.672-9.941 0-18-7.163-18-16s8.059-16 18-16c9.941 0 18 7.163 18 16 0 3.459-1.235 6.662-3.335 9.279-0.427 0.926-0.665 1.957-0.665 3.044zM32 0c17.404 0 31.562 11.288 31.99 25.345-3.074-1.37-6.474-2.095-9.99-2.095-5.972 0-11.614 2.090-15.884 5.886-4.428 3.936-6.866 9.215-6.866 14.864 0 2.792 0.596 5.493 1.733 7.987-0.327 0.008-0.654 0.013-0.983 0.013-1.697 0-3.363-0.108-4.989-0.315-6.874 6.874-15.078 8.106-23.011 8.287v-1.682c4.284-2.099 8-5.921 8-10.29 0-0.61-0.047-1.208-0.135-1.794-7.237-4.767-11.865-12.047-11.865-20.206 0-14.359 14.327-26 32-26z"></path>
+                            <svg class="benefit__icon">
+                                <use xlink:href="#support"></use>
                             </svg>
                         </div>
                         <h3 class="benefit__title">24/7 Live Support</h3>
@@ -112,8 +131,8 @@
                     </li>
                     <li class="benefits__item benefit">
                         <div class="benefit__icon_wrapper">
-                            <svg class="benefit__icon" viewBox="0 0 64 64">
-                                <path fill="#ff65c2" d="M64 24.816l-22.111-3.213-9.889-20.036-9.889 20.036-22.111 3.213 16 15.596-3.777 22.022 19.777-10.397 19.777 10.397-3.777-22.022 16-15.596z"></path>
+                            <svg class="benefit__icon">
+                                <use xlink:href="#maintenance"></use>
                             </svg>
                         </div>
                         <h3 class="benefit__title">Quality Maintenance</h3>
@@ -303,34 +322,34 @@
             <div class="footer__nav_wrapper col-laptop-sm-9 col-tablet-10">
                 <ul class="footer__main-list">
                     <li class="footer__main-item">
-                        <a href="" class="footer__main-link">Information</a>
+                        <a href="information.html" class="footer__main-link">Information</a>
                         <ul class="footer__additional-list">
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">About Us</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Additonal Info</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Privacy Policy</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Terms &amp; Conditions</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">FAQ’s</span>
                                 </a>
@@ -338,34 +357,34 @@
                         </ul>
                     </li>
                     <li class="footer__main-item">
-                        <a href="" class="footer__main-link">Navigation</a>
+                        <a href="navigation.html" class="footer__main-link">Navigation</a>
                         <ul class="footer__additional-list">
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">About Us</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Additonal Info</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Privacy Policy</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Terms &amp; Conditions</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">FAQ’s</span>
                                 </a>
@@ -373,34 +392,34 @@
                         </ul>
                     </li>
                     <li class="footer__main-item">
-                        <a href="" class="footer__main-link">Resource</a>
+                        <a href="resource.html" class="footer__main-link">Resource</a>
                         <ul class="footer__additional-list">
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">About Us</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Additonal Info</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Privacy Policy</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Terms &amp; Conditions</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">FAQ’s</span>
                                 </a>
@@ -408,34 +427,34 @@
                         </ul>
                     </li>
                     <li class="footer__main-item">
-                        <a href="" class="footer__main-link">Site map</a>
+                        <a href="map.html" class="footer__main-link">Site map</a>
                         <ul class="footer__additional-list">
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">About Us</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Additonal Info</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Privacy Policy</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">Terms &amp; Conditions</span>
                                 </a>
                             </li>
                             <li class="footer__additional-item">
-                                <a href="#" class="footer__additional-link">
+                                <a href="#nowhere" class="footer__additional-link">
                                     <i class="footer__additional-icon fa fa-angle-right"></i>
                                     <span class="footer__additional-description">FAQ’s</span>
                                 </a>
@@ -451,14 +470,14 @@
                 <div class="footer__following">
                     <span class="footer__follow-us">Follow Us</span>
                     <ul class="footer__social social__list">
-                        <li class="social__item"><a class="social__link" href=""><i class="social__icon fa fa-twitter-square"></i></a></li>
-                        <li class="social__item"><a class="social__link" href=""><i class="social__icon fa fa-twitter-square"></i></a></li>
-                        <li class="social__item"><a class="social__link" href=""><i class="social__icon fa fa-google-plus-square"></i></a></li>
-                        <li class="social__item"><a class="social__link" href=""><i class="social__icon fa fa-twitter-square"></i></a></li>
-                        <li class="social__item"><a class="social__link" href=""><i class="social__icon fa fa-facebook-square"></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#nowhere"><i class="social__icon fa fa-twitter-square"></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#nowhere"><i class="social__icon fa fa-twitter-square"></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#nowhere"><i class="social__icon fa fa-google-plus-square"></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#nowhere"><i class="social__icon fa fa-twitter-square"></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#nowhere"><i class="social__icon fa fa-facebook-square"></i></a></li>
                     </ul>
                 </div>
-                <span class="footer__copyright">Copyright All Right Reserved By <a href="#" class="footer__copyright_link">Soran</a><br>2018</span>
+                <span class="footer__copyright">Copyright All Right Reserved By <a href="#nowhere" class="footer__copyright_link">Soran</a><br>2018</span>
             </div>
         </div>
     </footer>

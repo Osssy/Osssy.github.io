@@ -9513,6 +9513,8 @@ __webpack_require__(340);
 
 __webpack_require__(341);
 
+__webpack_require__(342);
+
 /***/ }),
 /* 335 */
 /***/ (function(module, exports) {
@@ -9529,11 +9531,23 @@ __webpack_require__(341);
 // hamburger menu
 
 $(document).ready(function () {
-	$('.navigation__toggle').click(function () {
-		$('.navigation__item').toggle('slow', function () {});
-		$(this).find('.fa').toggleClass('fa-bars');
-		$(this).find('.fa').toggleClass('fa-close');
-	});
+    var toggle = $('.navigation__toggle');
+    var item = $('.navigation__item');
+
+    toggle.click(function () {
+        item.slideToggle('slow', function () {});
+        $(this).find('.fa').toggleClass('fa-bars');
+        $(this).find('.fa').toggleClass('fa-close');
+    });
+
+    $(window).resize(function () {
+        if (window.innerWidth > 767) {
+            item.show();
+        } else {
+            item.hide();
+            toggle.find('.fa').removeClass('fa-close').addClass('fa-bars');
+        }
+    });
 });
 
 /***/ }),
@@ -9546,30 +9560,24 @@ $(document).ready(function () {
 // login form
 
 $(document).ready(function () {
-	var modal = $('.modal__window, .form__login');
+    var modal = $('.modal__window, .form__login');
 
-	$('.header__login').click(function () {
-		modal.fadeIn();
-		$('body').addClass('no-scrolled').removeClass('scrolled');
-	});
+    $('.header__login').click(function () {
+        modal.removeClass('hide');
+        $('body').addClass('no-scrolled');
+    });
 
-	$('.form__close').click(function () {
-		modal.fadeOut();
-		$('body').addClass('scrolled').removeClass('no-scrolled');
-	});
+    $('.form__close').click(function () {
+        modal.addClass('hide');
+        $('body').removeClass('no-scrolled');
+    });
 
-	$('body').keydown(function (event) {
-		if (event.keyCode == 27) {
-			modal.fadeOut();
-			$('body').addClass('scrolled').removeClass('no-scrolled');
-		}
-	});
-	// $('.modal__window').click(function(event){
-	// 	if($(event.target).closest('.form__login').length)
-	// 		return;
-	// 	modal.fadeOut();
-	// 	$('.modal__window').unbind('click');
-	// });
+    $('body').keydown(function (event) {
+        if (event.keyCode == 27) {
+            modal.addClass('hide');
+            $('body').removeClass('no-scrolled');
+        }
+    });
 });
 
 /***/ }),
@@ -9582,24 +9590,24 @@ $(document).ready(function () {
 // register form
 
 $(document).ready(function () {
-	var modal = $('.modal__window, .form__register');
+    var modal = $('.modal__window, .form__register');
 
-	$('.header__register').click(function () {
-		modal.fadeIn();
-		$('body').addClass('no-scrolled').removeClass('scrolled');
-	});
+    $('.header__register').click(function () {
+        modal.removeClass('hide');
+        $('body').addClass('no-scrolled');
+    });
 
-	$('.form__cancel').click(function () {
-		modal.fadeOut();
-		$('body').addClass('scrolled').removeClass('no-scrolled');
-	});
+    $('.form__cancel').click(function () {
+        modal.addClass('hide');
+        $('body').removeClass('no-scrolled');
+    });
 
-	$('body').keydown(function (event) {
-		if (event.keyCode == 27) {
-			modal.fadeOut();
-			$('body').addClass('scrolled').removeClass('no-scrolled');
-		}
-	});
+    $('body').keydown(function (event) {
+        if (event.keyCode == 27) {
+            modal.addClass('hide');
+            $('body').removeClass('no-scrolled');
+        }
+    });
 });
 
 /***/ }),
@@ -9612,24 +9620,24 @@ $(document).ready(function () {
 // free-trial form
 
 $(document).ready(function () {
-	var modal = $('.modal__window, .form__free-trial');
+    var modal = $('.modal__window, .form__free-trial');
 
-	$('.pricing-package__button').click(function () {
-		modal.fadeIn();
-		$('body').addClass('no-scrolled').removeClass('scrolled');
-	});
+    $('.pricing-package__button').click(function () {
+        modal.removeClass('hide');
+        $('body').addClass('no-scrolled');
+    });
 
-	$('.form__close').click(function () {
-		modal.fadeOut();
-		$('body').addClass('scrolled').removeClass('no-scrolled');
-	});
+    $('.form__close').click(function () {
+        modal.addClass('hide');
+        $('body').removeClass('no-scrolled');
+    });
 
-	$('body').keydown(function (event) {
-		if (event.keyCode == 27) {
-			modal.fadeOut();
-			$('body').addClass('scrolled').removeClass('no-scrolled');
-		}
-	});
+    $('body').keydown(function (event) {
+        if (event.keyCode == 27) {
+            modal.addClass('hide');
+            $('body').removeClass('no-scrolled');
+        }
+    });
 });
 
 /***/ }),
@@ -9642,10 +9650,15 @@ $(document).ready(function () {
 // pricing table
 
 $(document).ready(function () {
-	$('.pricing__tab').click(function () {
-		$('.pricing__tab').removeClass('pricing__tab_active').eq($(this).index()).addClass('pricing__tab_active');
-		$('.pricing-table__list').removeClass('pricing-table__list_active').eq($(this).index()).addClass('pricing-table__list_active');
-	});
+    var tab = $('.pricing__tab');
+    var tabActive = 'pricing__tab_active';
+    var list = $('.pricing-table__list');
+    var listActive = 'pricing-table__list_active';
+
+    tab.click(function () {
+        tab.removeClass(tabActive).eq($(this).index()).addClass(tabActive);
+        list.removeClass(listActive).eq($(this).index()).addClass(listActive);
+    });
 });
 
 /***/ }),
@@ -9655,7 +9668,7 @@ $(document).ready(function () {
 "use strict";
 
 
-//slider
+//testimonials slider
 
 $(document).ready(function () {
     $('.testimonials-slider__list').slick({
@@ -9675,6 +9688,35 @@ $(document).ready(function () {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: false
+            }
+        }]
+    });
+});
+
+/***/ }),
+/* 342 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//clients slider
+
+$(document).ready(function () {
+    $('.clients__list').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 993,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         }]
     });

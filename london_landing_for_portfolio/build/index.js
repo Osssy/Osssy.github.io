@@ -9523,34 +9523,40 @@ __webpack_require__(338);
 // menu toggle
 
 $(document).ready(function () {
-    $('.navigation__open').click(function () {
-        $('.navigation').fadeIn();
-        $('.navigation__close').fadeIn();
+    var body = $('body');
+    var nav = $('.navigation');
+    var navOpen = $('.navigation__open');
+    var navClose = $('.navigation__close');
+    var navLink = $('.navigation__link');
+
+    navOpen.click(function () {
+        nav.fadeIn();
+        navClose.fadeIn();
         $(this).fadeOut();
-        $('body').css('overflow', 'hidden');
+        body.addClass('no-scrolled');
     });
 
-    $('.navigation__close').click(function () {
-        $('.navigation').fadeOut();
-        $('.navigation__open').fadeIn();
+    navClose.click(function () {
+        nav.fadeOut();
+        navOpen.fadeIn();
         $(this).fadeOut();
-        $('body').css('overflow', 'visible');
+        body.removeClass('no-scrolled');
     });
 
-    $('body').keydown(function (event) {
+    body.keydown(function (event) {
         if (event.keyCode == 27) {
-            $('.navigation').fadeOut();
-            $('.navigation__open').fadeIn();
-            $('.navigation__close').fadeOut();
-            $('body').css('overflow', 'visible');
+            nav.fadeOut();
+            navOpen.fadeIn();
+            navClose.fadeOut();
+            body.removeClass('no-scrolled');
         }
     });
 
-    $('.navigation__link').click(function () {
-        $('.navigation').fadeOut();
-        $('.navigation__open').fadeIn();
-        $('.navigation__close').fadeOut();
-        $('body').css('overflow', 'visible');
+    navLink.click(function () {
+        nav.fadeOut();
+        navOpen.fadeIn();
+        navClose.fadeOut();
+        body.removeClass('no-scrolled');
     });
 });
 
@@ -9565,13 +9571,11 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.news__slider').slick({
-        infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [{
             breakpoint: 768,
             settings: {
-                infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
@@ -9597,40 +9601,40 @@ $(document).ready(function () {
         $('.tab__description').text(alt);
         $('.tab_container').fadeIn();
         $([document.documentElement, document.body]).animate({
-            scrollTop: $(".tab_container").offset().top - 15
+            scrollTop: $(".tab_container").offset().top
         }, 700);
 
         if (window.matchMedia('(max-width: 767px)').matches) {
-            $('body').css('overflow', 'hidden');
+            $('body').addClass('no-scrolled');
         } else {
-            $('body').css('overflow', 'visible');
+            $('body').removeClass('no-scrolled');
         }
 
         $(window).resize(function () {
             if (window.matchMedia('(max-width: 767px)').matches) {
-                if ($('.tab_container').css('display', 'none')) {
-                    $('body').css('overflow', 'visible');
+                if ($('.tab_container').hasClass('hide')) {
+                    $('body').removeClass('no-scrolled');
                 } else {
-                    $('body').css('overflow', 'hidden');
+                    $('body').addClass('no-scrolled');
                 }
             } else {
-                $('body').css('overflow', 'visible');
+                $('body').removeClass('no-scrolled');
             }
         });
     });
 
     $('.tab__close').click(function () {
         $('.tab_container').fadeOut();
-        $('body').css('overflow', 'visible');
+        $('body').removeClass('no-scrolled');
         $([document.documentElement, document.body]).animate({
-            scrollTop: $(".trip__gallery").offset().top - 130
+            scrollTop: $(".trip__title").offset().top
         }, 700);
     });
 
     $('body').keydown(function (event) {
         if (event.keyCode == 27) {
             $('.tab_container').fadeOut();
-            $('body').css('overflow', 'visible');
+            $('body').removeClass('no-scrolled');
         }
     });
 });
