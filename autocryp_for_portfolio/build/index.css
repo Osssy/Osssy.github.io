@@ -2634,10 +2634,7 @@
   overflow: visible;
   clip: auto; }
 
-/* sizes */
 /* colors */
-/* font-properties */
-/* numerical properties */
 html, body, h1,
 h2,
 h3,
@@ -2661,7 +2658,7 @@ button {
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before, .slick-next:before, .form__checkmark {
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -4309,7 +4306,7 @@ button {
   border-bottom-right-radius: 12px;
   padding: 50px 40px;
   color: #fff;
-  width: 40%; }
+  width: 50%; }
   @media (max-width: 1169px) {
     .form__login, .form__register, .form__free-trial {
       width: 60%; } }
@@ -4428,35 +4425,64 @@ button {
         .form__name_container input::placeholder, .form__data_container input::placeholder {
           font-size: 11px; } }
 
-.form__remember {
+.form__remember, .form__privacy {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: stretch;
+      align-items: stretch;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
   margin: 0 0 25px; }
   @media (max-width: 767px) {
-    .form__remember {
+    .form__remember, .form__privacy {
       margin: 0 0 15px;
       font-size: 14px; } }
-  .form__remember input {
-    margin: 0 5px 0 0; }
+  .form__remember:hover input ~ .form__checkmark, .form__privacy:hover input ~ .form__checkmark {
+    background: #8d9dce; }
+  .form__remember input, .form__privacy input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+    .form__remember input:checked ~ .form__checkmark, .form__privacy input:checked ~ .form__checkmark {
+      background: #1fdb84;
+      box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6); }
+      .form__remember input:checked ~ .form__checkmark:after, .form__privacy input:checked ~ .form__checkmark:after {
+        display: block; }
+  .form__remember .form__checkmark:after, .form__privacy .form__checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #f8f9fc;
+    border-width: 0 3px 3px 0;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
 
-.form__privacy {
-  margin: 0 0 25px; }
-  @media (max-width: 767px) {
-    .form__privacy {
-      margin: 0 0 15px;
-      font-size: 14px; } }
-  .form__privacy_link {
-    display: inline-block; }
-    .form__privacy_link:hover {
-      color: #96a2bf; }
+.form__privacy_link {
+  display: inline-block; }
+  .form__privacy_link:hover {
+    color: #96a2bf; }
+
+.form__checkmark {
+  width: 25px;
+  height: 25px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: #f8f9fc;
+  left: 0; }
+  .form__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
 
 .form__buttons {
   display: -ms-flexbox;
