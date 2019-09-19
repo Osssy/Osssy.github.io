@@ -9502,12 +9502,14 @@ __webpack_require__(339);
 
 
 //side menu toggle
+
 $(document).ready(function () {
-    $('.side-nav__open').click(function () {
-        $('.side-nav__menu').removeClass('hide');
-    });
-    $('.side-nav__close').click(function () {
-        $('.side-nav__menu').addClass('hide');
+    var toggle = $('.side-nav__toggle');
+
+    toggle.click(function () {
+        $('.side-nav__menu').toggleClass('hide');
+        $(this).find('.fa').toggleClass('fa-bars');
+        $(this).find('.fa').toggleClass('fa-close');
     });
 });
 
@@ -9561,8 +9563,7 @@ $(document).ready(function () {
             breakpoint: 576,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
+                slidesToScroll: 1
             }
         }]
     });

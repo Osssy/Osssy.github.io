@@ -9517,7 +9517,7 @@ $(document).ready(function () {
     }
 
     $(window).resize(function () {
-        if (window.innerWidth < 767) {
+        if (window.innerWidth < 768) {
             $('.header-navigation').hide();
             $('.side-navigation__toggle').find('.fa').removeClass('fa-close').addClass('fa-bars');
             $('.company-info').appendTo('.header-navigation');
