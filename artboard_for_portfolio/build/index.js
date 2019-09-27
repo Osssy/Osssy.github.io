@@ -9521,6 +9521,7 @@ $(document).ready(function () {
 
 
 //spoiler
+
 $(document).ready(function () {
     var toggle = $('.main-nav__toggle');
     var list = $('.main-nav__list');
@@ -9549,6 +9550,7 @@ $(document).ready(function () {
 
 
 //slider
+
 $(document).ready(function () {
     $('.team__slider').slick({
         slidesToShow: 3,
@@ -9577,6 +9579,7 @@ $(document).ready(function () {
 
 
 // read more
+
 $(document).ready(function () {
     $.fn.extend({
         toggleText: function toggleText(a, b) {

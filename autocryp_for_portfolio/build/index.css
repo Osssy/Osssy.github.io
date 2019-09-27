@@ -3092,6 +3092,36 @@ button {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
+.grid-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%; }
+
+.flex-grow {
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+.flex-container > [class*='col-']:last-child {
+  margin-right: auto; }
+
+.row-reverse {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+
+.column {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.column-center {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 .col-1 {
   -ms-flex-preferred-size: 8.333333%;
       flex-basis: 8.333333%; }
