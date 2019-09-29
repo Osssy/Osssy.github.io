@@ -1,0 +1,9 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Arial-BoldMT";
+
+  src: url("./fonts/ArialBold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/ArialBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

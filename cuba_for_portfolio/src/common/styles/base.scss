@@ -1,0 +1,58 @@
+//base styles
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: $line-height-normal;
+}
+
+body {
+    @extend %padding-margin-reset;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %padding-margin-reset;
+    font-family: 'Georgia-Regular', serif;
+    font-weight: $font-weight-normal;
+    color: $color-text-dark;
+}
+
+ul,
+ol {
+    @extend %padding-margin-reset;
+    font-family: 'AvenirNext-Regular', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    @extend %padding-margin-reset;
+    line-height: $line-height-bigger;
+    font-family: 'AvenirNext-Regular', sans-serif;
+    color: $color-text;
+}
+
+input,
+button {
+    @extend %border-outline-none;
+    @extend %padding-margin-reset;
+}
+
+.more {
+    display: none;
+    &-link {
+        color: $color-yellow;
+    }
+}

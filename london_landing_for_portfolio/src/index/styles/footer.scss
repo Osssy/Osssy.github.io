@@ -1,0 +1,288 @@
+// footer
+
+.footer {
+    &__main {
+        border-top: solid 1px #979797;
+        background-color: #2b3a4d;
+
+        &_wrapper {
+            @include flex(flex, row, space-between, stretch, nowrap);
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 43px 50px;
+
+            @include laptop {
+                padding: 43px 30px;
+            }
+
+            @include mobile {
+                padding: 43px 15px;
+                flex-direction: column;
+            }
+        }
+    }
+
+    &-articles {
+        width: calc(292 / 1140 * 100%);
+
+        @include mobile {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+
+        &__title {
+            font-family: 'Arial-Regular', sans-serif;
+            font-size: 24px;
+            letter-spacing: 5.14px;
+            color: $color-footer-title;
+            margin: 0 0 40px;
+            text-align: center;
+
+            @include laptop {
+                font-size: 20px;
+                margin: 0 0 30px;
+            }
+
+            @include mobile {
+                font-size: 24px;
+                margin: 0 0 25px;
+            }
+        }
+
+        &__list {
+            list-style-type: disc;
+        }
+
+        &__item {
+            color: #cde9f1;
+            margin: 0 0 15px 15px;
+
+            &:last-child {
+                margin: 0 0 0 15px;
+            }
+        }
+
+        &__link {
+            display: block;
+            color: $color-footer-text;
+            margin: 0 0 5px;
+
+            @include laptop {
+                font-size: 13px;
+            }
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+
+        &__info {}
+
+        &__signature {
+            font-size: 12px;
+            color: $color-footer-text-grey;
+            display: inline-block;
+            padding: 0 12px 0 0;
+            border-right: 1px solid #979797;
+
+            @include laptop {
+                font-size: 11px;
+                padding: 0 10px 0 0;
+            }
+
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+
+        &__date {
+            font-size: 12px;
+            color: $color-footer-text-grey;
+            display: inline-block;
+            padding: 0 0 0 7px;
+
+            @include laptop {
+                font-size: 11px;
+                padding: 0 0 0 5px;
+            }
+
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &-about-us {
+        width: calc(292 / 1140 * 100%);
+
+        @include mobile {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+
+        &__title {
+            font-family: 'Arial-Regular', sans-serif;
+            font-size: 24px;
+            letter-spacing: 5.14px;
+            color: $color-footer-title;
+            margin: 0 0 40px;
+            text-align: center;
+
+            @include laptop {
+                font-size: 20px;
+                margin: 0 0 30px;
+            }
+
+            @include mobile {
+                font-size: 24px;
+                margin: 0 0 25px;
+            }
+        }
+
+        &__text {
+            font-size: 12px;
+            color: $color-footer-text;
+
+            @include laptop {
+                font-size: 11px;
+            }
+
+            @include mobile {
+                font-size: 12px;
+                text-align: justify;
+            }
+        }
+    }
+
+    &-newsletter {
+        width: calc(292 / 1140 * 100%);
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &__title {
+            font-family: 'Arial-Regular', sans-serif;
+            font-size: 24px;
+            letter-spacing: 5.14px;
+            color: $color-footer-title;
+            margin: 0 0 40px;
+            text-align: center;
+
+            @include laptop {
+                font-size: 20px;
+                margin: 0 0 30px;
+            }
+
+            @include mobile {
+                font-size: 24px;
+                margin: 0 0 25px;
+            }
+        }
+
+        &__description {
+            color: $color-footer-text;
+            margin: 0 0 35px;
+
+            @include laptop {
+                font-size: 13px;
+                margin: 0 0 30px;
+            }
+
+            @include mobile {
+                font-size: 14px;
+                margin: 0 0 25px;
+            }
+        }
+
+        &__subscription {}
+
+        &__name {
+            display: block;
+            width: 100%;
+            background: transparent;
+            border-bottom: solid 1px #c4d4e5;
+            color: $color-footer-text;
+            padding: 6px 0;
+            margin: 0 0 24px;
+            &::placeholder {
+                color: darken(#bccee2, 20%);
+            }
+        }
+
+        &__email {
+            display: block;
+            width: 100%;
+            background: transparent;
+            border-bottom: solid 1px #c4d4e5;
+            color: $color-footer-text;
+            padding: 6px 0;
+            margin: 0 0 37px;
+            &::placeholder {
+                color: darken(#bccee2, 20%);
+            }
+        }
+
+        &__submit {
+            display: block;
+            width: 100%;
+            background: transparent;
+            border: solid 2px #bccee2;
+            padding: 12px 0;
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            @include laptop {
+                font-size: 13px;
+                padding: 10px 0;
+                letter-spacing: 2px;
+            }
+
+            @include mobile {
+                font-size: 14px;
+                padding: 12px 0;
+                letter-spacing: 3px;
+            }
+
+            &:hover, &:active {
+                background: lighten(#2b3a4d, 20%);
+            }
+        }
+    }
+
+    &__additional {
+        @include flex(flex, row, center, center, nowrap);
+        background-color: #31363c;
+
+        &_wrapper {
+            max-width: 1140px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 45px 0;
+
+            @include mobile {
+                padding: 30px 0;
+            }
+        }
+    }
+
+    &__copyright {
+        display: block;
+        text-align: center;
+        color: #4d6a8d;
+        font-size: 12px;
+
+        @include laptop {
+            font-size: 11px;
+        }
+
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+}

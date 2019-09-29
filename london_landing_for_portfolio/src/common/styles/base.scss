@@ -1,0 +1,86 @@
+//base styles
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: 'Arial-Regular', sans-serif;
+    @extend %padding-margin-reset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %padding-margin-reset;
+    font-family: 'Born', sans-serif;
+    font-weight: 400;
+}
+
+ul,
+ol {
+    @extend %padding-margin-reset;
+    font-family: 'Arial-Regular', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    @extend %padding-margin-reset;
+    line-height: 1.64;
+    font-family: 'Arial-Regular', sans-serif;
+    color: $color-text;
+}
+
+input,
+button {
+    @extend %border-outline-none;
+    @extend %padding-margin-reset;
+}
+
+.button-blue {
+    display: inline-block;
+    background: $color-blue;
+    border-radius: 100px;
+    padding: 15px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+
+    @include laptop {
+        padding: 10px 21px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    &:hover {
+        color: darken(#fff, 10%);
+        background: lighten($color-blue, 10%);
+        box-shadow: 0px 0px 10px 0px lighten($color-blue, 10%);
+    }
+}
+
+.button-open,
+.button-close {
+    position: absolute;
+    font-size: 30px;
+    padding: 8px 13px;
+    border-radius: 5px;
+
+    @include laptop {
+        font-size: 26px;
+    }
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}

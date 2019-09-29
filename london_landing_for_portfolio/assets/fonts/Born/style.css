@@ -1,0 +1,12 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Born";
+  src: url("./fonts/born.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/born.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/born.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/born.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/born.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/born.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
