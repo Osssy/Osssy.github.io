@@ -1,6 +1,6 @@
 # public hosted zone.
 
-# Portfolio build folders.
+# Portfolio project folders.
 
 To see my projects work you can follow one of the links: 
 1. Artboard https://osssy.github.io/artboard_for_portfolio/build/
