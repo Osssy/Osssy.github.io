@@ -3975,10 +3975,20 @@ p {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  height: 20%; }
+      flex-wrap: nowrap; }
 
 .side-nav__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
   padding: 1.14286rem;
   cursor: pointer; }
   @media (max-width: 1440px) {
@@ -4000,6 +4010,8 @@ p {
     background-color: #706b6b; }
 
 .side-nav__link {
+  width: 100%;
+  text-align: center;
   color: #ffffff;
   font-size: 1rem; }
   @media (max-width: 1440px) {

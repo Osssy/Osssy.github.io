@@ -278,10 +278,11 @@
 
     &__list {
         @include flex(flex, column, space-between, center, nowrap);
-        height: 20%;
     }
 
     &__item {
+        @include flex(flex, column, space-between, center, nowrap);
+        width: $full-size;
         padding: $font-size-16px;
 
         @include laptop-lg {
@@ -312,6 +313,8 @@
     }
 
     &__link {
+        width: $full-size;
+        text-align: $text-centered;
         color: $color-white;
         font-size: $font-size-14px; //no standard
 
