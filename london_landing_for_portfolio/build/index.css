@@ -4361,15 +4361,6 @@ p {
     .trip__title_strikethrough {
       color: #9b9b9b;
       text-decoration: line-through; }
-  .trip__horizontal {
-    width: 90%;
-    position: absolute;
-    left: 10%;
-    height: 9px;
-    border-radius: 100px;
-    border: none;
-    background: linear-gradient(to right, #dc8ba1, rgba(200, 109, 215, 0));
-    margin: 0; }
 
 .gallery {
   display: -ms-flexbox;
@@ -4455,6 +4446,12 @@ p {
       .gallery__title {
         font-size: 18px;
         margin: 0 0 10px; } }
+  .gallery__horizontal {
+    width: 20%;
+    background: #fff;
+    height: 1px;
+    border: none;
+    margin: 10px 0; }
   .gallery__text {
     font-size: 12px;
     color: #fff; }
