@@ -23,17 +23,24 @@
 	&__item {
 		@include flex(flex, row, space-between, center, nowrap);
 		padding: 0 15px;
+		&:last-child .footer__link:after {
+			display: none;
+		}
 		@include mobile {padding: 0; margin: 0 0 15px; width: 100%;}
 	}
 	&__link {
 		text-align: center;
-		@include mobile {width: 100%; padding: 10px 0; font-size: 18px;}
+		position: relative;
+		@include mobile {width: 100%; padding: 10px 0; font-size: 18px;};
 		&:hover {
 			color: lighten($color-text, 30%);
 		}
-	}
-	&__divider {
-		@include mobile {display: none;}
+		&:after {
+			content: '/';
+			position: relative;
+			right: -15px;
+			@include mobile {display: none;}
+		}
 	}
 	&__additional {
 

@@ -179,6 +179,13 @@
 		}
 		&__author {
 			color: $color-text-dark;
+			margin: 0 15px 0 0;
+			position: relative;
+			&:after {
+				content: '/';
+				position: relative;
+				right: -12px;
+			}
 		}
 		&__company {
 			color: $color-text-dark;
