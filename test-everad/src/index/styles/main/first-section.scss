@@ -1,0 +1,258 @@
+.first-section {
+	background: url("../../assets/images/section_1_bg.jpg");
+	background-size: cover;
+	background-position: bottom center;
+	height: 900px;
+	&_wrapper{
+		@include flex(flex, row, flex-start, flex-start, nowrap);
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	&__left-block{
+		width: 500px;
+	}
+	&__right-block{
+		width: calc(1170px - 500px);
+		padding: 25px 0 0;
+	}
+	&__logo {
+		@include flex(flex, row, space-between, center, nowrap);
+		position: relative;
+		padding: 10px 20px;
+		left: 200px;
+		width: 250px;
+		&_img {}
+		&_text{
+			font-family: 'Roboto-Black', sans-serif;
+			font-weight: 900;
+			font-size: 22px;
+		}
+	}
+	&__advantages-list{
+		margin: 0 0 50px 0;
+	}
+	&__main-block{
+		@include flex(flex, row, space-between, center, nowrap);
+		&_info{
+			width: 370px;
+		}
+	}
+	&__form {
+		@include flex(flex, column, center, center, nowrap);
+		width: 270px;
+		background: url("../../assets/images/form_bg.png");
+		background-size: cover;
+		position: relative;
+	}
+	&__title{
+		font-size: 38px;
+		font-weight: 900;
+		display: inline-block;
+		width: 310px;
+	}
+	&__signature{
+		font-size: 27px;
+		font-weight: 900;
+	}
+}
+
+.advantages {
+	&__list {
+		@include flex(flex, row, flex-start, flex-start, nowrap);
+	}
+	&__item {
+		@include flex(flex, row, flex-start, center, nowrap);
+		margin: 0 25px 0 0;
+		&:last-child{
+			margin: 0;
+		}
+	}
+	&__img {
+		margin: 0 8px 0 0;
+	}
+	&__desc {
+		font-size: 16px;
+		font-style: italic;
+		color: #666666;
+	}
+}
+
+.indications {
+	&__list{
+		font-size: 20px;
+		font-weight: 700;
+	}
+	&__item {
+		@include flex(flex, row, space-between, center, nowrap);
+		margin: 40px 0 0 0;
+	}
+	&__number {
+		@include flex(flex, row, center, center, nowrap);
+		width: 58px;
+		height: 58px;
+		border-radius: 50%;
+		background: #a8ca3f;
+		border: 6px solid #e8edc9;
+		color: #ffffff;
+		&_arrows {
+			position: relative;
+			&:before{
+				content:"";
+				position: absolute;
+				top: -100%;
+				background: url("../../assets/images/arrows.png");
+				width: 9px;
+				height: 146px;
+			}
+		}
+	}
+	&__desc {
+		width: 295px;
+		color: #555657;
+	}
+}
+
+.form{
+	&__header{
+		@include flex(flex, row, center, center, nowrap);
+		width: 140px;
+		padding: 10px 12px;
+		position: absolute;
+		top: -13px;
+		&_img {
+			margin: 0 8px 0 0;
+		}
+		&_text {
+			color: #444444;
+			font-size: 16px;
+		}
+	}
+	&__main{
+		@include flex(flex, column, center, center, nowrap);
+		padding: 14px 16px;
+		width: 100%;
+	}
+	&__discount {
+		@include flex(flex, column, center, center, nowrap);
+		margin: 30px 0 15px 0;
+	}
+	&__in-time {
+		font-size: 18px;
+		color: #000000;
+		text-align: center;
+		margin: 0 0 15px 0;
+	}
+	&__price {
+		@include flex(flex, row, space-between, flex-start, nowrap);
+		width: 100%;
+	}
+	&__name{
+		@include flex(flex, row, center, center, nowrap);
+		background: #eef2f7;
+		padding: 20px;
+		margin: 0 0 15px 0;
+		border-radius: 40px;
+		& img {
+			margin: 0 10px 0 0;
+		}
+		& input {
+			background: #eef2f7;
+			width: 100%;
+		}
+	}
+	&__phone{
+		@include flex(flex, row, center, center, nowrap);
+		background: #eef2f7;
+		padding: 20px;
+		margin: 0 0 20px 0;
+		border-radius: 40px;
+		& img {
+			margin: 0 10px 0 0;
+		}
+		& input {
+			background: #eef2f7;
+			width: 100%;
+		}
+	}
+	&__order {
+		background: #ffc002;
+		padding: 8px 40px;
+		border: 2px solid #ffd34e;
+		box-shadow: 0px 0px 0px 5px #ffc002;
+		width: calc(100% - 10px);
+		margin: 0 0 20px 0;
+		border-radius: 50px;
+		line-height: 1;
+		&_title {
+			font-size: 28px;
+			font-weight: 700;
+		}
+		&_subtitle {
+			font-size: 18px;
+			font-weight: 700;
+		}
+	}
+	&__left {
+		font-size: 18px;
+		color: #333333;
+		text-align: center;
+	}
+	&__footer {
+		@include flex(flex, row, center, center, nowrap);
+		width: 100%;
+		padding: 9px 25px 17px;
+		&_img {
+			margin: 0 15px 0 0;
+		}
+		&_text {
+			color: #666666;
+			font-size: 14px;
+		}
+	}
+	&:after {
+		content:"";
+		background: url("../../assets/images/form_arrow.png");
+		width: 49px;
+		height: 233px;
+		position: absolute;
+		right: -35px;
+	}
+}
+
+.price {
+	&__old{
+		@include flex(flex, column, center, center, nowrap);
+		&_text {
+			font-size: 14px;
+			color: #666666;
+			margin: 0 0 10px 0;
+		}
+		&_quantity {
+			@include flex(flex, row, center, center, nowrap);
+			width: 106px;
+			height: 40px;
+				& img {
+					width: 88px;
+					height: 31px;
+				}
+		}
+	}
+	&__new{
+		@include flex(flex, column, center, center, nowrap);
+		&_text {
+			font-size: 14px;
+			color: #000000;
+			margin: 0 0 10px 0;
+		}
+		&_quantity {
+			@include flex(flex, row, center, center, nowrap);
+			width: 106px;
+			height: 40px;
+			& img {
+				width: 100%;
+			}
+		}
+	}
+}

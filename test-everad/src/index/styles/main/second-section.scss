@@ -1,0 +1,85 @@
+.second-section {
+	background: #ffffff;
+	&_wrapper{
+		@include flex(flex, column, flex-start, center, nowrap);
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	&__logo{
+		margin: 0 0 20px 0;
+	}
+	&__title{
+		margin: 0 0 35px 0;
+		font-size: 48px;
+	}
+	&__subtitle{
+		margin: 0 0 50px 0;
+		font-size: 24px;
+		color: #2b2828;
+		font-weight: 700;
+	}
+	&__simptom-list{
+
+		margin: 0 0 70px 0;
+	}
+	&__conclusion{
+		position: relative;
+		&_image{
+			@include flex(flex, row, center, center, nowrap);
+			position: absolute;
+			@extend %absolute-center-horizontal;
+			top: -25px;
+		}
+		&_text{
+			padding: 45px 90px;
+			border: 3px solid #f4d3bb;
+			border-radius: 10px;
+			text-align: center;
+			font-size: 22px;
+			& span {
+				color: #444444;
+			}
+		}
+	}
+}
+
+.simptom {
+	&__list{
+		@include flex(flex, row, space-between, center, nowrap);
+		width: 100%;
+	}
+	&__item{
+		@include flex(flex, column, center, center, nowrap);
+		width: 330px;
+	}
+	&__header{
+		@include flex(flex, row, center, center, nowrap);
+		margin: 0 0 40px 0;
+		position: relative;
+	}
+	&__image{
+		position: relative;
+		top: -20px;
+		left: -20px;
+	}
+	&__desc{
+		font-size: 22px;
+		color: #000000;
+		font-weight: 700;
+	}
+	&__footer{
+		color: #444444;
+		font-size: 18px;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: -20px;
+			width: 50px;
+			height: 2px;
+			background: #becbd8;
+		}
+	}
+}
