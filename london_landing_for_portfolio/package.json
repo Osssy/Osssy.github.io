@@ -43,7 +43,7 @@
     "style-loader": "^0.18.2",
     "uglify-js": "^2.8.21",
     "webpack": "^3.5.1",
-    "webpack-dev-server": "^2.7.1",
+    "webpack-dev-server": "^3.1.11",
     "webpack-svgstore-plugin": "^4.1.0"
   },
   "dependencies": {
