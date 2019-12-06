@@ -8,7 +8,7 @@ html, body {
     font-family: 'Roboto-Regular', sans-serif;
     line-height: 1.2;
     color: $color-text;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     @extend %padding-margin-reset;
 }
 
@@ -48,8 +48,9 @@ button {
     text-decoration: underline;
 }
 
-.border_orange {text-decoration-color: #ff6b00;}
-.border_green {text-decoration-color: #a7c93d;}
+.border_orange {text-decoration-color: $color-orange;}
+.border_green {text-decoration-color: $color-green;}
+.text_green {color: $color-green;}
+.text_red {color: $color-orange;}
 .text_dark {color: #000000; font-weight: 700;}
-.text_green {color: #9dbd39;}
-.text_red {color: #ff6b00;}
+.text_italic {font-style: italic;}

@@ -1,0 +1,116 @@
+.third-section {
+    background: url("../../assets/images/section_3_bg.jpg");
+
+    // background-size: cover;
+    &_wrapper {
+        @include flex(flex, column, flex-start, center, nowrap);
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 170px 0;
+    }
+
+    &__logo {
+        margin: 0 0 20px 0;
+    }
+
+    &__title {
+        margin: 0 0 80px 0;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    &__conclusion {
+        position: relative;
+
+        &_image {
+            @include flex(flex, row, center, center, nowrap);
+            position: relative;
+            @extend %absolute-center-horizontal;
+
+            & img {
+                position: absolute;
+            }
+
+            & span {
+                font-size: 22px;
+                font-weight: 900;
+                text-transform: uppercase;
+                position: absolute;
+            }
+        }
+
+        &_text {
+            padding: 25px 70px;
+            border: 3px solid #f4d3bb;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 22px;
+
+            & span {
+                color: #444444;
+            }
+        }
+    }
+}
+
+.disadvantage {
+    &__list {
+        @include flex(flex, row, space-between, stretch, nowrap);
+        width: 100%;
+        margin: 0 0 55px 0;
+    }
+
+    &__item {
+        @include flex(flex, column, flex-start, center, nowrap);
+        width: 370px;
+        background: url("../../assets/images/section_3bg-item.png");
+        background-size: cover;
+        box-shadow: 0px 0px 6px 3px rgba(128, 128, 128, 0.1);
+        padding: 53px 19px;
+        position: relative;
+    }
+
+    &__image {
+        position: absolute;
+        top: -35px;
+    }
+
+    &__main {
+        @include flex(flex, column, center, center, nowrap);
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        margin: 10px 0 15px 0;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        color: #222222;
+        margin: 0 0 55px 0;
+        line-height: 1.4;
+
+        & span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__but {
+        font-size: 24px;
+        font-weight: 900;
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: #444444;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+}

@@ -10,7 +10,8 @@
 // media-queries-variables
 $laptop-screen: 1169px;
 $tablet-screen: 992px;
-$mobile-screen: 767px;
+$large-mobile-screen: 767px;
+$small-mobile-screen: 575px;
 
 //media-queries mixins
 @mixin laptop {
@@ -25,8 +26,14 @@ $mobile-screen: 767px;
     }
 }
 
-@mixin mobile {
-    @media (max-width: #{$mobile-screen}) {
+@mixin l-mobile {
+    @media (max-width: #{$large-mobile-screen}) {
+        @content;
+    }
+}
+
+@mixin s-mobile {
+    @media (max-width: #{$small-mobile-screen}) {
         @content;
     }
 }

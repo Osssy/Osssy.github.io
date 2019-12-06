@@ -1,0 +1,90 @@
+.fourth-section {
+    background: #ffffff;
+
+    &_wrapper {
+        @include flex(flex, column, flex-start, center, nowrap);
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        margin: 0 0 20px 0;
+    }
+
+    &__title {
+        margin: 0 0 30px 0;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin: 0 0 85px 0;
+        font-size: 23px;
+        color: #444444;
+        font-weight: 400;
+    }
+
+    &__conclusion {
+        background: url("../../assets/images/conclusion_bg.png");
+        position: relative;
+
+        &_text {
+            padding: 34px 40px;
+            text-align: center;
+            font-size: 27px;
+            color: #000000;
+        }
+    }
+}
+
+.mikocin-advantage {
+    &__list {
+        @include flex(flex, row, space-between, stretch, nowrap);
+        width: 100%;
+        margin: 0 0 55px 0;
+    }
+
+    &__item {
+        @include flex(flex, column, flex-start, center, nowrap);
+        width: 370px;
+        background-size: cover;
+        box-shadow: 0px 0px 6px 3px rgba(128, 128, 128, 0.1);
+        padding: 50px 15px 29px;
+        position: relative;
+        text-align: center;
+
+        &:nth-child(2) {
+            .mikocin-advantage__image {
+                top: -65px;
+            }
+        }
+
+        &_red {
+            background: url("../../assets/images/mikocin_advantage_red_bg.png");
+        }
+
+        &_green {
+            background: url("../../assets/images/mikocin_advantage_green_bg.png");
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: -35px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        margin: 10px 0 15px 0;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: #444444;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+}

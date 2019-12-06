@@ -11,16 +11,11 @@ $fa-font-path: "~font-awesome/fonts";
 @import '../common/styles/base.scss';
 
 // useful libs styles
-@import '~slick-carousel-latest/slick/slick.css';
-@import '~slick-carousel-latest/slick/slick-theme.css';
-@import '../common/styles/_slick-modified.scss';
+
 
 // custom styles
 @import 'styles/fonts.scss';
-@import 'styles/header.scss';
 @import 'styles/main.scss';
-@import 'styles/footer.scss';
-// @import 'styles/modal_windows.scss';
 
 // js added classes
 @import '../common/styles/js-controlled-classes.scss';
