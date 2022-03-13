@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <title>Ракурс | О нас</title>
+  <meta charset="utf-8">
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+  <link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500i&amp;subset=cyrillic" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+    <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+  <![endif]-->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+  <!-- search modal -->
+  <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">
+        <i class="rt-icon2-cross2"></i>
+      </span>
+    </button>
+    <div class="widget widget_search">
+      <form method="get" class="searchform search-form form-inline" action="./">
+        <div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Поиск" id="modal-search-input"> </div> <button type="submit" class="theme_button color1 no_bg_button">Search</button>
+      </form>
+    </div>
+  </div>
+  <!-- Unyson messages modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+    <div class="fw-messages-wrap ls with_padding">
+      <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+      <!--
+    <ul class="list-unstyled">
+      <li>Message To User</li>
+    </ul>
+    -->
+    </div>
+  </div>
+  <!-- eof .modal -->
+  <!-- wrappers for visual page editor and boxed version of template -->
+  <div id="canvas">
+    <div id="box_wrapper">
+      <!-- template sections -->
+      <section class="page_topline ds background_cover">
+        <div class="container-fluid">
+          <div class="row flex-wrap v-center">
+            <div class="col-xs-12 col-md-8 text-center text-md-left">
+              <div class="inline-content big-spacing">
+                <span>
+                  <i class="qtyler-phone rightpadding_5"></i>
+                  +1(111)111-11-11
+                </span>
+                <span>
+                  <i class="qtyler-envelope rightpadding_5"></i>
+                  racurs@mail.ru
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <header class="page_header header_white header_v1 toggler_xxs_right">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 display-flex v-center">
+              <div class="header_left_logo"> <a href="./" class="logo">
+                  <img src="images/logo.png" alt="">
+                </a> </div>
+              <div class="header_mainmenu text-right">
+                <!-- main nav start -->
+                <nav class="mainmenu_wrapper">
+                  <ul class="mainmenu nav sf-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="active"><a href="about.html">О нас</a></li>
+                    <li><a href="goods.html">Товары</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                  </ul>
+                </nav>
+                <!-- eof main nav -->
+                <!-- header toggler --><span class="toggle_menu"><span></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="page_breadcrumbs ls background_cover section_padding_50">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h1 class="sr-only">О нас</h1>
+              <ol class="breadcrumb darklinks">
+                <li> <a href="index.html">
+                    Главная
+                  </a> </li>
+                <li class="active"> <span>О нас</span> </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ls section_padding_top_150 section_padding_bottom_150">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12"> <img src="images/about.jpg" class="alignright" alt="">
+              <h2 class="section_header topmargin_0">Добро пожаловать в &laquo;Р<i class="pink">а</i>к<i class="pink">у</i>рс&raquo;</h2>
+              <p class="small-text grey">О нашей компании</p>
+              <p>ООО &laquo;Ракурс&raquo; реализует продукцию для шитья в России с прошлого года. Большой опыт, планы на использование современной CRM-системы, налаженная логистика обеспечивают нам возможность быстро и качественно обслужить покупателя из любого города, независимо от объема заказа. У наших сотрудников есть весь необходимый опыт для длительной и результативной работы в этой сфере для осуществления желаний наших клиентов в приобретении разнообразных тканей для пошива. При этом мы гарантируем абсолютное качество наших пошивочных материалов и предоставляем вашему вниманию обновлённый ассортимент самых востребованных тканей от лучших производителей на современном рынке. У нас приобретают продукцию:</p>
+              <ul class="list2 grey">
+                <li>небольшие ателье по индивидуальному пошиву, мастерские по ремонту;</li>
+                <li>швейные фабрики, выпускающие верхнюю, легкую и спортивную одежду;</li>
+                <li>владельцы региональных торговых сетей и небольших розничных павильонов.</li>
+              </ul>
+              <p>Товар поставляется мелким и крупным оптом во все регионы, а также в Беларусь и Казахстан. В качестве официального дистрибьютора мы представляем фабрики России, производителей из Польши, Индонезии, Узбекистана и многих других стран мира. В том числе, наши клиенты имеют возможность купить ткань оптом из Китая, в сделке которой мы выступаем посредником до транспортной компании.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ls section_padding_bottom_150">
+        <div class="container">
+          <h2 class="divider_40">Наши умения:</h2>
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="chart" data-size="250" data-percent="87" data-line="5" data-bgcolor="#e7e7e7" data-trackcolor="#f4a115" data-speed="3200">
+                <div class="chart-meta"> <strong class="percent grey">87</strong>
+                  <p>Развитие</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="chart" data-size="250" data-percent="78" data-line="10" data-bgcolor="#e7e7e7" data-trackcolor="#f08521" data-speed="4800">
+                <div class="chart-meta"> <strong class="percent grey">78</strong>
+                  <p>Клиенты</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="chart" data-size="250" data-percent="62" data-line="15" data-bgcolor="#e7e7e7" data-trackcolor="#e84b3a" data-speed="4100">
+                <div class="chart-meta"> <strong class="percent grey">62</strong>
+                  <p>Ассортимент</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ls section_padding_bottom_150">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <h2 class="section_header">Почему выбирают нас</h2>
+              <p class="small-text grey">наши преимуещства</p>
+              <ul class="list2 grey">
+                <li>Широкий выбор материалов и тканей, включая редкие, экзотические новинки.</li>
+                <li>Удобный сайт-визитка, простая форма заказа, обратная связь.</li>
+                <li>Менеджер для каждого заказчика, заказ пробных образцов.</li>
+                <li>Регулярные акции, распродажи, скидки от 3 до 10%.</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="isotope_container isotope row masonry-layout images-grid columns_margin_bottom_20">
+                <div class="isotope-item col-xs-6">
+                  <div class="with_shadow text-center"> <img src="images/features/01.jpg" alt=""> </div>
+                </div>
+                <div class="isotope-item col-xs-6">
+                  <div class="with_shadow text-center"> <img src="images/features/02.jpg" alt=""> </div>
+                </div>
+                <div class="isotope-item col-xs-6">
+                  <div class="with_shadow text-center"> <img src="images/features/03.jpg" alt=""> </div>
+                </div>
+                <div class="isotope-item col-xs-6">
+                  <div class="with_shadow text-center"> <img src="images/features/04.jpg" alt=""> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ls section_padding_bottom_150">
+        <div class="container">
+          <div class="row topmargin_30">
+            <div class="col-md-12">
+              <h3>Как заказать у нас:</h3>
+              <div class="row vertical-tabs color3">
+                <div class="col-sm-4">
+                  <!-- Nav tabs -->
+                  <ul class="nav" role="tablist">
+                    <li class="active"> <a href="#vertical-tab1" role="tab" data-toggle="tab">
+                        <i class="rt-icon2-light-bulb"></i> Выбрать ткани
+                      </a> </li>
+                    <li> <a href="#vertical-tab2" role="tab" data-toggle="tab">
+                        <i class="rt-icon2-cog"></i> Выбрать объемы
+                      </a> </li>
+                    <li> <a href="#vertical-tab3" role="tab" data-toggle="tab">
+                        <i class="rt-icon2-book"></i> Заполните форму заказа
+                      </a> </li>
+                    <li> <a href="#vertical-tab4" role="tab" data-toggle="tab">
+                        <i class="rt-icon2-home2"></i> Получите свои товары
+                      </a> </li>
+                  </ul>
+                </div>
+                <div class="col-sm-8">
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="vertical-tab1">
+                      <p><i class="rt-icon2-anchor"></i> Ткани у нас в каталогах разбиты по категориям. На сайте выставлены самые продаваемые ткани, о наличии и сроке доставки вы должны всегда уточнять, есть ли нужное количество у нашего менеджера;</p>
+                    </div>
+                    <div class="tab-pane fade" id="vertical-tab2">
+                      <p><i class="rt-icon2-compass"></i> Далее вы должны указать объемы на каждую разную единицу товара. Наш менеджер свяжется с вами и уточнит через сколько времени все будет в наличии;</p>
+                    </div>
+                    <div class="tab-pane fade" id="vertical-tab3">
+                      <p><i class="rt-icon2-laptop"></i> Вы должны указать контактные данные и условия, либо уточнения по поводу своего заказа и отправить форму, а мы свяжемся с вами и обсудим все детали;</p>
+                    </div>
+                    <div class="tab-pane fade" id="vertical-tab4">
+                      <p><i class="fa fa-trophy"></i> В итоге, мы доставляем вам полный заказ, вы осматриваете и если все устраивает, то забираете посылку. Мы начисляем бонусные баллы клиенту для следующей покупки.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="ls fluid_padding_0 columns_padding_0">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="owl-carousel gallery-carousel framed" data-responsive-xlg="6" data-responsive-lg="5" data-responsive-md="4" data-responsive-sm="3" data-responsive-xs="3" data-responsive-xxs="2" data-loop="true" data-margin="0" data-nav="true">
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/64527414_images_18313208023.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/64527414_images_18313208023.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/1-barhat.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/1-barhat.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/resize_900_900_true_q90_3843271_b21fb3b4ec.jpeg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/resize_900_900_true_q90_3843271_b21fb3b4ec.jpeg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/trikotazh-bifleks-na-kupalniki-blestyashchiy-malinovyy-36240522004442.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/trikotazh-bifleks-na-kupalniki-blestyashchiy-malinovyy-36240522004442.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/bukle000006-1280x800.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/bukle000006-1280x800.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/591759340_tkan-velvet-art.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/591759340_tkan-velvet-art.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg1473_1.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg1473_1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/2244e128b18963b09f2a337f9amc--materialy-dlya-tvorchestva-118201-tkan-gipyur-v-stile-makrame.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/2244e128b18963b09f2a337f9amc--materialy-dlya-tvorchestva-118201-tkan-gipyur-v-stile-makrame.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/1200px-Singlejersey.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/1200px-Singlejersey.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/dsc01908.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/dsc01908.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/8e06dfb3a177431e944a8f2742bq--materialy-dlya-tvorchestva-tkan-zhakkard.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/8e06dfb3a177431e944a8f2742bq--materialy-dlya-tvorchestva-tkan-zhakkard.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/original.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/original.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/8057b9606db135020784cec417fw--materialy-dlya-tvorchestva-kashemir-s-sherstyu-loro-piana.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/8057b9606db135020784cec417fw--materialy-dlya-tvorchestva-kashemir-s-sherstyu-loro-piana.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/8d5de807ae2dfc22e83759b4051j--materialy-dlya-tvorchestva-89101-tkan-zamsha-na-hlopkovoj-osn.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/8d5de807ae2dfc22e83759b4051j--materialy-dlya-tvorchestva-89101-tkan-zamsha-na-hlopkovoj-osn.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/75250673d67d3f6b16a6c67ac2xa--materialy-dlya-tvorchestva-tkan-kostyumnaya-poliviskoza.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/75250673d67d3f6b16a6c67ac2xa--materialy-dlya-tvorchestva-tkan-kostyumnaya-poliviskoza.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/1662278682_w640_h640_tkan-sherstyanaya-kostyumnaya.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/1662278682_w640_h640_tkan-sherstyanaya-kostyumnaya.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/0.91076100 154116825050830.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/0.91076100 154116825050830.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/P7720_5.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/P7720_5.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/R8861__5_.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/R8861__5_.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/525694524_w640_h640_525694524.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/525694524_w640_h640_525694524.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/len_T3764__5_.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/len_T3764__5_.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/b8472821f576ebf304006c91914a--materialy-dlya-tvorchestva-tkan-paltovaya-loden.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/b8472821f576ebf304006c91914a--materialy-dlya-tvorchestva-tkan-paltovaya-loden.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/organza-cvet-goluboj-1200x800.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/organza-cvet-goluboj-1200x800.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/7c4dc769f4fe21dd80be6f89ffc5--materialy-dlya-tvorchestva-tkan-paltovaya-italiya.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/7c4dc769f4fe21dd80be6f89ffc5--materialy-dlya-tvorchestva-tkan-paltovaya-italiya.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/4493-950x950.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/4493-950x950.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg1007.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg1007.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/original (1).jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/original (1).jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg0080.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg0080.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/eb169f72e268d95580ab5de2e8tb--materialy-dlya-tvorchestva-tkan-satin-dymchataya-roza-shir-24.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/eb169f72e268d95580ab5de2e8tb--materialy-dlya-tvorchestva-tkan-satin-dymchataya-roza-shir-24.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg6911.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg6911.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/0edf9f39aab4710e5be1447f93c5--materialy-dlya-tvorchestva-tkan-trikotazh-viskoza-pr-vo-itali.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/0edf9f39aab4710e5be1447f93c5--materialy-dlya-tvorchestva-tkan-trikotazh-viskoza-pr-vo-itali.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/00359_1.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/00359_1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/9db4060f8d9077129cd68f4cb25w--materialy-dlya-tvorchestva-tkan-hlopok-s-pokrytiem-teflon-dry.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/9db4060f8d9077129cd68f4cb25w--materialy-dlya-tvorchestva-tkan-hlopok-s-pokrytiem-teflon-dry.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/eco-0018-2-of-5-1120x1280.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/eco-0018-2-of-5-1120x1280.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/0c6f287cbbbfd63f2417d3f4360w--materialy-dlya-tvorchestva-italyanskaya-tkan-shelk-kadi-atlas.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/0c6f287cbbbfd63f2417d3f4360w--materialy-dlya-tvorchestva-italyanskaya-tkan-shelk-kadi-atlas.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/282032561_w640_h640_tkan-shite-mirazh.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/282032561_w640_h640_tkan-shite-mirazh.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/344acf27a28d36031c7170a9027k--materialy-dlya-tvorchestva-tkan-shifon-oranzhevyj.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/344acf27a28d36031c7170a9027k--materialy-dlya-tvorchestva-tkan-shifon-oranzhevyj.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/original (2).jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/original (2).jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="page_footer ls section_padding_top_150 section_padding_bottom_140 columns_margin_bottom_30">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-4 text-center text-md-left">
+              <div class="widget widget_text">
+                <div class="logo"> <img src="images/logo.png" alt=""> </div>
+                <ul class="list-unstyled greylinks">
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-phone"></i> </div>
+                      <div class="media-body"> <a href="tel:+11111111111">+1(111)111-11-11</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-envelope"></i> </div>
+                      <div class="media-body"> <a href="mailto:racurs@mail.ru">racurs@mail.ru</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-map-marker"></i> </div>
+                      <div class="media-body"> <a href="contact.html#map">111111, г.Москва, ул.Малиновая, д.10, к.1, э.1, пом.1, к.1, оф.11</a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center text-md-left">
+              <div class="widget widget_text">
+                <h3 class="widget-title">Рабочее время</h3>
+                <ul class="feature-list">
+                  <li> <span>Будние</span> <span>8:00 - 20:00</span> </li>
+                  <li> <span>Суббота</span> <span>9:00 - 16:00</span> </li>
+                  <li> <span>Воскресенье</span> <span>Закрыто</span> </li>
+                  <li> <span>Праздники</span> <span>10:00 - 14:00</span> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center text-md-left">
+              <div class="widget widget_text">
+                <h3 class="widget-title">Особенности</h3>
+                <ul class="list-unstyled greylinks">
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-delivery"></i> </div>
+                      <div class="media-body">Бесплатная доставка по Москве</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-headphones"></i> </div>
+                      <div class="media-body">Отличная и быстрая техподдержка</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-money"></i> </div>
+                      <div class="media-body">100% гарантия качества</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section class="page_copyright ds background_cover section_padding_top_10 section_padding_bottom_10">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">&copy; 2019-2020 <a href="http://www.racurs.com.ru">Ракурс</a>. Все права защищены.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+  <!-- eof #canvas -->
+  <script src="js/compressed.js"></script>
+  <script src="js/selectize.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/switcher.js"></script> -->
+  <!-- Google Map Script -->
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script> -->
+</body>
+
+</html>

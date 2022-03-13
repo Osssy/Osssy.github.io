@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if gte IE 8]><html class="ie ie8" lang="en-US"> <![endif]-->
+<html dir="ltr" lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Google Fonts
+        ============================================= -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+  <!-- Stylesheets
+        ============================================= -->
+  <link rel="stylesheet" href="css/plugin.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <!-- JavaScripts
+        ============================================= -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  <title>«ПАЛЬМИРА»</title>
+</head>
+
+<body onload="hideTotal()">
+  <div id="preloader">
+    <div id="status">
+      <img src="img/logo-palmira.png" alt="" />
+    </div>
+  </div>
+  <!-- MAIN WRAPPER
+        ============================================= -->
+  <div id="main-wrapper" class="clearfix">
+    <!-- HEADER
+            ============================================= -->
+    <header id="header" class="clearfix">
+      <div class="site-header">
+        <div class="container">
+          <div class="row">
+            <div class="top-header clearfix">
+              <div class="logo col-md-4">
+                <a href="index.html">
+                  <img src="img/logo-palmira.png" alt="" class="header-logo-width" />
+                </a>
+              </div>
+              <div class="info col-md-8">
+                <ul>
+                  <li>
+                    <i class="fa fa-clock-o"></i>
+                    <p>
+                      <span class="heading">Часы работы</span>
+                      <span>ПН - СБ: 09.00 - 22.00</span>
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <p>
+                      <span class="heading">Звоните</span>
+                      <span><a href="tel:+11111111111">+1(111)111-11-11</a></span>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <i class="fa fa-envelope"></i>
+                    <p>
+                      <span class="heading">Пишите</span>
+                      <span><a href="mailto:palmira@mail.ru">palmira@mail.ru</a></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-buttons">
+                <button id="slide-buttons" class="slide-button icon icon-navicon"></button>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="main-menu">
+                <ul class="menu" style="list-style-type: none;">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about-us.html">О нас</a></li>
+                  <li class="has-sub"><a href="services.html">Услуги</a>
+                    <ul style="list-style-type: none;">
+                      <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+                      <li><a href="shipping-service.html">Морские перевозки</a></li>
+                      <li><a href="air-service.html">Авиаперевозки</a></li>
+                      <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+                      <li><a href="express-service.html">Экспресс-доставка</a></li>
+                      <li><a href="storage-service.html">Складское хранение</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="right-section">
+                  <div class="search">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <div class="quote-link">
+                    <a href="contact.html">Поисковый запрос</a>
+                  </div>
+                  <div class="search-input">
+                    <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Mobile
+                ============================================= -->
+      <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+        <button class="c-menu__close icon icon-close"></button>
+        <div class="search-input">
+          <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+        <ul class="slide-menu-items" style="list-style-type: none;">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about-us.html">О нас</a></li>
+          <li class="has-sub"><a href="services.html">Услуги</a>
+            <ul style="list-style-type: none;">
+              <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+              <li><a href="shipping-service.html">Морские перевозки</a></li>
+              <li><a href="air-service.html">Авиаперевозки</a></li>
+              <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+              <li><a href="express-service.html">Экспресс-доставка</a></li>
+              <li><a href="storage-service.html">Складское хранение</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <div class="info">
+          <ul>
+            <li>
+              <p>
+                <span class="heading">Часы работы</span>
+                <span>ПН - СБ: 09.00 - 22.00</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="heading">Звоните</span>
+                <span><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></span>
+              </p>
+            </li>
+            <li class="last">
+              <p>
+                <span class="heading">Пишите</span>
+                <span><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="slide-overlay" class="slide-overlay"></div>
+      <!-- Menu Mobile End -->
+    </header>
+    <!-- HEADER END -->
+    <!-- PAGE TITLE START
+            ============================================= -->
+    <section class="page-title wrapper clearfix" style="background-image: url(img/about-page-bg.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="title-wrap wow fadeIn" data-wow-delay="1s">
+            <h1>Контакты</h1>
+            <div class="breadcrumbs">
+              <p>Вы здесь :
+                <span><a href="index.html">Главная</a></span>
+                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                <span>Контакты</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PAGE TITLE END -->
+    <!-- CONTENT START
+            ============================================= -->
+    <section id="content" class="clearfix">
+      <!-- SINGLE SERVICES START
+                ============================================= -->
+      <div class="contact-page wrapper bg-color" id="form">
+        <div class="container">
+          <div class="row">
+            <div class="contact-wrap row">
+              <div class="contact-details col-md-4">
+                <div class="address wow fadeInLeft" data-wow-delay="0.3s">
+                  <h4 class="title">Наши контакты</h4>
+                  <p><span style="font-weight: bold;">Адрес : </span>Россия, г. Москва</p>
+                  <p>111111, ул.Малиновая, д.10</p>
+                  <p>к.1, э.1, пом.1, к.1, оф.11</p>
+                  <p><span style="font-weight: bold;">Телефон : </span><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></p>
+                  <p><span style="font-weight: bold;">Почта : </span><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></p>
+                </div>
+                <div class="hours wow fadeInLeft" data-wow-delay="0.6s">
+                  <h4 class="title">Часы работы офиса</h4>
+                  <p><span>Понедельник : </span>09.00 - 22.00</p>
+                  <p><span>Вторник : </span>09.00 - 22.00</p>
+                  <p><span>Среда : </span>09.00 - 22.00</p>
+                  <p><span>Четверг : </span>09.00 - 22.00</p>
+                  <p><span>Пятница : </span>09.00 - 22.00</p>
+                  <p><span>Суббота : </span>09.00 - 22.00</p>
+                </div>
+              </div>
+              <div class="contact-form col-md-8">
+                <form method="post" class="row">
+                  <p class="name col-md-6">
+                    <label>Имя</label>
+                    <input type="text" name="name">
+                  </p>
+                  <p class="email col-md-6">
+                    <label>Почта</label>
+                    <input type="text" name="email">
+                  </p>
+                  <p class="telephone col-md-6">
+                    <label>Телефон</label>
+                    <input type="text" name="telephone">
+                  </p>
+                  <p class="subject col-md-6">
+                    <label>Тема</label>
+                    <input type="text" name="subject">
+                  </p>
+                  <p class="message col-md-12">
+                    <label>Текст сообщения</label>
+                    <textarea name="message" cols="45" rows="7"></textarea>
+                  </p>
+                  <p class="col-md-12">
+                    <a href="#" class="button-normal">Отправить запрос</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d479.0361427167248!2d37.62392984792654!3d55.74071853583765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afe0fd7ff61%3A0x41be3966d7932816!2z0JHQvtC70YzRiNC-0Lkg0KLQvtC70LzQsNGH0LXQstGB0LrQuNC5INC_0LXRgC4sIDQvNdCQINGB0YLRgNC-0LXQvdC40LUgNCwg0JzQvtGB0LrQstCwLCAxMTkwMTc!5e0!3m2!1sru!2sru!4v1645446613455!5m2!1sru!2sru" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+      </div>
+      <!-- SINGLE SERVICES END -->
+    </section>
+    <!-- CONTENT END -->
+    <!-- FOOTER START
+            ============================================= -->
+    <footer id="footer" class="wrapper clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="footer-wrap row">
+            <!-- WIDGET FOOTER 1 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="short-desc">
+                <div class="logo-footer">
+                  <img src="img/logo-palmira-footer.png" alt="logo" class="footer-logo-width" />
+                </div>
+                <p>Мы - российская транспортная компания, созданная совсем недавно. Наша цель - занять передовые позиции среди топовых компаний по предоставлению траспортных услуг. Используя современные методы развития и западные схемы по работе с клиентами мы пробиваем свой путь к успеху в сфере логистики.</p>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 1 END -->
+            <!-- WIDGET FOOTER 2 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="recent-post">
+                <h4 class="title">Меню услуг</h4>
+                <div class="footer-content">
+                  <ul class="menu" style="list-style-type: none;">
+                    <li><a href="tir-service.html" class="footer-link">Грузоперевозки фурой</a></li>
+                    <li><a href="shipping-service.html" class="footer-link">Морские перевозки</a></li>
+                    <li><a href="air-service.html" class="footer-link">Авиаперевозки</a></li>
+                    <li><a href="expedition-service.html" class="footer-link">Экспедиторские услуги</a></li>
+                    <li><a href="express-service.html" class="footer-link">Экспресс-доставка</a></li>
+                    <li><a href="storage-service.html" class="footer-link">Складское хранение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 2 END -->
+            <!-- WIDGET FOOTER 3 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="contact-footer">
+                <h4 class="title">Контакты</h4>
+                <div class="footer-content">
+                  <div class="contact-section">
+                    <h4>Адрес</h4>
+                    <p>111111, ул.Малиновая, д.10</p>
+                    <p>к.1, э.1, пом.1, к.1, оф.11</p>
+                    <p>Россия, г. Москва</p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Телефон</h4>
+                    <p><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Почта</h4>
+                    <p><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 3 END -->
+            <!-- WIDGET FOOTER 4 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="buy-now">
+                <h4 class="title">Закажите сейчас</h4>
+                <div class="footer-content">
+                  <p>Вы можете заказать конкретные услуги со своими требованиями и поправками, а мы, в свою очередь, свяжемся с вами и опишем условия предоставляемых нами способов доставки.</p>
+                  <a href="contact.html#form" class="button-normal white">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 4 END -->
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT START
+                ============================================= -->
+      <div class="copyright text-center">
+        <div class="container">
+          <p>&#169; 2019-2020. Все права защищены. <a href="http://palmira-transervice.ru" class="footer-company">«ПАЛЬМИРА»</a></p>
+        </div>
+      </div>
+      <!-- COPYRIGHT END -->
+    </footer>
+    <!-- FOOTER END -->
+  </div>
+  <!-- MAIN WRAPPER END -->
+  <!-- Footer Scripts
+        ============================================= -->
+  <!-- External -->
+  <script type="text/javascript" src="js/plugin.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

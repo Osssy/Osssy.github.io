@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FABC3D;}
+	.st1{fill:none;stroke:#FABC3D;stroke-width:1.6;stroke-miterlimit:10;}
+	.st2{font-family:'Cera-Bold';}
+	.st3{font-size:24px;}
+</style>
+<g>
+	<rect x="51.81" y="54.71" class="st0" width="53.86" height="2"/>
+	<rect x="51.81" y="68.91" class="st0" width="53.86" height="2"/>
+	<rect x="66.26" y="83.1" class="st0" width="39.41" height="2"/>
+	<rect x="68.91" y="97.29" class="st0" width="36.76" height="2"/>
+	<path class="st0" d="M111.19,41.09H96.32V26.22L111.19,41.09z M56.66,112.09h57.94V41.67L95.73,22.8H42.88v45.71V80.2l2,0.03V24.8
+		h49.43v18.28h18.28v67H58.42L56.66,112.09z"/>
+	<circle class="st1" cx="43.9" cy="98.7" r="18.5"/>
+	<text transform="matrix(1 0 0 1 37.1411 105.61)" class="st0 st2 st3">€</text>
+</g>
+</svg>

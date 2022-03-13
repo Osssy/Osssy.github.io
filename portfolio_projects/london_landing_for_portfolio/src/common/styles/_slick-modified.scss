@@ -1,0 +1,122 @@
+//modified base slick styles
+.slick {
+    &-slide {
+        @include flex (flex, row, center, stretch, nowrap);
+        display: flex !important;
+        margin: 0px 20px;
+        transition: all ease-in-out .3s;
+        opacity: 1;
+    }
+
+    &-track {
+        @include flex (flex, row, flex-start, stretch, nowrap);
+        display: flex !important;
+    }
+
+    &-list {
+        @include flex (flex, row, flex-start, stretch, nowrap);
+        display: flex !important;
+    }
+
+    &-prev {
+        @include laptop {
+            left: -15px;
+        }
+
+        @include mobile {
+            left: 0;
+        }
+
+        &:before {
+            @include flex(flex, row, center, center, nowrap);
+            font-family: FontAwesome;
+            content: "\f060";
+            background: $color-blue;
+            width: 40px;
+            height: 40px;
+
+            @include laptop-lg {
+                width: 36px;
+                height: 36px;
+            }
+
+            @include laptop {
+                width: 32px;
+                height: 32px;
+            }
+
+            @include tablet {
+                width: 38px;
+                height: 38px;
+                font-size: 26px;
+            }
+
+            @include mobile {
+                width: 32px;
+                height: 32px;
+                font-size: 20px;
+            }
+
+            border-radius: 50%;
+            opacity: 1;
+            @extend %absolute-center-vertical;
+            right: 0;
+            z-index: 10;
+        }
+    }
+
+    &-next {
+        @include laptop {
+            right: -15px;
+        }
+
+        @include mobile {
+            right: 0;
+        }
+
+        &:before {
+            @include flex(flex, row, center, center, nowrap);
+            font-family: FontAwesome;
+            content: "\f061";
+            background: $color-blue;
+            width: 40px;
+            height: 40px;
+
+            @include laptop-lg {
+                width: 36px;
+                height: 36px;
+            }
+
+            @include laptop {
+                width: 32px;
+                height: 32px;
+            }
+
+            @include tablet {
+                width: 38px;
+                height: 38px;
+                font-size: 26px;
+            }
+
+            @include mobile {
+                width: 32px;
+                height: 32px;
+                font-size: 20px;
+            }
+
+            border-radius: 50%;
+            opacity: 1;
+            @extend %absolute-center-vertical;
+            left: 0;
+            z-index: 10;
+        }
+    }
+
+    &-active {
+        opacity: 1;
+    }
+
+    &-current {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if gte IE 8]><html class="ie ie8" lang="en-US"> <![endif]-->
+<html dir="ltr" lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Google Fonts
+        ============================================= -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+  <!-- Stylesheets
+        ============================================= -->
+  <link rel="stylesheet" href="css/plugin.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <!-- JavaScripts
+        ============================================= -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  <title>«ПАЛЬМИРА»</title>
+</head>
+
+<body onload="hideTotal()">
+  <div id="preloader">
+    <div id="status">
+      <img src="img/logo-palmira.png" alt="" />
+    </div>
+  </div>
+  <!-- MAIN WRAPPER
+        ============================================= -->
+  <div id="main-wrapper" class="clearfix">
+    <!-- HEADER
+            ============================================= -->
+    <header id="header" class="clearfix">
+      <div class="site-header">
+        <div class="container">
+          <div class="row">
+            <div class="top-header clearfix">
+              <div class="logo col-md-4">
+                <a href="index.html">
+                  <img src="img/logo-palmira.png" alt="" class="header-logo-width" />
+                </a>
+              </div>
+              <div class="info col-md-8">
+                <ul>
+                  <li>
+                    <i class="fa fa-clock-o"></i>
+                    <p>
+                      <span class="heading">Часы работы</span>
+                      <span>ПН - СБ: 09.00 - 22.00</span>
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <p>
+                      <span class="heading">Звоните</span>
+                      <span><a href="tel:+11111111111">+1(111)111-11-11</a></span>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <i class="fa fa-envelope"></i>
+                    <p>
+                      <span class="heading">Пишите</span>
+                      <span><a href="mailto:palmira@mail.ru">palmira@mail.ru</a></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-buttons">
+                <button id="slide-buttons" class="slide-button icon icon-navicon"></button>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="main-menu">
+                <ul class="menu" style="list-style-type: none;">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about-us.html">О нас</a></li>
+                  <li class="has-sub"><a href="services.html">Услуги</a>
+                    <ul style="list-style-type: none;">
+                      <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+                      <li><a href="shipping-service.html">Морские перевозки</a></li>
+                      <li><a href="air-service.html">Авиаперевозки</a></li>
+                      <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+                      <li><a href="express-service.html">Экспресс-доставка</a></li>
+                      <li><a href="storage-service.html">Складское хранение</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="right-section">
+                  <div class="search">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <div class="quote-link">
+                    <a href="contact.html">Поисковый запрос</a>
+                  </div>
+                  <div class="search-input">
+                    <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Mobile
+                ============================================= -->
+      <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+        <button class="c-menu__close icon icon-close"></button>
+        <div class="search-input">
+          <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+        <ul class="slide-menu-items" style="list-style-type: none;">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about-us.html">О нас</a></li>
+          <li class="has-sub"><a href="services.html">Услуги</a>
+            <ul style="list-style-type: none;">
+              <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+              <li><a href="shipping-service.html">Морские перевозки</a></li>
+              <li><a href="air-service.html">Авиаперевозки</a></li>
+              <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+              <li><a href="express-service.html">Экспресс-доставка</a></li>
+              <li><a href="storage-service.html">Складское хранение</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <div class="info">
+          <ul>
+            <li>
+              <p>
+                <span class="heading">Часы работы</span>
+                <span>ПН - СБ: 09.00 - 22.00</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="heading">Звоните</span>
+                <span><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></span>
+              </p>
+            </li>
+            <li class="last">
+              <p>
+                <span class="heading">Пишите</span>
+                <span><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="slide-overlay" class="slide-overlay"></div>
+      <!-- Menu Mobile End -->
+    </header>
+    <!-- HEADER END -->
+    <!-- PAGE TITLE START
+            ============================================= -->
+    <section class="page-title wrapper clearfix" style="background-image: url(img/about-page-bg.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="title-wrap wow fadeIn" data-wow-delay="1s">
+            <h1>Экспедиторские услуги</h1>
+            <div class="breadcrumbs">
+              <p>Вы здесь :
+                <span><a href="index.html">Главная</a></span>
+                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                <span><a href="services.html">Услуги</a></span>
+                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                <span>Экспедиторские услуги</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PAGE TITLE END -->
+    <!-- CONTENT START
+            ============================================= -->
+    <section id="content" class="clearfix">
+      <!-- SINGLE SERVICES START
+                ============================================= -->
+      <div class="single-services wrapper bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="single-services-wrap row">
+              <div class="single-content col-md-9">
+                <img src="img/content/5433c1017f56bec20b9c17a187800658.jpg" alt="" />
+                <h3 class="title">Экспедиторские услуги</h3>
+                <div class="content-text">
+                  <p>Группа компаний «Негабаритные перевозки» оказывает полный перечень транспортно-экспедиционных услуг. Транспортно-экспедиционные услуги – это работа, направленная на обеспечение и выполнение своевременной доставки товаров. Экспедирование грузов включается в себя:</p>
+                  <ul>
+                    <li>оформление товаросопроводительной и транспортной документации;</li>
+                    <li>организация выполнения погрузо-разгрузочных работ, самой перевозки;</li>
+                    <li>при использовании морского транспорта – экспедирование в порту (внутрипортовое экспедирование);</li>
+                    <li>грузопереработка и хранение (складирование груза);</li>
+                    <li>охрана (в том числе вооруженная) и сопровождение груза;</li>
+                    <li>услуга страхования грузов;</li>
+                    <li>выполнение расчетов платежей;</li>
+                    <li>консультирование и информационное сопровождение (включая отслеживание местоположения груза).</li>
+                  </ul>
+                  <img style="border-width: 1px; margin: 4px;" src="img/content/dc68719e237cdcebe29838d494ebcd65.jpg" alt="Транспортно-экспедиционные услуги">
+                  <p>Транспортно-экспедиционные услуги тесно связаны с понятием логистики. Экспедирование и логистика в нашей практике дополняют друг друга, позволяя добиваться снижения общей стоимости перевозки, сокращения ее сроков, повышения надежности транспортного процесса.</p>
+                  <p>Экспедитор координирует действия всех участников перевозки и осуществляет мониторинг состояния груза в пути.
+                    Такое наблюдение осуществляется при помощи современных спутниковых систем, позволяющих в реальном времени отслеживать точное местонахождение груза.</p>
+                  <p>Клиент в обязательном порядке информируется о состоянии перевозки и любых вынужденных изменениях в ходе движения.</p>
+                  <p>Стандартное транспортное экспедирование включает в себя оформление документации, подготовку груза к перевозке, его временное или ответственное хранение. При необходимости или по желанию клиента оказываются дополнительные транспортно-экспедиционные услуги: сопровождение груза, его охрана, страхование.</p>
+                  <img style="border-width: 1px; margin: 4px;" src="img/content/охрана-грузов2.jpg" alt="Транспортные экспедиционные услуги">
+                  <p>Логистика, экспедирование и перевозка грузов составляют для нас единое целое. Только так можно избавить клиента от всех забот по доставке груза.</p>
+                  <h4>Используя услугу экспедирования груза, Вы получите ряд весомых преимуществ:</h4>
+                  <ul>
+                    <li><b>Надежность перевозки</b><br>
+                      Услуга предполагает подготовку всех необходимых разрешительных документов и страхование груза, что оберегает клиента от негативных последствий различных форс-мажорных обстоятельств.</li>
+                    <li><b>Экономия времени доставки</b><br>
+                      Экспедиторы предварительно оценивают сроки доставки и разрабатывают оптимальный маршрут движения груза Важность данного фактора переоценить невозможно, в особенности для скоропортящихся
+                      товаров, где любая задержка грозит потерей целой партии товаров.</li>
+                    <li><b>Уменьшение транспортных расходов</b><br>
+                      Исходя из особенностей груза, подбирается наиболее подходящее и экономичное транспортное средство, строится оптимальный маршрут и таким образом достигается значительная экономия
+                      транспортных расходов.</li>
+                  </ul>
+                  <p>Таким образом, услуга экспедирования играет весьма значимую роль в процессе перевозки и служит гарантом сохранности грузов на всех этапах товародвижения.</p>
+                </div>
+              </div>
+              <div class="sidebar col-md-3">
+                <div class="widget other-services">
+                  <h4 class="title">Другие услуги</h4>
+                  <ul style="list-style-type: none;">
+                    <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+                    <li><a href="shipping-service.html">Морские перевозки</a></li>
+                    <li><a href="air-service.html">Авиаперевозки</a></li>
+                    <li><a href="express-service.html">Экспресс-доставка</a></li>
+                    <li><a href="storage-service.html">Складское хранение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SINGLE SERVICES END -->
+      <!-- SERVICES CALCULATOR START
+                ============================================= -->
+      <div class="services-calculator bg-color" style="padding-bottom: 100px;">
+        <div class="container">
+          <div class="row">
+            <div class="services-calculator-wrap row">
+              <div class="intro-section col-md-6">
+                <h3 class="title">Расчет стоимости</h3>
+                <p>Для примерного расчета стоимости услуги заполните форму калькулятора.</p>
+                <div class="image">
+                  <img src="img/content/service-calculator-img.png" alt="" />
+                </div>
+              </div>
+              <div class="form-section col-md-6">
+                <form id="calculationform" onsubmit="return false;">
+                  <fieldset>
+                    <label class="form-input-mb">Типы экспедиторских услуг</label>
+                    <p class="extra-services expedition-services">
+                      <span class="form-input-mb">
+                        <label for='documentation_registration' class="expedition-label">Оформление товаросопроводительной и транспортной документации</label>
+                        <input type="checkbox" id="documentation_registration" name='documentation_registration' class="expedition-input" />
+                      </span>
+                      <span class="form-input-mb">
+                        <label for='transportation_organization' class="expedition-label">Организация выполнения погрузо-разгрузочных работ, самой перевозки</label>
+                        <input type="checkbox" id="transportation_organization" name='transportation_organization' class="expedition-input" />
+                      </span>
+                      <span class="form-input-mb">
+                        <label for='port_forwarding' class="expedition-label">Экспедирование в порту (морские перевозки)</label>
+                        <input type="checkbox" id="port_forwarding" name='port_forwarding' class="expedition-input" />
+                      </span>
+                      <span class="form-input-mb">
+                        <label for='cargo_storage' class="expedition-label">Грузопереработка и хранение (складирование груза)</label>
+                        <input type="checkbox" id="cargo_storage" name='cargo_storage' class="expedition-input" />
+                      </span>
+                      <span class="form-input-mb">
+                        <label for='cargo_escort' class="expedition-label">Охрана (в том числе вооруженная) и сопровождение груза</label>
+                        <input type="checkbox" id="cargo_escort" name='cargo_escort' class="expedition-input" />
+                      </span>
+                      <span class="form-input-mb">
+                        <label for='cargo_insurance' class="expedition-label">Услуга страхования грузов</label>
+                        <input type="checkbox" id="cargo_insurance" name='cargo_insurance' class="expedition-input" />
+                      </span>
+                      <span class="form-input-mb">
+                        <label for='payments_settlement' class="expedition-label">Выполнение расчетов платежей</label>
+                        <input type="checkbox" id="payments_settlement" name='payments_settlement' class="expedition-input" />
+                      </span>
+                      <span>
+                        <label for='cargo_support' class="expedition-label">Консультирование и информационное сопровождение (включая отслеживание местоположения груза)</label>
+                        <input type="checkbox" id="cargo_support" name='cargo_support' class="expedition-input" />
+                      </span>
+                    </p>
+                    <button class="button-calc" type="submit" onclick="calculateTotal()" value="submit">
+                      Рассчитать
+                    </button>
+                    <div id="totalPrice">
+                      Общая стоимость = €
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="contact-us-banner text-center wow fadeIn" data-wow-delay="0.5s">
+              <h1>Готовы сотрудничать?</h1>
+              <a href="contact.html#form" class="button-normal">Свяжитесь с нами</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICE CALCULATOR END -->
+    </section>
+    <!-- CONTENT END -->
+    <!-- FOOTER START
+            ============================================= -->
+    <footer id="footer" class="wrapper clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="footer-wrap row">
+            <!-- WIDGET FOOTER 1 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="short-desc">
+                <div class="logo-footer">
+                  <img src="img/logo-palmira-footer.png" alt="logo" class="footer-logo-width" />
+                </div>
+                <p>Мы - российская транспортная компания, созданная совсем недавно. Наша цель - занять передовые позиции среди топовых компаний по предоставлению траспортных услуг. Используя современные методы развития и западные схемы по работе с клиентами мы пробиваем свой путь к успеху в сфере логистики.</p>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 1 END -->
+            <!-- WIDGET FOOTER 2 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="recent-post">
+                <h4 class="title">Меню услуг</h4>
+                <div class="footer-content">
+                  <ul class="menu" style="list-style-type: none;">
+                    <li><a href="tir-service.html" class="footer-link">Грузоперевозки фурой</a></li>
+                    <li><a href="shipping-service.html" class="footer-link">Морские перевозки</a></li>
+                    <li><a href="air-service.html" class="footer-link">Авиаперевозки</a></li>
+                    <li><a href="expedition-service.html" class="footer-link">Экспедиторские услуги</a></li>
+                    <li><a href="express-service.html" class="footer-link">Экспресс-доставка</a></li>
+                    <li><a href="storage-service.html" class="footer-link">Складское хранение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 2 END -->
+            <!-- WIDGET FOOTER 3 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="contact-footer">
+                <h4 class="title">Контакты</h4>
+                <div class="footer-content">
+                  <div class="contact-section">
+                    <h4>Адрес</h4>
+                    <p>111111, ул.Малиновая, д.10</p>
+                    <p>к.1, э.1, пом.1, к.1, оф.11</p>
+                    <p>Россия, г. Москва</p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Телефон</h4>
+                    <p><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Почта</h4>
+                    <p><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 3 END -->
+            <!-- WIDGET FOOTER 4 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="buy-now">
+                <h4 class="title">Закажите сейчас</h4>
+                <div class="footer-content">
+                  <p>Вы можете заказать конкретные услуги со своими требованиями и поправками, а мы, в свою очередь, свяжемся с вами и опишем условия предоставляемых нами способов доставки.</p>
+                  <a href="contact.html#form" class="button-normal white">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 4 END -->
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT START
+                ============================================= -->
+      <div class="copyright text-center">
+        <div class="container">
+          <p>&#169; 2019-2020. Все права защищены. <a href="http://palmira-transervice.ru" class="footer-company">«ПАЛЬМИРА»</a></p>
+        </div>
+      </div>
+      <!-- COPYRIGHT END -->
+    </footer>
+    <!-- FOOTER END -->
+  </div>
+  <!-- MAIN WRAPPER END -->
+  <!-- Footer Scripts
+        ============================================= -->
+  <!-- External -->
+  <script type="text/javascript" src="js/plugin.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/expedition-calculator.js"></script>
+</body>
+
+</html>

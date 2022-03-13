@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ООО "ЮНИКС"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/light-color.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+  <div class="page-loading white-bg">
+    <div class="thecube">
+      <div class="cube c1"></div>
+      <div class="cube c2"></div>
+      <div class="cube c4"></div>
+      <div class="cube c3"></div>
+    </div>
+  </div>
+  <!--page-loading end-->
+  <div class="wrapper">
+    <header class="stick v2">
+      <div class="hd_bar hd_light">
+        <div class="container">
+          <div class="header-bar qut-style">
+            <div class="logo">
+              <a href="index.html" title=""><img src="images/logo2.png" alt=""></a>
+            </div>
+            <!--logo end-->
+            <nav>
+              <ul class="list-display">
+                <li><a href="index.html" title="">Главная</a></li>
+                <li><a href="about.html" title="">О нас</a></li>
+                <li><a href="products.html" title="">Товары</a></li>
+                <li><a class="active" href="contacts.html" title="">Контакты</a></li>
+              </ul>
+            </nav>
+            <!--nav end-->
+            <div class="mobile-menu-btn">
+              <a href="#" title="" class="open-menu"><i class="fa fa-bars"></i></a>
+            </div>
+            <!--mobile-menu-btn end-->
+            <div class="get-quote">
+              <a href="#" title="">Наверх</a>
+            </div>
+            <!--select-language end-->
+          </div>
+          <!--header-bar end-->
+        </div>
+      </div>
+      <!---hd_bar end-->
+    </header>
+    <div class="responsive-mobile-menu">
+      <a href="#" title="" class="close-menu"><i class="ion-close"></i></a>
+      <ul>
+        <li><a href="index.html" title="">Главная</a></li>
+        <li><a href="about.html" title="">О нас</a></li>
+        <li><a href="products.html" title="">Товары</a></li>
+        <li><a href="contacts.html" title="">Контакты</a></li>
+      </ul>
+    </div>
+    <!--responsive-mobile-menu end-->
+    <section>
+      <div class="block no-padding">
+        <div class="main-map">
+          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d479.0361427167248!2d37.62392984792654!3d55.74071853583765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afe0fd7ff61%3A0x41be3966d7932816!2z0JHQvtC70YzRiNC-0Lkg0KLQvtC70LzQsNGH0LXQstGB0LrQuNC5INC_0LXRgC4sIDQvNdCQINGB0YLRgNC-0LXQvdC40LUgNCwg0JzQvtGB0LrQstCwLCAxMTkwMTc!5e0!3m2!1sru!2sru!4v1645446613455!5m2!1sru!2sru" frameborder="0" style="border:0; width: 100%; height: 700px;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <!--main-map end-->
+      </div>
+    </section>
+    <section>
+      <div class="contact-info-sec">
+        <div class="container">
+          <div class="cntct-details">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="contact-address">
+                  <h2><strong>Россия, </strong>Москва</h2>
+                  <p>111111, г.Москва, ул.Малиновая,<br> д.10, к.1, э.1, пом.1, к.1, оф.11</p>
+                </div>
+                <!--contact-address end-->
+              </div>
+              <div class="col-lg-6">
+                <div class="contact-more-info">
+                  <div class="address">
+                    <h3>Телефон: </h3>
+                    <h2><a class="contact-link" href="tel:+11111111111">+1(111)111-11-11</a></h2>
+                  </div>
+                  <!--address end-->
+                  <div class="address">
+                    <h3>Почта: <a class="contact-link" href="mailto:unix@mail.ru">unix@mail.ru</a></h3>
+                  </div>
+                  <!--address end-->
+                  <div class="address">
+                    <h3>Сайт: <a class="contact-link" href="http://unix-forbuild.ru">www.unix-forbuild.ru</a></h3>
+                  </div>
+                  <!--address end-->
+                </div>
+                <!--contact-more-info end-->
+              </div>
+            </div>
+          </div>
+          <!--cntct-details end-->
+          <div class="contact-form-sec">
+            <h3 class="text-xxs-center">Есть вопросы? Оставьте заявку!</h3>
+            <p class="success alert alert-success" id="success" style="display:none;"></p>
+            <p class="error alert alert-danger" id="error" style="display:none;"></p>
+            <form name="contact_form_3" id="contact_form_3" method="post">
+              <input type="hidden" name="axn" value="contact_3">
+              <div class="row">
+                <div class="col-lg-4">
+                  <input type="text" name="username" id="username" placeholder="Имя*">
+                </div>
+                <div class="col-lg-4">
+                  <input type="text" name="email" id="email" placeholder="Почта*">
+                </div>
+                <div class="col-lg-4">
+                  <input type="text" name="subject" placeholder="Тема">
+                </div>
+                <div class="col-lg-12">
+                  <textarea name="description" id="description" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="col-lg-12 text-xxs-center">
+                  <button type="button" id="submit_3">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--contact-form-sec end-->
+        </div>
+      </div>
+      <!--contact-info-sec end-->
+    </section>
+    <footer>
+      <div class="footer-data">
+        <div class="container">
+          <div class="ft-contact-info">
+            <h6>Давайте строить вместе</h6>
+            <h1><a class="footer-link" href="mailto:unix@mail.ru">unix@mail.ru</a></h1>
+            <h3><span>111111, г.Москва, ул.Малиновая, д.10, к.1, э.1, пом.1, к.1, оф.11</span></h3>
+            <h3><a class="footer-link" href="tel:+11111111111">+1(111)111-11-11</a></h3>
+          </div>
+          <!--ft-contact-info end-->
+          <div class="social-copyright">
+            <div class="copyright-text">
+              <p>© 2019-2020 <a class="footer-link" href="http://unix-forbuild.ru">ЮНИКС</a>. Все права защищены.</p>
+            </div>
+          </div>
+          <!--social-copyright end-->
+        </div>
+      </div>
+      <!--footer-data end-->
+    </footer>
+  </div>
+  <!--wrapper end-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/html5lightbox.js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyCEprRgdAfS753As69Wak04p2fvCzKbXQU"></script>
+  <script src="js/gmap.js"></script>
+  <script type="text/javascript" src="js/contact-form.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

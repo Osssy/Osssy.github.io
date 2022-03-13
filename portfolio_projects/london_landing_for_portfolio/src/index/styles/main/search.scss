@@ -1,0 +1,273 @@
+// search section
+
+.search {
+    &_wrapper {
+        @include flex(flex, column, flex-start, center, nowrap);
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 50px 40px 50px;
+        position: relative;
+
+        @include laptop {
+            padding: 0 40px 40px;
+        }
+
+        @include mobile {
+            padding: 0 15px 30px 15px;
+        }
+    }
+
+    &__field {
+        max-width: 615px;
+        width: 60%;
+        position: absolute;
+        background: #fff;
+        box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        transform: translateY(-50%);
+        overflow: hidden;
+
+        @include mobile {
+            width: 90%;
+            border-radius: 25px;
+        }
+    }
+
+    &__label {}
+
+    &__icon {
+        color: #9f9f9f;
+        font-size: 22px;
+        @extend %absolute-center-vertical;
+        left: 20px;
+
+        @include laptop {
+            font-size: 20px;
+        }
+
+        @include mobile {
+            left: 12px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        font-family: 'Arial-Regular', sans-serif;
+        color: $color-text-grey;
+        padding: 16px 23px 16px 53px;
+
+        @include mobile {
+            padding: 12px 18px 12px 35px;
+        }
+    }
+
+    &__excerption {
+        margin: 70px 0 50px;
+        text-align: center;
+        font-family: 'Arial-Regular', sans-serif;
+        color: $color-search-text;
+
+        @include laptop {
+            font-size: 13px;
+        }
+
+        @include mobile {
+            font-size: 14px;
+            margin: 60px 0 40px;
+        }
+
+        &_highlighted {
+            color: $color-search-text-highlighted;
+        }
+    }
+}
+
+.entertainment {
+    &__list {
+        @include flex(flex, row, center, stretch, wrap);
+        text-align: center;
+    }
+
+    &__item {
+        @include flex(flex, row, center, stretch, nowrap);
+        flex-basis: 16%;
+        margin: 0 0 15px;
+        position: relative;
+
+        @include laptop {
+            flex-basis: 32%;
+        }
+
+        @include mobile {
+            flex-basis: 100%;
+        }
+
+        &:hover &_border {
+            background: $color-blue;
+        }
+
+        &:hover &_wrapper {
+            box-shadow: 0px 0px 0px 2px #fff;
+        }
+
+        &:hover * {
+            color: #fff;
+        }
+
+        &:hover .entertainment__icon {
+            fill: #fff;
+        }
+
+        &:hover .entertainment__horizontal_active {
+            background: #fff;
+        }
+
+        &_border {
+            @include flex(flex, row, flex-start, stretch, nowrap);
+            padding: 11px 9px;
+        }
+
+        &_wrapper {
+            @include flex(flex, column, flex-start, center, nowrap);
+            padding: 26px 9px 36px;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__icon {
+        margin: 0 0 17px;
+
+        &_hotel {
+            width: 60px;
+            height: 60px;
+
+            @include laptop {
+                width: 48px;
+            }
+
+            @include mobile {
+                width: 60px;
+            }
+        }
+
+        &_big-ben {
+            width: 26px;
+            height: 60px;
+
+            @include laptop {
+                width: 21px;
+            }
+
+            @include mobile {
+                width: 26px;
+            }
+        }
+
+        &_hamburger {
+            width: 62px;
+            height: 60px;
+
+            @include laptop {
+                width: 49px;
+            }
+
+            @include mobile {
+                width: 62px;
+            }
+        }
+
+        &_ticket {
+            width: 60px;
+            height: 60px;
+
+            @include laptop {
+                width: 48px;
+            }
+
+            @include mobile {
+                width: 60px;
+            }
+        }
+
+        &_coffee-cup {
+            width: 52px;
+            height: 60px;
+
+            @include laptop {
+                width: 39px;
+            }
+
+            @include mobile {
+                width: 52px;
+            }
+        }
+
+        &_museum {
+            width: 63px;
+            height: 60px;
+
+            @include laptop {
+                width: 50px;
+            }
+
+            @include mobile {
+                width: 63px;
+            }
+        }
+    }
+
+    &__description {
+        @include flex(flex, column, flex-start, center, wrap);
+        word-break: break-word;
+    }
+
+    &__title {
+        margin: 0 0 15px;
+        font-size: 18px;
+        color: #000;
+        word-wrap: break-word;
+
+        @include laptop {
+            font-size: 16px;
+        }
+
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+
+    &__horizontal {
+        &_active {
+            border: none;
+            background: transparent;
+            margin: 0 0 15px;
+            width: 50px;
+            height: 2px;
+        }
+    }
+
+    &__text {
+        color: $color-search-text;
+
+        @include laptop {
+            font-size: 13px;
+        }
+
+        @include mobile {
+            font-size: 14px;
+        }
+
+        &_highlighted {
+            color: $color-search-text-highlighted;
+            display: block;
+        }
+    }
+}

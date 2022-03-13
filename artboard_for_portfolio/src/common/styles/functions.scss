@@ -1,6 +1,0 @@
-//functions
-
-//distance value calculation in percents
-@function distance-percent($value, $container-width) {
-    @return $value / $container-width * 100%;
-}

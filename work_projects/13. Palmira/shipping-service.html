@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if gte IE 8]><html class="ie ie8" lang="en-US"> <![endif]-->
+<html dir="ltr" lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Google Fonts
+        ============================================= -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+  <!-- Stylesheets
+        ============================================= -->
+  <link rel="stylesheet" href="css/plugin.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <!-- JavaScripts
+        ============================================= -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  <title>«ПАЛЬМИРА»</title>
+</head>
+
+<body onload="hideTotal()">
+  <div id="preloader">
+    <div id="status">
+      <img src="img/logo-palmira.png" alt="" />
+    </div>
+  </div>
+  <!-- MAIN WRAPPER
+        ============================================= -->
+  <div id="main-wrapper" class="clearfix">
+    <!-- HEADER
+            ============================================= -->
+    <header id="header" class="clearfix">
+      <div class="site-header">
+        <div class="container">
+          <div class="row">
+            <div class="top-header clearfix">
+              <div class="logo col-md-4">
+                <a href="index.html">
+                  <img src="img/logo-palmira.png" alt="" class="header-logo-width" />
+                </a>
+              </div>
+              <div class="info col-md-8">
+                <ul>
+                  <li>
+                    <i class="fa fa-clock-o"></i>
+                    <p>
+                      <span class="heading">Часы работы</span>
+                      <span>ПН - СБ: 09.00 - 22.00</span>
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <p>
+                      <span class="heading">Звоните</span>
+                      <span><a href="tel:+11111111111">+1(111)111-11-11</a></span>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <i class="fa fa-envelope"></i>
+                    <p>
+                      <span class="heading">Пишите</span>
+                      <span><a href="mailto:palmira@mail.ru">palmira@mail.ru</a></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-buttons">
+                <button id="slide-buttons" class="slide-button icon icon-navicon"></button>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="main-menu">
+                <ul class="menu" style="list-style-type: none;">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about-us.html">О нас</a></li>
+                  <li class="has-sub"><a href="services.html">Услуги</a>
+                    <ul style="list-style-type: none;">
+                      <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+                      <li><a href="shipping-service.html">Морские перевозки</a></li>
+                      <li><a href="air-service.html">Авиаперевозки</a></li>
+                      <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+                      <li><a href="express-service.html">Экспресс-доставка</a></li>
+                      <li><a href="storage-service.html">Складское хранение</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="right-section">
+                  <div class="search">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <div class="quote-link">
+                    <a href="contact.html">Поисковый запрос</a>
+                  </div>
+                  <div class="search-input">
+                    <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Mobile
+                ============================================= -->
+      <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+        <button class="c-menu__close icon icon-close"></button>
+        <div class="search-input">
+          <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+        <ul class="slide-menu-items" style="list-style-type: none;">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about-us.html">О нас</a></li>
+          <li class="has-sub"><a href="services.html">Услуги</a>
+            <ul style="list-style-type: none;">
+              <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+              <li><a href="shipping-service.html">Морские перевозки</a></li>
+              <li><a href="air-service.html">Авиаперевозки</a></li>
+              <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+              <li><a href="express-service.html">Экспресс-доставка</a></li>
+              <li><a href="storage-service.html">Складское хранение</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <div class="info">
+          <ul>
+            <li>
+              <p>
+                <span class="heading">Часы работы</span>
+                <span>ПН - СБ: 09.00 - 22.00</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="heading">Звоните</span>
+                <span><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></span>
+              </p>
+            </li>
+            <li class="last">
+              <p>
+                <span class="heading">Пишите</span>
+                <span><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="slide-overlay" class="slide-overlay"></div>
+      <!-- Menu Mobile End -->
+    </header>
+    <!-- HEADER END -->
+    <!-- PAGE TITLE START
+            ============================================= -->
+    <section class="page-title wrapper clearfix" style="background-image: url(img/about-page-bg.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="title-wrap wow fadeIn" data-wow-delay="1s">
+            <h1>Морские перевозки</h1>
+            <div class="breadcrumbs">
+              <p>Вы здесь :
+                <span><a href="index.html">Главная</a></span>
+                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                <span><a href="services.html">Услуги</a></span>
+                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                <span>Морские перевозки</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PAGE TITLE END -->
+    <!-- CONTENT START
+            ============================================= -->
+    <section id="content" class="clearfix">
+      <!-- SINGLE SERVICES START
+                ============================================= -->
+      <div class="single-services wrapper bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="single-services-wrap row">
+              <div class="single-content col-md-9">
+                <img src="img/content/8-1.jpg" alt="" />
+                <h3 class="title">Морские перевозки</h3>
+                <div class="content-text">
+                  <p>Морские перевозки&nbsp;— это услуга, оказываемая транспортными компаниями, которая подразумевает перемещение грузов на&nbsp;значительные расстояния с&nbsp;помощью морского транспорта.</p>
+                  <p>Морской транспорт&nbsp;— это любые судна, которые могут передвигаться по&nbsp;водной поверхности или просто оставаться на&nbsp;плаву и&nbsp;участвуют в&nbsp;процессах хранения, погрузки, разгрузки, транспортирования, обслуживания грузов или пассажиров.</p>
+                  <img title="Морские перевозки грузов" src="img/content/e06abfb4f0bba4a7c813eed914ac8e32-1024x576.jpg" alt="Морские перевозки грузов" width="100%">
+                  <p>Основное назначение морских перевозок&nbsp;— работа с&nbsp;крупными объёмами поставок в&nbsp;мировом масштабе (между континентами), поэтому международное законодательство, регламентирующее эту сферу, хорошо проработано во&nbsp;многих странах, ведущих внешнеэкономическую деятельность.</p>
+                  <h4>Немного статистики</h4>
+                  <p>По&nbsp;данным Росстата доля морских перевозок в&nbsp;России составляют лишь 0,3% от&nbsp;общего грузооборота (около 25&nbsp;млн. тонн в&nbsp;год).</p>
+                  <p>В&nbsp;структуре мирового торгового флота российские суда занимают всего лишь&nbsp;1% (для примера, у&nbsp;Греции&nbsp;— более 16%)&nbsp;— согласно статистике ЮНКТАД за&nbsp;2016&nbsp;год.</p>
+                  <p><img src="img/content/sea-stat.png" alt="Структура мирового флота по типам перевозок"></p>
+                  <p>Несмотря на&nbsp;то, что лидирующие позиции в&nbsp;структуре грузоперевозок долгое время сохраняют за&nbsp;собой суда, работающие преимущественно с&nbsp;сырьём (нефть, руды и&nbsp;т.п.), доля контейнеровозов неуклонно растёт. Это видно на&nbsp;диаграмме выше. Связано это с&nbsp;тем, что контейнеровозы заменяют собой универсальные суда, так как контейнеры позволяют оперативнее осуществлять погрузочно-разгрузочные работы и&nbsp;облегчают процессы промежуточного хранения.</p>
+                  <p><img src="img/content/sea-stat-1.png" alt="Распределение морских перевозок по направлениям"></p>
+                  <p>Россия использует морской транспорт в&nbsp;основном для доставки сырья: сталь, уголь, зерно.</p>
+                  <h4>Оборудование</h4>
+                  <p>Международные морские перевозки осуществляются с&nbsp;применением следующих групп судов:</p>
+                  <ul>
+                    <li>танкеры (предназначены для транспортировки жидких грузов);</li>
+                    <li>балкеры и&nbsp;рудовозы (для навалочных грузов);</li>
+                    <li>многоцелевые суда для генеральных грузов;</li>
+                    <li>контейнеровозы;</li>
+                    <li>рефрижераторные суда.</li>
+                  </ul>
+                  <p>Купить или даже арендовать любое из&nbsp;этих транспортных средств малому бизнесу просто не&nbsp;по&nbsp;карману. Поэтому единственный доступный для МСБ способ организации доставки&nbsp;— морские контейнерные перевозки.</p>
+                  <h4>Преимущества контейнерных перевозок морем</h4>
+                  <ul>
+                    <li>Минимальная стоимость из&nbsp;всех возможных вариантов для таких расстояний.</li>
+                    <li>Возможность формирования в&nbsp;том числе сборных грузов, если такую услугу предоставляет транспортная компания.</li>
+                    <li>Проработанные схемы перевозки и&nbsp;прохождения таможенного оформления.</li>
+                    <li>Возможна перевозка различных видов грузов, в&nbsp;том числе с&nbsp;соблюдением определённых температурных режимов.</li>
+                    <li>После доставки контейнера в&nbsp;порт, его можно перегрузить на&nbsp;другой вид транспорта без выгрузки содержимого, что ускоряет складские процессы.</li>
+                  </ul>
+                  <h4>Недостатки</h4>
+                  <ul>
+                    <li>Низкая скорость перемещения (около 30-45 дней).</li>
+                    <li>Планируемые сроки поставки могут сильно увеличиться из-за погодных условий.</li>
+                    <li>Инфраструктура морских грузоперевозок сильно привязана к&nbsp;портам.</li>
+                    <li>Если контейнер не&nbsp;приобретается в&nbsp;собственность, то&nbsp;требуется его возврат владельцу&nbsp;— то&nbsp;есть транспортной компании, а&nbsp;это дополнительные расходы.</li>
+                    <li>Перевозки контейнеров уже на&nbsp;суше часто обходятся дороже, чем аренда автомобиля с&nbsp;полной загрузкой в&nbsp;том&nbsp;же направлении.</li>
+                  </ul>
+                  <h4>Стоимость</h4>
+                  <p>Цена доставки складывается из&nbsp;нескольких факторов:</p>
+                  <ul>
+                    <li>Тип перевозки (полная аренда или сборная доставка).</li>
+                    <li>Размер и&nbsp;тип контейнера (типовые размеры&nbsp;— 20&nbsp;или 40&nbsp;футов, но&nbsp;существует большое количество модификаций, в&nbsp;том числе адаптированные под различные типы грузов).</li>
+                    <li>Необходимость таможенного оформления.</li>
+                    <li>Направление (складывается из&nbsp;востребованности маршрута и&nbsp;преодолеваемого расстояния).</li>
+                    <li>Перечень дополнительных услуг (погрузка, разгрузка, перегрузка в&nbsp;другой вид транспорта, доставка от&nbsp;порта до&nbsp;места назначения, страхование и&nbsp;т.п.).</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar col-md-3">
+                <div class="widget other-services">
+                  <h4 class="title">Другие услуги</h4>
+                  <ul style="list-style-type: none;">
+                    <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+                    <li><a href="air-service.html">Авиаперевозки</a></li>
+                    <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+                    <li><a href="express-service.html">Экспресс-доставка</a></li>
+                    <li><a href="storage-service.html">Складское хранение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SINGLE SERVICES END -->
+      <!-- SERVICES CALCULATOR START
+                ============================================= -->
+      <div class="services-calculator bg-color" style="padding-bottom: 100px;">
+        <div class="container">
+          <div class="row">
+            <div class="services-calculator-wrap row">
+              <div class="intro-section col-md-6">
+                <h3 class="title">Расчет стоимости</h3>
+                <p>Для примерного расчета стоимости услуги заполните форму калькулятора.</p>
+                <div class="image">
+                  <img src="img/content/service-calculator-img.png" alt="" />
+                </div>
+              </div>
+              <div class="form-section col-md-6">
+                <form id="calculationform" onsubmit="return false;">
+                  <fieldset>
+                    <label>Типы морских перевозок</label>
+                    <select id="delivery_type" name='delivery_type' required>
+                      <option value="None">Выберите тип перевозки</option>
+                      <option value="Balker_ore">Балкер и рудовоз</option>
+                      <option value="20DC">20DC контейнер</option>
+                      <option value="40DC">40DC контейнер</option>
+                      <option value="Tanker">Танкер</option>
+                      <option value="Multipurpose">Многоцелевое судно</option>
+                      <option value="Refrigerator">Рефрижератор</option>
+                      <option value="Combined">Сборная доставка</option>
+                    </select>
+                    <label>Типы грузов</label>
+                    <select id="goods_type" name='goods_type' required>
+                      <option value="None">Выберите тип грузов</option>
+                      <option value="General">Общие</option>
+                      <option value="Fragile">Хрупкие</option>
+                      <option value="Hazardous">Опасные</option>
+                      <option value="Fine">Творения исскуства</option>
+                    </select>
+                    <label>Вес, кг</label>
+                    <span class="form-input-mb">
+                      <input type="text" id="weight" name='weight' placeholder="Введите вес" required />
+                    </span>
+                    <label>Расстояние, км</label>
+                    <span class="form-input-mb">
+                      <input type="text" id="distance" name='distance' placeholder="Введите расстояние" required />
+                    </span>
+                    <p class="extra-services">
+                      <label>Дополнительные услуги</label>
+                      <span>
+                        <label for='insurance'>Страховка</label>
+                        <input type="checkbox" id="insurance" name='insurance' />
+                      </span>
+                      <span>
+                        <label for='packaging'>Упаковка</label>
+                        <input type="checkbox" id="packaging" name='packaging' />
+                      </span>
+                    </p>
+                    <p class="fragile clearfix">
+                      <label>Осторожность</label>
+                      <span>
+                        <label for='fragileyes'>Да</label>
+                        <input type="checkbox" id="fragileyes" name='fragileyes' />
+                      </span>
+                    </p>
+                    <button class="button-calc" type="submit" onclick="calculateTotal()" value="submit">
+                      Рассчитать
+                    </button>
+                    <div id="totalPrice">
+                      Общая стоимость = €
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="contact-us-banner text-center wow fadeIn" data-wow-delay="0.5s">
+              <h1>Готовы сотрудничать?</h1>
+              <a href="contact.html#form" class="button-normal">Свяжитесь с нами</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICE CALCULATOR END -->
+    </section>
+    <!-- CONTENT END -->
+    <!-- FOOTER START
+            ============================================= -->
+    <footer id="footer" class="wrapper clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="footer-wrap row">
+            <!-- WIDGET FOOTER 1 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="short-desc">
+                <div class="logo-footer">
+                  <img src="img/logo-palmira-footer.png" alt="logo" class="footer-logo-width" />
+                </div>
+                <p>Мы - российская транспортная компания, созданная совсем недавно. Наша цель - занять передовые позиции среди топовых компаний по предоставлению траспортных услуг. Используя современные методы развития и западные схемы по работе с клиентами мы пробиваем свой путь к успеху в сфере логистики.</p>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 1 END -->
+            <!-- WIDGET FOOTER 2 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="recent-post">
+                <h4 class="title">Меню услуг</h4>
+                <div class="footer-content">
+                  <ul class="menu" style="list-style-type: none;">
+                    <li><a href="tir-service.html" class="footer-link">Грузоперевозки фурой</a></li>
+                    <li><a href="shipping-service.html" class="footer-link">Морские перевозки</a></li>
+                    <li><a href="air-service.html" class="footer-link">Авиаперевозки</a></li>
+                    <li><a href="expedition-service.html" class="footer-link">Экспедиторские услуги</a></li>
+                    <li><a href="express-service.html" class="footer-link">Экспресс-доставка</a></li>
+                    <li><a href="storage-service.html" class="footer-link">Складское хранение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 2 END -->
+            <!-- WIDGET FOOTER 3 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="contact-footer">
+                <h4 class="title">Контакты</h4>
+                <div class="footer-content">
+                  <div class="contact-section">
+                    <h4>Адрес</h4>
+                    <p>111111, ул.Малиновая, д.10</p>
+                    <p>к.1, э.1, пом.1, к.1, оф.11</p>
+                    <p>Россия, г. Москва</p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Телефон</h4>
+                    <p><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Почта</h4>
+                    <p><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 3 END -->
+            <!-- WIDGET FOOTER 4 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="buy-now">
+                <h4 class="title">Закажите сейчас</h4>
+                <div class="footer-content">
+                  <p>Вы можете заказать конкретные услуги со своими требованиями и поправками, а мы, в свою очередь, свяжемся с вами и опишем условия предоставляемых нами способов доставки.</p>
+                  <a href="contact.html#form" class="button-normal white">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 4 END -->
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT START
+                ============================================= -->
+      <div class="copyright text-center">
+        <div class="container">
+          <p>&#169; 2019-2020. Все права защищены. <a href="http://palmira-transervice.ru" class="footer-company">«ПАЛЬМИРА»</a></p>
+        </div>
+      </div>
+      <!-- COPYRIGHT END -->
+    </footer>
+    <!-- FOOTER END -->
+  </div>
+  <!-- MAIN WRAPPER END -->
+  <!-- Footer Scripts
+        ============================================= -->
+  <!-- External -->
+  <script type="text/javascript" src="js/plugin.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/shipping-service.js"></script>
+</body>
+
+</html>

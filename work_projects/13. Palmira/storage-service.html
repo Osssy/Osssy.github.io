@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if gte IE 8]><html class="ie ie8" lang="en-US"> <![endif]-->
+<html dir="ltr" lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Google Fonts
+        ============================================= -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+  <!-- Stylesheets
+        ============================================= -->
+  <link rel="stylesheet" href="css/plugin.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <!-- JavaScripts
+        ============================================= -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  <title>«ПАЛЬМИРА»</title>
+</head>
+
+<body onload="hideTotal()">
+  <div id="preloader">
+    <div id="status">
+      <img src="img/logo-palmira.png" alt="" />
+    </div>
+  </div>
+  <!-- MAIN WRAPPER
+        ============================================= -->
+  <div id="main-wrapper" class="clearfix">
+    <!-- HEADER
+            ============================================= -->
+    <header id="header" class="clearfix">
+      <div class="site-header">
+        <div class="container">
+          <div class="row">
+            <div class="top-header clearfix">
+              <div class="logo col-md-4">
+                <a href="index.html">
+                  <img src="img/logo-palmira.png" alt="" class="header-logo-width" />
+                </a>
+              </div>
+              <div class="info col-md-8">
+                <ul>
+                  <li>
+                    <i class="fa fa-clock-o"></i>
+                    <p>
+                      <span class="heading">Часы работы</span>
+                      <span>ПН - СБ: 09.00 - 22.00</span>
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <p>
+                      <span class="heading">Звоните</span>
+                      <span><a href="tel:+11111111111">+1(111)111-11-11</a></span>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <i class="fa fa-envelope"></i>
+                    <p>
+                      <span class="heading">Пишите</span>
+                      <span><a href="mailto:palmira@mail.ru">palmira@mail.ru</a></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-buttons">
+                <button id="slide-buttons" class="slide-button icon icon-navicon"></button>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="main-menu">
+                <ul class="menu" style="list-style-type: none;">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about-us.html">О нас</a></li>
+                  <li class="has-sub"><a href="services.html">Услуги</a>
+                    <ul style="list-style-type: none;">
+                      <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+                      <li><a href="shipping-service.html">Морские перевозки</a></li>
+                      <li><a href="air-service.html">Авиаперевозки</a></li>
+                      <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+                      <li><a href="express-service.html">Экспресс-доставка</a></li>
+                      <li><a href="storage-service.html">Складское хранение</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="right-section">
+                  <div class="search">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <div class="quote-link">
+                    <a href="contact.html">Поисковый запрос</a>
+                  </div>
+                  <div class="search-input">
+                    <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Mobile
+                ============================================= -->
+      <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+        <button class="c-menu__close icon icon-close"></button>
+        <div class="search-input">
+          <input type="text" name="s" placeholder="Введите поисковое слово" class="untouched">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+        <ul class="slide-menu-items" style="list-style-type: none;">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about-us.html">О нас</a></li>
+          <li class="has-sub"><a href="services.html">Услуги</a>
+            <ul style="list-style-type: none;">
+              <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+              <li><a href="shipping-service.html">Морские перевозки</a></li>
+              <li><a href="air-service.html">Авиаперевозки</a></li>
+              <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+              <li><a href="express-service.html">Экспресс-доставка</a></li>
+              <li><a href="storage-service.html">Складское хранение</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <div class="info">
+          <ul>
+            <li>
+              <p>
+                <span class="heading">Часы работы</span>
+                <span>ПН - СБ: 09.00 - 22.00</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="heading">Звоните</span>
+                <span><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></span>
+              </p>
+            </li>
+            <li class="last">
+              <p>
+                <span class="heading">Пишите</span>
+                <span><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="slide-overlay" class="slide-overlay"></div>
+      <!-- Menu Mobile End -->
+    </header>
+    <!-- HEADER END -->
+    <!-- PAGE TITLE START
+            ============================================= -->
+    <section class="page-title wrapper clearfix" style="background-image: url(img/about-page-bg.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="title-wrap wow fadeIn" data-wow-delay="1s">
+            <h1>Складское хранение</h1>
+            <div class="breadcrumbs">
+              <p>Вы здесь :
+                <span><a href="index.html">Главная</a></span>
+                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                <span><a href="services.html">Услуги</a></span>
+                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                <span>Складское хранение</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PAGE TITLE END -->
+    <!-- CONTENT START
+            ============================================= -->
+    <section id="content" class="clearfix">
+      <!-- SINGLE SERVICES START
+                ============================================= -->
+      <div class="single-services wrapper bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="single-services-wrap row">
+              <div class="single-content col-md-9">
+                <img src="img/content/sklad1.jpg" alt="" />
+                <h3 class="title">Складское хранение</h3>
+                <div class="content-text">
+                  <p>Термин «<strong>ответственное хранение</strong>» имеет несколько определений. Для бизнеса будут актуальны следующие:</p>
+                  <ol>
+                    <li>Это юридический термин, закреплённый Гражданским кодексом&nbsp;РФ, который характеризует ситуацию, наступающую в&nbsp;момент отказа покупателя (получателя) от&nbsp;полученного груза на&nbsp;законных основаниях (согласно договору поставки или других правовых актов). В&nbsp;этом случае на&nbsp;него всё равно переходит обязанность обеспечения сохранности груза до&nbsp;того момента, пока его не&nbsp;заберёт обратно поставщик, получатель его не&nbsp;продаст или ситуация не&nbsp;решится другим способом по&nbsp;обоюдному согласию участвующих сторон.</li>
+                    <li>Это отдельная или комплексная услуга, оказываемая логистическими компаниями или иными провайдерами услуги (например, провайдерами 3PL&nbsp;— Third Party Logistics), которая подразумевает выполнения операций приёмки, хранения, контроля качества, передачи на&nbsp;доставку и&nbsp;другие действия, детально описываемые в&nbsp;договоре. Это аутсорсинг складских услуг, который позволяет компаниям избежать расходов на&nbsp;создание и&nbsp;содержание собственных складов.</li>
+                  </ol>
+                  <p>Принцип в&nbsp;обоих случаях схож&nbsp;— текущий держатель груза, будь то&nbsp;3PL-провайдер или просто клиент, на&nbsp;100% несёт материальную ответственность за&nbsp;его хранение.</p>
+                  <p>Ниже разберём рынок аутсорсинга.</p>
+                  <h4>Статистика рынка складских помещений</h4>
+                  <p>Наибольший объём складских площадей в&nbsp;России традиционно сконцентрирован в&nbsp;Москве и&nbsp;Московской области. По&nbsp;данным исследования Knight Frank Research в&nbsp;2019 году на&nbsp;долю Московской области приходится больше половины (около&nbsp;57%) качественных складских площадей.</p>
+                  <p><img src="img/content/custody1.png" alt="Распределение обёма складской недвижимости в России в 2018 г."></p>
+                  <p>Если исключить Ленинградскую и&nbsp;Московскую области, то&nbsp;в&nbsp;остальных регионах останется лишь&nbsp;30% от&nbsp;общего объёма складских площадей.</p>
+                  <p>Из&nbsp;всех построенных складов в&nbsp;2018 году почти&nbsp;60% объектов реализовывались собственными силами, 12%&nbsp;— под конкретного заказчика (Built-to-suit, BTS) и&nbsp;почти 30%&nbsp;— для спекулятивных целей.</p>
+                  <p><img src="img/content/custody2.png" alt="Распределение новой складской недвижимости в 2018 г."></p>
+                  <p>Для оценки расходов на&nbsp;строительство собственного склада (в&nbsp;формате BTS) можно исходить из&nbsp;показателя в&nbsp;35-45 тыс. р./м<sup>2</sup>, причём, по&nbsp;статистике Knight Frank Research строительство объектов в&nbsp;Москве обходится дешевле, чем в&nbsp;регионах (исследовательское агентство связывает это с&nbsp;необходимостью транспортировки строительных материалов и&nbsp;дефицитом квалифицированных кадров). Сюда не&nbsp;включены операционные расходы на&nbsp;дальнейшее содержание объекта, а&nbsp;это еще приблизительно 900-1300 р./м<sup>2</sup>/год (сюда будут включены: охрана, уборка, ремонт, расходы на&nbsp;персонал, налоги и&nbsp;платежи управляющей компании).</p>
+                  <p>А&nbsp;аренда может рассматриваться исключительно с&nbsp;точки зрения операционных расходов. Средний уровень аренды в&nbsp;регионах составил около 3,5&nbsp;тыс.&nbsp;р./м<sup>2</sup>/год.</p>
+                  <p>Но&nbsp;цены сильно зависят от&nbsp;региона. Вот ориентировочные показатели для наиболее крупных городов России.</p>
+                  <p><img src="img/content/custody3.png" alt="Стоимость аренды склада по городам России"></p>
+                  <p>Вместе с&nbsp;ростом предложения складских площадей стоимость аренды снижается. Так выглядит динамика для Московского региона.</p>
+                  <p><img src="img/content/custody4.png" alt="Динамика стоимости аренды склада класса А в Москве"></p>
+                  <p>Даже грубый подсчёт говорит о&nbsp;том, что начинающему малому бизнесу выгоднее выбрать складское хранение по&nbsp;модели аренды, чем строить склад своими силами или через подрядчиков.</p>
+                  <p>Но&nbsp;не&nbsp;стоит упускать из&nbsp;вида доступность предложения в&nbsp;каждом конкретном регионе. Ведь провайдеров 3PL или даже просто свободных складских площадей может не&nbsp;оказаться.</p>
+                  <p><img src="img/content/custody5.png" alt="Ключевые показатели рынка складской недвижимости РФ"></p>
+                  <h4>Типы складов</h4>
+                  <p>В&nbsp;зависимости от&nbsp;требований, предъявляемых к&nbsp;условиям хранения и&nbsp;к&nbsp;инфраструктуре, выделяют следующие основные классы складских помещений:</p>
+                  <ul>
+                    <li>«<strong>D</strong>»&nbsp;— характеризуются существенным удалением от&nbsp;автомагистралей, оборудованы системами сигнализации и&nbsp;тушения пожаров, имеют подъезд для грузовых автомобилей средней тоннажности. Условия хранения&nbsp;— постоянная температура и&nbsp;уровень влажности. Обычно такие склады строятся на&nbsp;базе других сооружений, которые изначально не&nbsp;были запланированы для хранения товаров, поэтому имеют небольшую площадь.</li>
+                    <li>«<strong>C</strong>»&nbsp;— в&nbsp;большинстве случаев это переоборудованные утеплённые ангары, где нет специального антипылевого напольного покрытия. Температура контролируется только в&nbsp;холодное время года&nbsp;— в&nbsp;пределах +4-8°C.&nbsp;Есть система пожаротушения и&nbsp;охраны. Возможен подъезд большегрузного автотранспорта.</li>
+                    <li>«<strong>B</strong>»&nbsp;— хорошо оборудованные склады, которые незначительно отличаются от&nbsp;класса «A». Например, здесь нет автономного энергоснабжения, специального антипылевого напольного покрытия и&nbsp;системы принудительного кондиционирования. В&nbsp;остальном они подходят для любого спектра задач по&nbsp;хранению товаров, отвечают достаточным требованиях по&nbsp;безопасности (есть система охранной сигнализации, пожаротушения, оборудованные пандусы для подъезда грузовой техники и&nbsp;т.п.).</li>
+                    <li>«<strong>A</strong>»&nbsp;— помещения с&nbsp;лучшими условиями для складского хранения. Могут работать автономно, располагаются вблизи от&nbsp;инфраструктуры города, оборудованы системами кондиционирования, пожаротушения и&nbsp;сигнализации. Территория охраняется круглосуточно. Есть не&nbsp;только удобный подъезд для большегрузного транспорта, но&nbsp;и&nbsp;стояночные места для ожидания очереди разгрузки.</li>
+                  </ul>
+                  <p>Для товаров со&nbsp;специальными режимами хранения (опасные грузы, грузы с&nbsp;требованиями к&nbsp;температуре и&nbsp;т.п.) часто оборудуются отдельные склады или специальные зоны в&nbsp;имеющемся складском комплексе.</p>
+                  <h4>Что входит в&nbsp;услугу складского хранения</h4>
+                  <p>К&nbsp;разряду базовых возможностей можно отнести:</p>
+                  <ul>
+                    <li><strong>Погрузочные и&nbsp;разгрузочные работы</strong>. Могут отличаться по&nbsp;используемым техническим средствам. Например, ручная погрузка/выгрузка всегда будет дороже.</li>
+                    <li><strong>Приёмка товара</strong>. Может осуществляться поартикульно или по&nbsp;количеству мест. Чем детальнее проверка, тем дороже. Например, кладовщик может даже вскрывать каждую единицу товара и&nbsp;проверять на&nbsp;качество и&nbsp;работоспособность.</li>
+                    <li><strong>Хранение товара</strong>. В&nbsp;норме для каждого клиента выделяются стандартные места, размер которых зависит от&nbsp;объёма и&nbsp;типа хранимого товара и&nbsp;от&nbsp;условий хранения. В&nbsp;большинстве случаев речь идёт о&nbsp;палетоместах (товары размещаются на&nbsp;европоддонах и&nbsp;опалечиваются), но&nbsp;для мелких и&nbsp;негабаритных товаров условия размещения могут быть индивидуальными, так как требуется специальное складское оборудование.</li>
+                    <li><strong>Сбор заказа</strong>. Отгрузка укомплектованных поддонов и&nbsp;штучный сбор заказа требуют разного подхода. Чем выше трудозатраты, тем больше стоимость услуги.</li>
+                    <li><strong>Маркировка</strong>. Требуется в&nbsp;тех случаях, когда имеющиеся данные на&nbsp;товаре не&nbsp;могут использоваться для складских операций.</li>
+                    <li><strong>Передача товара службе доставки</strong>. Стоимость услуги может зависеть от&nbsp;различных факторов: удалённость от&nbsp;пункта приема, текущие договорённости со&nbsp;службами доставки, формат сдачи, объём заказа и&nbsp;т.п. Некоторые провайдеры могут предложить доставку собственными силами.</li>
+                    <li><strong>Выдача заказа</strong>. Требует специально оборудованного места и&nbsp;обученного персонала.</li>
+                  </ul>
+                  <p>Но&nbsp;перечень может быть увеличен или уменьшен в&nbsp;зависимости от&nbsp;возможностей провайдера услуги.</p>
+                  <p>В&nbsp;качестве дополнительных услуг можно рассматривать следующие:</p>
+                  <ul>
+                    <li>Детальный контроль складских операций (видеонаблюдение, отслеживание перемещений и&nbsp;т.п.).</li>
+                    <li>Страхование.</li>
+                    <li>Помощь с&nbsp;товарами, требующими таможенного оформления.</li>
+                    <li>Забор груза у&nbsp;поставщиков.</li>
+                    <li>Интеграция с&nbsp;системами учёта.</li>
+                  </ul>
+                  <p>Перечень доступных услуг и&nbsp;их&nbsp;стоимость могут отличаться в&nbsp;каждом конкретном случае.</p>
+                </div>
+              </div>
+              <div class="sidebar col-md-3">
+                <div class="widget other-services">
+                  <h4 class="title">Другие услуги</h4>
+                  <ul style="list-style-type: none;">
+                    <li><a href="tir-service.html">Грузоперевозки фурой</a></li>
+                    <li><a href="shipping-service.html">Морские перевозки</a></li>
+                    <li><a href="air-service.html">Авиаперевозки</a></li>
+                    <li><a href="expedition-service.html">Экспедиторские услуги</a></li>
+                    <li><a href="express-service.html">Экспресс-доставка</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SINGLE SERVICES END -->
+      <!-- SERVICES CALCULATOR START
+                ============================================= -->
+      <div class="services-calculator bg-color" style="padding-bottom: 100px;">
+        <div class="container">
+          <div class="row">
+            <div class="services-calculator-wrap row">
+              <div class="intro-section col-md-6">
+                <h3 class="title">Расчет стоимости</h3>
+                <p>Для примерного расчета стоимости услуги заполните форму калькулятора.</p>
+                <div class="image">
+                  <img src="img/content/service-calculator-img.png" alt="" />
+                </div>
+              </div>
+              <div class="form-section col-md-6">
+                <form id="calculationform" onsubmit="return false;">
+                  <fieldset>
+                    <label>Типы складских помещений</label>
+                    <select id="services_type" name='services_type' required>
+                      <option value="None">Выберите тип склада</option>
+                      <option value="D">D</option>
+                      <option value="C">C</option>
+                      <option value="B">B</option>
+                      <option value="A">A</option>
+                    </select>
+                    <label>Типы грузов</label>
+                    <select id="goods_type" name='goods_type' required>
+                      <option value="None">Выберите тип грузов</option>
+                      <option value="Cellrental">Аренда ячейки</option>
+                      <option value="Europallet">Европалет</option>
+                      <option value="Nonstandardpallet">Нестандартный палет</option>
+                    </select>
+                    <label>Количество, шт</label>
+                    <span class="form-input-mb">
+                      <input type="text" id="quantity" name='quantity' placeholder="Введите количество" required />
+                    </span>
+                    <label>Срок хранения, суток</label>
+                    <span class="form-input-mb">
+                      <input type="text" id="dayquantity" name='dayquantity' placeholder="Введите срок хранения" required />
+                    </span>
+                    <p class="extra-services storage-services">
+                      <label class="form-input-mb">Дополнительные услуги</label>
+                      <span class="form-input-mb">
+                        <label>Продажа паллет, 4€/шт</label>
+                        <input class="storage-input" type="text" id="palletquantity" name='palletquantity' />
+                      </span>
+                      <span class="form-input-mb">
+                        <label>Печать документов, 0.4€/шт</label>
+                        <input class="storage-input" type="text" id="documentquantity" name='documentquantity' />
+                      </span>
+                      <span>
+                        <label for='control'>Детальный контроль складских операций</label>
+                        <input type="checkbox" id="control" name='control' />
+                      </span>
+                      <span>
+                        <label for='insurance'>Страховка</label>
+                        <input type="checkbox" id="insurance" name='insurance' />
+                      </span>
+                      <span>
+                        <label for='clearance'>Таможенное оформление</label>
+                        <input type="checkbox" id="clearance" name='clearance' />
+                      </span>
+                      <span>
+                        <label for='fence'>Забор груза у поставщиков</label>
+                        <input type="checkbox" id="fence" name='fence' />
+                      </span>
+                      <span>
+                        <label for='integration'>Интеграция с системами учёта</label>
+                        <input type="checkbox" id="integration" name='integration' />
+                      </span>
+                    </p>
+                    <button class="button-calc" type="submit" onclick="calculateTotal()" value="submit">
+                      Рассчитать
+                    </button>
+                    <div id="totalPrice">
+                      Общая стоимость = €
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="contact-us-banner text-center wow fadeIn" data-wow-delay="0.5s">
+              <h1>Готовы сотрудничать?</h1>
+              <a href="contact.html#form" class="button-normal">Свяжитесь с нами</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICE CALCULATOR END -->
+    </section>
+    <!-- CONTENT END -->
+    <!-- FOOTER START
+            ============================================= -->
+    <footer id="footer" class="wrapper clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="footer-wrap row">
+            <!-- WIDGET FOOTER 1 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="short-desc">
+                <div class="logo-footer">
+                  <img src="img/logo-palmira-footer.png" alt="logo" class="footer-logo-width" />
+                </div>
+                <p>Мы - российская транспортная компания, созданная совсем недавно. Наша цель - занять передовые позиции среди топовых компаний по предоставлению траспортных услуг. Используя современные методы развития и западные схемы по работе с клиентами мы пробиваем свой путь к успеху в сфере логистики.</p>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 1 END -->
+            <!-- WIDGET FOOTER 2 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="recent-post">
+                <h4 class="title">Меню услуг</h4>
+                <div class="footer-content">
+                  <ul class="menu" style="list-style-type: none;">
+                    <li><a href="tir-service.html" class="footer-link">Грузоперевозки фурой</a></li>
+                    <li><a href="shipping-service.html" class="footer-link">Морские перевозки</a></li>
+                    <li><a href="air-service.html" class="footer-link">Авиаперевозки</a></li>
+                    <li><a href="expedition-service.html" class="footer-link">Экспедиторские услуги</a></li>
+                    <li><a href="express-service.html" class="footer-link">Экспресс-доставка</a></li>
+                    <li><a href="storage-service.html" class="footer-link">Складское хранение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 2 END -->
+            <!-- WIDGET FOOTER 3 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="contact-footer">
+                <h4 class="title">Контакты</h4>
+                <div class="footer-content">
+                  <div class="contact-section">
+                    <h4>Адрес</h4>
+                    <p>111111, ул.Малиновая, д.10</p>
+                    <p>к.1, э.1, пом.1, к.1, оф.11</p>
+                    <p>Россия, г. Москва</p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Телефон</h4>
+                    <p><a href="tel:+11111111111" class="footer-link">+1(111)111-11-11</a></p>
+                  </div>
+                  <div class="contact-section">
+                    <h4>Почта</h4>
+                    <p><a href="mailto:palmira@mail.ru" class="footer-link">palmira@mail.ru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 3 END -->
+            <!-- WIDGET FOOTER 4 START
+                            ============================================= -->
+            <div class="widget-footer col-md-3">
+              <div class="buy-now">
+                <h4 class="title">Закажите сейчас</h4>
+                <div class="footer-content">
+                  <p>Вы можете заказать конкретные услуги со своими требованиями и поправками, а мы, в свою очередь, свяжемся с вами и опишем условия предоставляемых нами способов доставки.</p>
+                  <a href="contact.html#form" class="button-normal white">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <!-- WIDGET FOOTER 4 END -->
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT START
+                ============================================= -->
+      <div class="copyright text-center">
+        <div class="container">
+          <p>&#169; 2019-2020. Все права защищены. <a href="http://palmira-transervice.ru" class="footer-company">«ПАЛЬМИРА»</a></p>
+        </div>
+      </div>
+      <!-- COPYRIGHT END -->
+    </footer>
+    <!-- FOOTER END -->
+  </div>
+  <!-- MAIN WRAPPER END -->
+  <!-- Footer Scripts
+        ============================================= -->
+  <!-- External -->
+  <script type="text/javascript" src="js/plugin.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/storage-calculator.js"></script>
+</body>
+
+</html>

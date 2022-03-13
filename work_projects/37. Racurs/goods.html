@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <title>Ракурс | Товары</title>
+  <meta charset="utf-8">
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+  <link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500i&amp;subset=cyrillic" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+    <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+  <![endif]-->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+  <!-- search modal -->
+  <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">
+        <i class="rt-icon2-cross2"></i>
+      </span>
+    </button>
+    <div class="widget widget_search">
+      <form method="get" class="searchform search-form form-inline" action="./">
+        <div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Поискd" id="modal-search-input"> </div> <button type="submit" class="theme_button color1 no_bg_button">Search</button>
+      </form>
+    </div>
+  </div>
+  <!-- Unyson messages modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+    <div class="fw-messages-wrap ls with_padding">
+      <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+      <!--
+    <ul class="list-unstyled">
+      <li>Message To User</li>
+    </ul>
+    -->
+    </div>
+  </div>
+  <!-- eof .modal -->
+  <!-- wrappers for visual page editor and boxed version of template -->
+  <div id="canvas">
+    <div id="box_wrapper">
+      <!-- template sections -->
+      <section class="page_topline ds background_cover">
+        <div class="container-fluid">
+          <div class="row flex-wrap v-center">
+            <div class="col-xs-12 col-md-8 text-center text-md-left">
+              <div class="inline-content big-spacing">
+                <span>
+                  <i class="qtyler-phone rightpadding_5"></i>
+                  +1(111)111-11-11
+                </span>
+                <span>
+                  <i class="qtyler-envelope rightpadding_5"></i>
+                  racurs@mail.ru
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <header class="page_header header_white header_v1 toggler_xxs_right">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 display-flex v-center">
+              <div class="header_left_logo"> <a href="./" class="logo">
+                  <img src="images/logo.png" alt="">
+                </a> </div>
+              <div class="header_mainmenu text-right">
+                <!-- main nav start -->
+                <nav class="mainmenu_wrapper">
+                  <ul class="mainmenu nav sf-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li class="active"><a href="goods.html">Товары</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                  </ul>
+                </nav>
+                <!-- eof main nav -->
+                <!-- header toggler --><span class="toggle_menu"><span></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="page_breadcrumbs ls background_cover section_padding_50">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h1 class="sr-only">Товары</h1>
+              <ol class="breadcrumb darklinks">
+                <li> <a href="index.html">
+                    Главная
+                  </a> </li>
+                <li class="active"> <span>Товары</span> </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ls page_portfolio section_padding_top_140 section_padding_bottom_150">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 goods-container">
+              <!-- <div class="filters isotope_filters"> <a href="#" class="selected" data-filter="*">All</a> <a href="#" data-filter=".category-1">Category 1</a> <a href="#" data-filter=".category-2">Category 2</a> <a href="#" data-filter=".category-3">Category 3</a> <a href="#" data-filter=".category-4">Category 4</a> </div>
+              <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20" data-filters=".isotope_filters"> -->
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0557-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0557-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">420 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Атлас зелёный с красным и желтым узором
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0549-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0549-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">420 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Атлас фиолетовый с цветочным узором
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0228-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0228-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">480 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Атлас итальянский с цветочным узором
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0163-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0163-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">400 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Шёлк в черную полоску
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/img-2006.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/img-2006.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">160 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Атлас однотонный 049 "Бирюзово-Голубой"
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-5841.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-5841.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">150 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бархат-стрейч однотонный голубого цвета
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0045.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0045.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">450 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бархат бирюзовый с абстрактным узором
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-8611-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-8611-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">440 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бархат рыже-коричневый
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-4894.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-4894.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">440 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бархат "Бежевый" 090
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-3518.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-3518.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">440 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бархат в полоску
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0304-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0304-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">480 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бифлекс однотонный цвета фуксия
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0269-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0269-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">480 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бифлекс однотонный цвета капучино
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0253-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0253-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">480 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Бифлекс белого цвета Орландо
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0414-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0414-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">420 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Трикотаж серый из хлопка с эластаном
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0398-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0398-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">350 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Трикотаж вязаный бежевого цвета
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0375-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0375-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">350 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Трикотаж хлопковый цвета баклажан
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0022-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0022-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">400 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Вельвет однотонный итальянский с эластаном
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0407-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0407-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">400 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Вельвет однотонный итальянский в мелкий рубчик
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-4589.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-4589.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">180 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Габардин-027 "Голубой"
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/img-9851.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/img-9851.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">180 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Габардин-018 "Оранжевый"
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/img-4581.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/img-4581.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">950 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Валяный лоден "Либертен"
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/img-3271-2.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/img-3271-2.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">950 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Валяный лоден "Пелегрино"
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0348-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0348-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">280 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Гипюр-стрейч салатового цвета
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0358-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0358-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">280 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Гипюр-стрейч Альгард
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0144-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0144-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">400 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Джинс серо-синий из хлопка с эластаном
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0122-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0122-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">400 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Джинс тёмно-синего цвета однотонный итальянский
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/mg-8712.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/mg-8712.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">950 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Жаккард кремовый с узором Абстракция
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/mg-8759.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/mg-8759.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">420 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Жаккард сиренево-серый Петушки
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0428-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0428-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">300 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Китайский шёлк синий с цветочками
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0398-result (1).jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0398-result (1).jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">360 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Китайский шёлк голубой в мелкий цветок
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-5425.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-5425.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">380 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Кожзаменитель итальянский перфорированный
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-3441-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-3441-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">420 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Кожзаменитель коричневый
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0033-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0033-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">400 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Костюмная серая однотонная ткань
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0093-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0093-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">400 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Костюмная однотонная тёмно-синяя ткань
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/img-5680-1.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/img-5680-1.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">160 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Креп-сатин 10
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/img-5646.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/img-5646.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">160 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Креп-сатин 15
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/krdsc-5889-min.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/krdsc-5889-min.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">950 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Кружево "Молоко"
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-2197.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-2197.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">160 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Кружево (А-1) "Бельторри" 196
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0358-result (1).jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0358-result (1).jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">300 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Курточная однотонная салатовая
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0322-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0322-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">300 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Курточная с надписью Stone Island
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-0112-result.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-0112-result.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">350 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Хлопок голубой однотонный
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-5400.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-5400.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">350 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Хлопок однотонный серый в рубчик
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                <article class="vertical-item gallery-item content-padding big-padding with_shadow text-center">
+                  <div class="item-media"> <img src="images/goods/dsc-5451.jpg" alt="">
+                    <div class="media-links">
+                      <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/goods/dsc-5451.jpg"></a> </div>
+                    </div>
+                  </div>
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="categories-links small-text highlightlinks"> <a href="#nowhere">550 Р/м</a> </div>
+                      <h3 class="entry-title"> <a href="#contact-form" rel="bookmark">
+                          Махровая ткань молочного цвета
+                        </a> </h3>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-form" class="ls section_padding_bottom_150">
+        <div class="container">
+          <div class="row flex-wrap v-center">
+            <div class="col-xs-12 col-md-5 col-md-push-6"> <img src="images/tailoring.jpg" alt="" class="contact-form-cover"> </div>
+            <div class="col-xs-12 col-md-7 col-md-pull-5">
+              <h2 class="section_header">Форма заказа</h2>
+              <!-- <p class="small-text grey">заполните контактные данные и укажите ваши пожелания</p> -->
+              <div class="toppadding_5"></div>
+              <form class="contact-form row columns_padding_10" method="post" action="./">
+                <div class="col-xs-12">
+                  <div class="form-group"> <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control with_icon" placeholder="ФИО"> <i class="qtyler-user grey"></i> </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group"> <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control with_icon" placeholder="Почта"> <i class="qtyler-envelope grey"></i> </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group"> <input type="tel" size="30" value="" name="phone" id="phone" class="form-control with_icon" placeholder="Телефон"> <i class="qtyler-phone grey"></i> </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-group"> <input type="text" aria-required="true" size="30" value="" name="address" id="address" class="form-control with_icon" placeholder="Адрес"> <i class="qtyler-map-marker grey"></i> </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-group"> <textarea aria-required="true" rows="3" cols="45" name="message" id="message" class="form-control with_icon" placeholder="Условия заказа"></textarea> <i class="qtyler-comment grey"></i> </div>
+                </div>
+                <div class="col-xs-12 bottommargin_0">
+                  <div class="contact-form-submit"> <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button min_width_button margin_0">Отправить заказ</button> </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ls fluid_padding_0 columns_padding_0">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="owl-carousel gallery-carousel framed" data-responsive-xlg="6" data-responsive-lg="5" data-responsive-md="4" data-responsive-sm="3" data-responsive-xs="3" data-responsive-xxs="2" data-loop="true" data-margin="0" data-nav="true">
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/64527414_images_18313208023.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/64527414_images_18313208023.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/1-barhat.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/1-barhat.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/resize_900_900_true_q90_3843271_b21fb3b4ec.jpeg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/resize_900_900_true_q90_3843271_b21fb3b4ec.jpeg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/trikotazh-bifleks-na-kupalniki-blestyashchiy-malinovyy-36240522004442.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/trikotazh-bifleks-na-kupalniki-blestyashchiy-malinovyy-36240522004442.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/bukle000006-1280x800.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/bukle000006-1280x800.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/591759340_tkan-velvet-art.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/591759340_tkan-velvet-art.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg1473_1.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg1473_1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/2244e128b18963b09f2a337f9amc--materialy-dlya-tvorchestva-118201-tkan-gipyur-v-stile-makrame.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/2244e128b18963b09f2a337f9amc--materialy-dlya-tvorchestva-118201-tkan-gipyur-v-stile-makrame.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/1200px-Singlejersey.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/1200px-Singlejersey.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/dsc01908.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/dsc01908.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/8e06dfb3a177431e944a8f2742bq--materialy-dlya-tvorchestva-tkan-zhakkard.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/8e06dfb3a177431e944a8f2742bq--materialy-dlya-tvorchestva-tkan-zhakkard.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/original.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/original.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/8057b9606db135020784cec417fw--materialy-dlya-tvorchestva-kashemir-s-sherstyu-loro-piana.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/8057b9606db135020784cec417fw--materialy-dlya-tvorchestva-kashemir-s-sherstyu-loro-piana.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/8d5de807ae2dfc22e83759b4051j--materialy-dlya-tvorchestva-89101-tkan-zamsha-na-hlopkovoj-osn.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/8d5de807ae2dfc22e83759b4051j--materialy-dlya-tvorchestva-89101-tkan-zamsha-na-hlopkovoj-osn.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/75250673d67d3f6b16a6c67ac2xa--materialy-dlya-tvorchestva-tkan-kostyumnaya-poliviskoza.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/75250673d67d3f6b16a6c67ac2xa--materialy-dlya-tvorchestva-tkan-kostyumnaya-poliviskoza.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/1662278682_w640_h640_tkan-sherstyanaya-kostyumnaya.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/1662278682_w640_h640_tkan-sherstyanaya-kostyumnaya.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/0.91076100 154116825050830.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/0.91076100 154116825050830.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/P7720_5.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/P7720_5.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/R8861__5_.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/R8861__5_.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/525694524_w640_h640_525694524.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/525694524_w640_h640_525694524.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/len_T3764__5_.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/len_T3764__5_.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/b8472821f576ebf304006c91914a--materialy-dlya-tvorchestva-tkan-paltovaya-loden.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/b8472821f576ebf304006c91914a--materialy-dlya-tvorchestva-tkan-paltovaya-loden.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/organza-cvet-goluboj-1200x800.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/organza-cvet-goluboj-1200x800.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/7c4dc769f4fe21dd80be6f89ffc5--materialy-dlya-tvorchestva-tkan-paltovaya-italiya.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/7c4dc769f4fe21dd80be6f89ffc5--materialy-dlya-tvorchestva-tkan-paltovaya-italiya.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/4493-950x950.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/4493-950x950.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg1007.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg1007.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/original (1).jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/original (1).jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg0080.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg0080.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/eb169f72e268d95580ab5de2e8tb--materialy-dlya-tvorchestva-tkan-satin-dymchataya-roza-shir-24.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/eb169f72e268d95580ab5de2e8tb--materialy-dlya-tvorchestva-tkan-satin-dymchataya-roza-shir-24.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/cimg6911.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/cimg6911.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/0edf9f39aab4710e5be1447f93c5--materialy-dlya-tvorchestva-tkan-trikotazh-viskoza-pr-vo-itali.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/0edf9f39aab4710e5be1447f93c5--materialy-dlya-tvorchestva-tkan-trikotazh-viskoza-pr-vo-itali.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/00359_1.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/00359_1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/9db4060f8d9077129cd68f4cb25w--materialy-dlya-tvorchestva-tkan-hlopok-s-pokrytiem-teflon-dry.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/9db4060f8d9077129cd68f4cb25w--materialy-dlya-tvorchestva-tkan-hlopok-s-pokrytiem-teflon-dry.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/eco-0018-2-of-5-1120x1280.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/eco-0018-2-of-5-1120x1280.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/0c6f287cbbbfd63f2417d3f4360w--materialy-dlya-tvorchestva-italyanskaya-tkan-shelk-kadi-atlas.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/0c6f287cbbbfd63f2417d3f4360w--materialy-dlya-tvorchestva-italyanskaya-tkan-shelk-kadi-atlas.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/282032561_w640_h640_tkan-shite-mirazh.webp" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/282032561_w640_h640_tkan-shite-mirazh.webp">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/344acf27a28d36031c7170a9027k--materialy-dlya-tvorchestva-tkan-shifon-oranzhevyj.jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/344acf27a28d36031c7170a9027k--materialy-dlya-tvorchestva-tkan-shifon-oranzhevyj.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="vertical-item">
+                  <div class="item-media">
+                    <img src="images/textile-types/original (2).jpg" alt="">
+                    <a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/textile-types/original (2).jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="page_footer ls section_padding_top_150 section_padding_bottom_140 columns_margin_bottom_30">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-4 text-center text-md-left">
+              <div class="widget widget_text">
+                <div class="logo"> <img src="images/logo.png" alt=""> </div>
+                <ul class="list-unstyled greylinks">
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-phone"></i> </div>
+                      <div class="media-body"> <a href="tel:+11111111111">+1(111)111-11-11</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-envelope"></i> </div>
+                      <div class="media-body"> <a href="mailto:racurs@mail.ru">racurs@mail.ru</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-map-marker"></i> </div>
+                      <div class="media-body"> <a href="contact.html#map">111111, г.Москва, ул.Малиновая, д.10, к.1, э.1, пом.1, к.1, оф.11</a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center text-md-left">
+              <div class="widget widget_text">
+                <h3 class="widget-title">Рабочее время</h3>
+                <ul class="feature-list">
+                  <li> <span>Будние</span> <span>8:00 - 20:00</span> </li>
+                  <li> <span>Суббота</span> <span>9:00 - 16:00</span> </li>
+                  <li> <span>Воскресенье</span> <span>Закрыто</span> </li>
+                  <li> <span>Праздники</span> <span>10:00 - 14:00</span> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center text-md-left">
+              <div class="widget widget_text">
+                <h3 class="widget-title">Особенности</h3>
+                <ul class="list-unstyled greylinks">
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-delivery"></i> </div>
+                      <div class="media-body">Бесплатная доставка по Москве</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-headphones"></i> </div>
+                      <div class="media-body">Отличная и быстрая техподдержка</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media small-media">
+                      <div class="media-left"> <i class="qtyler-money"></i> </div>
+                      <div class="media-body">100% гарантия качества</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section class="page_copyright ds background_cover section_padding_top_10 section_padding_bottom_10">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">&copy; 2019-2020 <a href="http://www.racurs.com.ru">Ракурс</a>. Все права защищены.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+  <!-- eof #canvas -->
+  <script src="js/compressed.js"></script>
+  <script src="js/selectize.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/switcher.js"></script> -->
+</body>
+
+</html>

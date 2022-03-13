@@ -1,0 +1,281 @@
+.caddilacs {
+	&_wrapper {
+		@include flex(flex, column, flex-start, center, nowrap);
+		padding: 40px 75px 80px;
+		max-width: 1170px;
+		width: 100%;
+		@include laptop-lg {padding: 35px 60px 70px;}
+		@include laptop {padding: 32px 50px 65px;}
+		@include tablet {padding: 32px 45px 70px;}
+		@include mobile {padding: 40px 20px;}
+		margin: $margin-centered;
+		border-bottom: 1px solid $color-divider;
+		position: relative;
+	}
+	&__title {
+		text-align: center;
+		margin: 0 0 10px;
+		font-size: $font-size-32px;
+		@include laptop-lg {font-size: $font-size-30px; margin: 0 0 8px;}
+		@include laptop {font-size: $font-size-28px; margin: 0 0 7px;}
+		@include tablet {font-size: $font-size-36px; margin: 0 0 8px;}
+		@include mobile {font-size: $font-size-28px; margin: 0 0 20px;}
+	}
+	&__excerpt-info {
+		font-family: 'AvenirNext-Regular', serif;
+		font-weight: 600;
+		color: $color-yellow;
+		@include laptop-lg {font-size: $font-size-15px;};
+		@include laptop {font-size: $font-size-14px;};
+		@include tablet {font-size: $font-size-17px;}
+		@include mobile {display: none;}
+	}
+	&__image {
+		display: block;
+		width: 100%;
+		padding: 80px 0 0;
+		@include mobile {padding: 60px 0 0;}
+		&_container {
+			margin: 0 0 60px;
+			@include laptop-lg {margin: 0 0 55px;}
+			@include laptop {margin: 0 0 50px;}
+			@include tablet {margin: 0 0 55px;}
+			@include mobile {margin: 0 0 60px;}
+			position: relative;
+		}
+	}
+	&__shadow {
+		width: 100%;
+		height: 7px;
+		opacity: 0.5;
+		filter: blur(2px);
+		background-color: #212020;
+		position: relative;
+		&::before {
+			content: '';
+			width: calc(154 / 1170 * 100%);
+			height: 7px;
+			opacity: 0.3;
+			filter: blur(5px);
+			background-color: #000000;
+			position: absolute;
+			left: calc(111 / 1170 * 100%);
+		}
+		&::after {
+			content: '';
+			width: calc(154 / 1170 * 100%);
+			height: 7px;
+			opacity: 0.3;
+			filter: blur(5px);
+			background-color: #000000;
+			position: absolute;
+			left: calc(787 / 1170 * 100%);
+		}
+	}
+	&__text {
+		max-width: 970px;
+		width: 90%;
+		@include laptop-lg {font-size: $font-size-15px;}
+		@include laptop {font-size: $font-size-14px;}
+		@include tablet {font-size: $font-size-16px;}
+		@include mobile {font-size: $font-size-14px; text-align: justify;}
+	}
+}
+
+.advantages {
+	&__list {
+		list-style: disc;
+		display: none;
+		@include mobile {display: block;};
+	}
+	&__item {
+		font-family: 'AvenirNext-Regular', serif;
+		font-size: $font-size-16px;
+		font-weight: 600;
+		color: $color-yellow;
+	}
+}
+
+.tooltip {
+	&__pointer {
+		width: 10px;
+		height: 10px;
+		@include laptop-lg {width: 11px; height: 11px;};
+		@include laptop {width: 12px; height: 12px;};
+		@include tablet {width: 13px; height: 13px;};
+		@include mobile {display: none;}
+		border-radius: 50%;
+ 		background-color: #ffd600;
+ 		box-shadow: 0px 0px 0px 0px rgba(236, 184, 76, 0.75);
+ 		position: absolute;
+ 		transition-duration: 0.7s;
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0px 0px 0px 11px rgba(236, 184, 76, 0.75);
+		}
+	}
+	&_fender {
+		top: calc(211 / 410 * 100%);
+		left: calc(160 / 1170 * 100%);
+		&::before {
+			content: '';
+		    background: $color-yellow;
+		    height: 1px;
+		    position: absolute;
+		    width: 165px;
+		    left: 120px;
+		    bottom: 130px;
+		    @include laptop-lg {width: 144px; left: 107px; bottom: 115px;}
+			@include laptop {width: 123px; left: 93px; bottom: 100px;}
+			@include tablet {width: 109px; left: 85px; bottom: 91px;}
+		    transform-origin: 0 100%;
+		    transform: rotate(133deg);
+		    display: none;
+		}
+		&::after {
+			content: 'Stainless Fender';
+			position: absolute;
+			left: 120px;
+			bottom: 130px;
+			padding: 0 0 10px;
+			@include laptop-lg {left: 107px; bottom: 115px; font-size: $font-size-15px; padding: 0 0 9px;}
+			@include laptop {left: 93px; bottom: 100px; font-size: $font-size-14px; padding: 0 0 8px;}
+			@include tablet {left: 85px; bottom: 91px; font-size: $font-size-13px; padding: 0 0 7px;}
+			white-space: nowrap;
+			border-bottom: 1px solid $color-yellow;
+			font-family: "AvenirNext-Regular", serif;
+			color: $color-text;
+			font-weight: 600;
+			display: none;
+		}
+		&:hover::before {
+			display: block;
+		}
+		&:hover::after {
+			display: block;
+		}
+	}
+	&_door {
+		top: calc(209 / 410 * 100%);
+		left: calc(506 / 1170 * 100%);
+		&::before {
+			content: '';
+			background: $color-yellow; 
+			height: 1px;
+			position: absolute;
+			width: 165px;
+			left: 120px;
+			bottom: 130px;
+			@include laptop-lg {width: 144px; left: 107px; bottom: 115px;}
+			@include laptop {width: 123px; left: 93px; bottom: 100px;}
+			@include tablet {width: 109px; left: 85px; bottom: 91px;}
+			transform-origin: 0 100%;
+			transform: rotate(133deg);
+			display: none;	
+		}
+		&::after {
+			content: 'Super Door';
+			position: absolute;
+			left: 120px;
+			bottom: 130px;
+			padding: 0 0 10px;
+			@include laptop-lg {left: 107px; bottom: 115px; font-size: $font-size-15px; padding: 0 0 9px;}
+			@include laptop {left: 93px; bottom: 100px; font-size: $font-size-14px; padding: 0 0 8px;}
+			@include tablet {left: 85px; bottom: 91px; font-size: $font-size-13px; padding: 0 0 7px;}
+			white-space: nowrap;
+			border-bottom: 1px solid $color-yellow;
+			font-family: "AvenirNext-Regular", serif;
+			color: $color-text;
+			font-weight: 600;
+			display: none;
+		}
+		&:hover::before {
+			display: block;
+		}
+		&:hover::after {
+			display: block;
+		}
+	}
+	&_wheel {
+		top: calc(364 / 410 * 100%);
+		left: calc(850 / 1170 * 100%);
+		&::before {
+			content: '';
+			background: $color-yellow; 
+			height: 1px;
+			position: absolute;
+			width: 165px;
+			left: 120px;
+			bottom: 130px;
+			@include laptop-lg {width: 144px; left: 107px; bottom: 115px;}
+			@include laptop {width: 123px; left: 93px; bottom: 100px;}
+			@include tablet {width: 109px; left: 85px; bottom: 91px;}
+			transform-origin: 0 100%;
+			transform: rotate(133deg);
+			display: none;
+		}
+		&::after {
+			content: 'Painted Wheels';
+			position: absolute;
+			left: 120px;
+			bottom: 130px;
+			padding: 0 0 10px;
+			@include laptop-lg {left: 107px; bottom: 115px; font-size: $font-size-15px; padding: 0 0 9px;}
+			@include laptop {left: 93px; bottom: 100px; font-size: $font-size-14px; padding: 0 0 8px;}
+			@include tablet {left: 85px; bottom: 91px; font-size: $font-size-13px; padding: 0 0 7px;}
+			white-space: nowrap;
+			border-bottom: 1px solid $color-yellow;
+			font-family: "AvenirNext-Regular", serif;
+			color: $color-text;
+			font-weight: 600;
+			display: none;
+		}
+		&:hover::before {
+			display: block;
+		}
+		&:hover::after {
+			display: block;
+		}
+	}
+	&_roof {
+		top: calc(170 / 410 * 100%);
+		left: calc(777 / 1170 * 100%);
+		&::before {
+			content: '';
+			background: $color-yellow; 
+			height: 1px;
+			position: absolute;
+			width: 165px;
+			left: 120px;
+			bottom: 130px;
+			@include laptop-lg {width: 144px; left: 107px; bottom: 115px;}
+			@include laptop {width: 123px; left: 93px; bottom: 100px;}
+			@include tablet {width: 109px; left: 85px; bottom: 91px;}
+			transform-origin: 0 100%;
+			transform: rotate(133deg);
+			display: none;
+		}
+		&::after {
+			content: 'Nice Roof';
+			position: absolute;
+			left: 120px;
+			bottom: 130px;
+			padding: 0 0 10px;
+			@include laptop-lg {left: 107px; bottom: 115px; font-size: $font-size-15px; padding: 0 0 9px;}
+			@include laptop {left: 93px; bottom: 100px; font-size: $font-size-14px; padding: 0 0 8px;}
+			@include tablet {left: 85px; bottom: 91px; font-size: $font-size-13px; padding: 0 0 7px;}
+			white-space: nowrap;
+			border-bottom: 1px solid $color-yellow;
+			font-family: "AvenirNext-Regular", serif;
+			color: $color-text;
+			font-weight: 600;
+			display: none;
+		}
+		&:hover::before {
+			display: block;
+		}
+		&:hover::after {
+			display: block;
+		}
+	}	
+}

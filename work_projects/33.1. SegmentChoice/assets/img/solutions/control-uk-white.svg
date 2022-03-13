@@ -1,0 +1,29 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+    <defs>
+        <style>
+        .cls-1 {
+            fill: none;
+            stroke: #FABC3D;
+            stroke-miterlimit: 10;
+            stroke-width: 1.9px;
+        }
+
+        .cls-2 {
+            fill: #FABC3D;
+        }
+        </style>
+    </defs>
+    <title>control uk white</title>
+    <rect class="cls-1" x="33.32" y="24.03" width="73.06" height="91.46" rx="6" />
+    <rect class="cls-1" x="40.64" y="32.62" width="58.39" height="25.03" rx="3" />
+    <rect class="cls-1" x="40.62" y="82.81" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="62.25" y="82.81" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="83.82" y="82.46" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="40.72" y="66.65" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="62.35" y="66.65" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="83.91" y="66.3" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="40.72" y="99.05" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="62.35" y="99.05" width="15.15" height="8.55" rx="3" />
+    <rect class="cls-1" x="83.91" y="98.7" width="15.15" height="8.55" rx="3" />
+    <path class="cls-2" d="M70.6,40.12a2.12,2.12,0,0,1,1.52.57,3.75,3.75,0,0,1,.95,1.67l2.61-1a5.57,5.57,0,0,0-2-3.13,5.37,5.37,0,0,0-3.3-1,6,6,0,0,0-2,.31,4.7,4.7,0,0,0-1.6.89,4.16,4.16,0,0,0-1.06,1.41,4.24,4.24,0,0,0-.39,1.84,4.68,4.68,0,0,0,.3,1.73,12.2,12.2,0,0,0,.69,1.46H64.53v2.63h2.82v.23a3.52,3.52,0,0,1-.84,2.32,11.94,11.94,0,0,1-2.21,2v.67H75.44V50.11H69.7A3.77,3.77,0,0,0,70.28,49a4.58,4.58,0,0,0,.18-1.27v-.18h2.79V44.88H69.54c-.25-.45-.48-.88-.69-1.31a2.92,2.92,0,0,1-.33-1.37,2.12,2.12,0,0,1,.54-1.49A2,2,0,0,1,70.6,40.12Z" />
+</svg>
