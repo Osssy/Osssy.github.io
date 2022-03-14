@@ -31,11 +31,11 @@
 19. Primos https://osssy.github.io/work_projects/19.%20Primos/
 20. Rectime https://osssy.github.io/work_projects/20.%20Rectime/
 21. Trans Comp https://osssy.github.io/work_projects/21.%20Trans%20Comp/
-22.1 Stroy Market https://osssy.github.io/work_projects/22.%20Stroy%20Market/Kaz_lang/public/
-22.2 Stroy Market https://osssy.github.io/work_projects/22.%20Stroy%20Market/Rus_lang/public/
+22. L1 Stroy Market https://osssy.github.io/work_projects/22.%20Stroy%20Market/Kaz_lang/public/
+ 	L2 Stroy Market https://osssy.github.io/work_projects/22.%20Stroy%20Market/Rus_lang/public/
 23. Setra Business_v1 https://osssy.github.io/work_projects/23.%20Setra%20business_v1/
-24.1 Setra Business_v2 https://osssy.github.io/work_projects/24.%20Setra%20business_v2/Pol_lang/
-24.2 Setra Business_v2 https://osssy.github.io/work_projects/24.%20Setra%20business_v2/Rus_lang/
+24. L1 Setra Business_v2 https://osssy.github.io/work_projects/24.%20Setra%20business_v2/Pol_lang/
+	L2 Setra Business_v2 https://osssy.github.io/work_projects/24.%20Setra%20business_v2/Rus_lang/
 25. Legioner Sauda https://osssy.github.io/work_projects/25.%20Legioner%20Sauda/
 26. Visteon Capital https://osssy.github.io/work_projects/26.%20Visteon%20capital/
 27. Avtomig_v1 https://osssy.github.io/work_projects/27.%20Avtomig_v1/
