@@ -1,10 +1,10 @@
 # public hosted zone.
 
 ## Portfolio projects. The links are below: 
-1. Artboard https://osssy.github.io/artboard_for_portfolio/build/
-2. Cuba https://osssy.github.io/cuba_for_portfolio/build/
-3. London Landing https://osssy.github.io/london_landing_for_portfolio/build/
-4. Autocryp https://osssy.github.io/autocryp_for_portfolio/build/
+1. Artboard https://osssy.github.io/portfolio_projects/artboard_for_portfolio/build/
+2. Cuba https://osssy.github.io/portfolio_projects/cuba_for_portfolio/build/
+3. London Landing https://osssy.github.io/portfolio_projects/london_landing_for_portfolio/build/
+4. Autocryp https://osssy.github.io/portfolio_projects/autocryp_for_portfolio/build/
 
 ## Test projects. The links are below: 
 1. https://osssy.github.io/tests_projects/test-everad/build/
